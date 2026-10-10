@@ -1,5 +1,5 @@
 {
-  "checked": "10 October 2026",
+  "checked": "11 October 2026",
   "climate": {
     "source": "Wikipedia Jammu climate table, citing IMD; primary source not yet independently retrieved",
     "url": "https://en.wikipedia.org/wiki/Jammu#Climate",
@@ -112,10 +112,22 @@
       "finding": "Official climate-service index was accessible. It links climate information and IMD Pune services. Its current-weather pages do not substitute for yearly normals."
     },
     {
-      "title": "Modern living-room references",
-      "url": "https://www.houzz.in/photos/modern-living-room-design-ideas-phbr1-bp~t_26341~s_26738",
-      "status": "Reference listing read",
-      "finding": "Listing includes Tenang House, Eklavya House and Indian residential interiors. Use for furniture scale, storage and palette comparisons; no claim that their climate or layout matches your site."
+      "title": "Tenang House — KSD Studio",
+      "url": "https://www.houzz.in/photos/tenang-house-phvw-vp~211404173",
+      "status": "Reference image and metadata reviewed",
+      "finding": "The Mumbai living room uses a low curved neutral sofa, two visually light wood armchairs, full-height sheers and very little open display. Applied here: a calm neutral base, mixed seating and clear sightlines. Its dimensions and Jammu climate performance are unknown."
+    },
+    {
+      "title": "Eklavya House — KSD Studio",
+      "url": "https://www.houzz.in/photos/eklavya-house-phvw-vp~211406582",
+      "status": "Reference image and metadata reviewed",
+      "finding": "The Mumbai room pairs light neutral seating with strong greenery and one controlled blue accent. Applied here: restrained colour and connection to planting. Its large unshaded glass areas are not copied because Jammu solar gain must be checked."
+    },
+    {
+      "title": "Mandir — The Eka Designs",
+      "url": "https://www.houzz.in/photos/mandir-phvw-vp~212700054",
+      "status": "Reference image and description reviewed",
+      "finding": "The Delhi mandir uses symmetry, warm concealed light, marble and carved wood. Applied here: symmetry and warm task light. Heavy ornament is simplified for your compact 4 by 5 foot puja and minimal preference."
     },
     {
       "title": "Indian interior projects",
@@ -126,8 +138,8 @@
     {
       "title": "YouTube: compact Indian homes",
       "url": "https://www.youtube.com/results?search_query=small+indian+home+interior+light+minimal+storage",
-      "status": "Videos not reviewed · access blocked",
-      "finding": "Video access returned a proxy 403. This is a suggested search, not an endorsed or watched video. Review dimensions, ventilation, concealed storage and real construction costs once access is enabled."
+      "status": "Videos not reviewed · access still blocked",
+      "finding": "Direct YouTube pages and video metadata requests returned proxy 403 on 11 October 2026. The link remains a search prompt, not a watched or endorsed video. No design claim in this site is attributed to an unseen video."
     },
     {
       "title": "Colour and thermal comfort",
