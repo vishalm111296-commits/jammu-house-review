@@ -1,0 +1,155 @@
+{
+  "checked": "10 October 2026",
+  "climate": {
+    "source": "Wikipedia Jammu climate table, citing IMD; primary source not yet independently retrieved",
+    "url": "https://en.wikipedia.org/wiki/Jammu#Climate",
+    "retrievedUrl": "https://en.wikipedia.org/w/index.php?title=Jammu&action=raw",
+    "period": "1991–2020 normals",
+    "station": "Jammu, WMO 42056 (station ID from cited reference)",
+    "primaryUrl": "https://imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf",
+    "primaryStatus": "HTTP 503 when checked; secondary-source transcription only",
+    "months": [
+      {
+        "name": "Jan",
+        "high": 18.1,
+        "low": 7.3,
+        "rain": 67.9,
+        "humidity": 66.0
+      },
+      {
+        "name": "Feb",
+        "high": 21.5,
+        "low": 10.2,
+        "rain": 74.6,
+        "humidity": 57.0
+      },
+      {
+        "name": "Mar",
+        "high": 26.6,
+        "low": 14.5,
+        "rain": 64.1,
+        "humidity": 51.0
+      },
+      {
+        "name": "Apr",
+        "high": 32.7,
+        "low": 19.7,
+        "rain": 41.4,
+        "humidity": 38.0
+      },
+      {
+        "name": "May",
+        "high": 37.6,
+        "low": 24.3,
+        "rain": 22.5,
+        "humidity": 31.0
+      },
+      {
+        "name": "Jun",
+        "high": 38.3,
+        "low": 26.1,
+        "rain": 109.5,
+        "humidity": 41.0
+      },
+      {
+        "name": "Jul",
+        "high": 34.3,
+        "low": 25.5,
+        "rain": 416.5,
+        "humidity": 66.0
+      },
+      {
+        "name": "Aug",
+        "high": 33.1,
+        "low": 24.9,
+        "rain": 403.1,
+        "humidity": 72.0
+      },
+      {
+        "name": "Sep",
+        "high": 32.8,
+        "low": 23.2,
+        "rain": 144.8,
+        "humidity": 68.0
+      },
+      {
+        "name": "Oct",
+        "high": 31.1,
+        "low": 18.4,
+        "rain": 23.5,
+        "humidity": 58.0
+      },
+      {
+        "name": "Nov",
+        "high": 26.4,
+        "low": 13.0,
+        "rain": 12.2,
+        "humidity": 63.0
+      },
+      {
+        "name": "Dec",
+        "high": 21.1,
+        "low": 8.7,
+        "rain": 21.9,
+        "humidity": 69.0
+      }
+    ],
+    "annualRainCalculated": 1402.0,
+    "sourceSnapshotSHA256": "4bfaef4099dcba66324ce0d63ac2cda45c0e88b3f0e95a00552b8b5297895f2f",
+    "note": "Uses the explicitly dated climate table, not contradictory undated prose on the same page. Monthly averages are not extremes, forecasts or a site microclimate."
+  },
+  "references": [
+    {
+      "title": "Jammu: the yearly climate",
+      "url": "https://en.wikipedia.org/wiki/Jammu#Climate",
+      "status": "Monthly table read · secondary source",
+      "finding": "1991–2020 table reports June mean daily high 38.3°C, January mean daily low 7.3°C, and July rain 416.5 mm. Primary IMD PDF retrieval failed; this distinction is explicit."
+    },
+    {
+      "title": "IMD climate services",
+      "url": "https://mausam.imd.gov.in/responsive/climate_services.php",
+      "status": "Official index read",
+      "finding": "Official climate-service index was accessible. It links climate information and IMD Pune services. Its current-weather pages do not substitute for yearly normals."
+    },
+    {
+      "title": "Modern living-room references",
+      "url": "https://www.houzz.in/photos/modern-living-room-design-ideas-phbr1-bp~t_26341~s_26738",
+      "status": "Reference listing read",
+      "finding": "Listing includes Tenang House, Eklavya House and Indian residential interiors. Use for furniture scale, storage and palette comparisons; no claim that their climate or layout matches your site."
+    },
+    {
+      "title": "Indian interior projects",
+      "url": "https://www.archdaily.com/search/projects/categories/interiors/country/india",
+      "status": "Category index read · projects pending",
+      "finding": "India interior category index is accessible; project results need separate review. It is a discovery source, not evidence for dimensions, construction details or a Jammu-specific thermal design."
+    },
+    {
+      "title": "YouTube: compact Indian homes",
+      "url": "https://www.youtube.com/results?search_query=small+indian+home+interior+light+minimal+storage",
+      "status": "Videos not reviewed · access blocked",
+      "finding": "Video access returned a proxy 403. This is a suggested search, not an endorsed or watched video. Review dimensions, ventilation, concealed storage and real construction costs once access is enabled."
+    },
+    {
+      "title": "Colour and thermal comfort",
+      "url": "../docs/RESEARCH.md",
+      "status": "Design reasoning · no product endorsement",
+      "finding": "Light interiors support brightness. Exterior solar reflectance, insulation, shading, ventilation and humidity control determine thermal performance; paint colour alone is not a cooling system."
+    },
+    {
+      "title": "Safe cot placement for your babies",
+      "url": "https://safetosleep.nichd.nih.gov/reduce-risk/safe-sleep-environment",
+      "status": "Official NIH/NICHD guidance read",
+      "finding": "Room sharing uses a separate infant sleep space near the parents. Use a firm, flat, level surface with a fitted sheet and no loose bedding, pillows or cot bumpers. The 3D cots are layout placeholders, not fabrication specifications."
+    }
+  ],
+  "solarGeometry": {
+    "latitudeAssumed": 32.73,
+    "source": "Jammu latitude from retrieved Wikipedia page; spherical solar-geometry calculation",
+    "model": "Level horizon, solar centre at zero elevation; ignores refraction, terrain and buildings",
+    "summerSolsticeSunriseAzimuthDeg": 61.8,
+    "summerSolsticeSunsetAzimuthDeg": 298.2,
+    "winterSolsticeSunriseAzimuthDeg": 118.2,
+    "winterSolsticeSunsetAzimuthDeg": 241.8,
+    "interpretation": "Approximate summer sunset aligns with the NW rear; winter sunrise is near the SE front. This supports adjustable shading rather than permanently closing rear glazing. Actual obstruction survey is required."
+  }
+}

@@ -1,0 +1,481 @@
+{
+  "project": {
+    "location": "Jammu, India",
+    "stage": "Plinth built; building shell not complete",
+    "style": "Light, modern, minimal",
+    "budget": "No budget fixed; all interior categories included",
+    "occupants": "4 adults and 2 children",
+    "frontBearing": 121,
+    "bearingStatus": "Approximate user-supplied compass annotation, not surveyed true north",
+    "ceilingHeight": 3.0,
+    "ceilingStatus": "3.0 m model assumption; not a construction instruction",
+    "modelBasis": "Image-traced conceptual model. Room labels carry drawing dimensions; mesh positions are approximate and are not reconciled survey geometry.",
+    "sleeping": "Parents and children in main bedroom; grandparents in Bedroom 1",
+    "children": "One baby aged 6 months; second baby not yet born",
+    "grandparents": "55–65 years",
+    "bathroomAccess": "User confirmed: keep access through main bedroom/dressing as drawn",
+    "futureFloor": "Another floor later; engineer-designed foundation/plinth confirmed by user, drawings not independently reviewed",
+    "structure": "User confirms an engineer designed foundation/plinth for the future upper floor; drawings not independently reviewed",
+    "siteContext": {
+      "rightSide": "Neighbouring building reported by user",
+      "orientationInterpretation": "Right side interpreted as the right of the supplied plan: approximately southwest, 211 degrees",
+      "gap": "3 feet or more, reported by user; exact distance not measured",
+      "neighbourHeight": "One floor, per latest user correction; actual height in metres not measured",
+      "frontRearLeft": "User reports only a right-side neighbour; front, rear and left are open. Exact setbacks and distant obstructions are not measured.",
+      "minimumReportedGapM": 0.9144,
+      "neighbourFloors": 1,
+      "openSides": [
+        "front / southeast",
+        "rear / northwest",
+        "left / northeast"
+      ],
+      "confirmedBy": "User reply: Only right side neighbour."
+    },
+    "ceilingDecision": "User confirmed ceiling height is not decided yet",
+    "ceilingRecommendation": "Discuss approximately 10 feet (3.048 m) clear height with the architect, subject to structural drawings, beams, stair headroom and future floor levels. The model remains at an illustrative 3.0 m.",
+    "parentsMobility": "User reports neither parent has difficulty walking or using steps",
+    "purchaseScope": "User confirmed all furniture and appliances will be bought new; no reuse assumed",
+    "cooling": {
+      "confirmedRooms": [
+        "bed-left",
+        "bed-main"
+      ],
+      "unitCount": 2,
+      "otherRooms": "No AC requested in drawing room or lobby; plan fans and controllable ventilation",
+      "equipmentType": "Awaiting split versus window AC choice",
+      "capacity": "Not selected; calculate each bedroom heat load after shell, glazing and roof-insulation design",
+      "placement": "Final unit and service positions require coordination; keep bedroom airflow away from the infant cots"
+    },
+    "lastRequirementsUpdate": "11 October 2026"
+  },
+  "rooms": [
+    {
+      "id": "bed-left",
+      "name": "Bedroom 1",
+      "dimensions": "12′ × 11′",
+      "bounds": [
+        148,
+        260,
+        391,
+        481
+      ],
+      "title": "A quiet, flexible bedroom",
+      "finishes": "Warm ivory walls, a soft sage headboard and pale oak bedside tables.",
+      "furniture": [
+        "1500 × 2000 mm bed; check at least 750 mm passage at accessible sides and preserve the route to the door.",
+        "Two compact bedside tables, blackout curtain and a shallow chest.",
+        "Parents report no difficulty with walking or steps; retain convenient switches, night lighting and clear floors.",
+        "Storage shared with dressing room; add a wardrobe only after checking circulation."
+      ],
+      "lighting": "3000 K dimmable ceiling light; reading lamps with separate switches.",
+      "services": "AC confirmed for this bedroom: dedicated circuit and protection sized by the electrician; equipment type and capacity pending. Coordinate power, outdoor heat rejection and condensate drainage before plaster. Keep bedside sockets and switches convenient.",
+      "climate": "Rear/NW side is open, as confirmed by user. Preserve the rear window and provide adjustable exterior shade for late summer sun, insect screens and controllable curtains. Ventilation depends on actual openings and outdoor conditions.",
+      "source": "Dimensions transcribed from supplied image; side veranda from retained Rev 2 plan",
+      "status": "Design proposal; not site-measured"
+    },
+    {
+      "id": "study",
+      "name": "Study",
+      "dimensions": "6′7½″ × 6′9″",
+      "bounds": [
+        406,
+        260,
+        540,
+        400
+      ],
+      "title": "A compact work corner",
+      "finishes": "Ivory, light oak desk and a small sage pinboard.",
+      "furniture": [
+        "1200 × 550 mm desk at the side wall, facing across the room.",
+        "Shallow shelves above desk; leave a clear door swing.",
+        "Ergonomic chair; avoid a full-depth bed in this compact room."
+      ],
+      "lighting": "4000 K desk light, 3000 K ambient; control glare on screens.",
+      "services": "Desk sockets, data conduit and router route before plaster.",
+      "climate": "Open rear/NW side offers a possible daylight and ventilation route. The plan labels a vent; architect to confirm its size and whether a suitable glazed opening fits the approved wall design.",
+      "source": "Dimensions transcribed from supplied image; side veranda from retained Rev 2 plan",
+      "status": "Design proposal; not site-measured"
+    },
+    {
+      "id": "bed-main",
+      "name": "Main bedroom",
+      "dimensions": "12′ × 11′",
+      "bounds": [
+        557,
+        260,
+        800,
+        481
+      ],
+      "title": "A calm retreat",
+      "finishes": "Warm ivory, pale oak and a textured stone-colour headboard.",
+      "furniture": [
+        "1500 × 2000 mm parent bed with headboard at the rear wall.",
+        "Two separate baby cots (illustrative outer footprint 700 × 1300 mm each) along the side wall; verify product sizes and clear passages.",
+        "Firm, flat, empty infant sleep surfaces; no adult-bed or bunk-bed assumption. Keep cots away from windows, cords and direct AC airflow."
+      ],
+      "lighting": "3000 K dimmable light; low-level night light toward bathroom.",
+      "services": "AC confirmed for the parents’ and babies’ bedroom. Choose unit position and adjustable airflow to avoid direct draughts at both cots. Coordinate a dedicated circuit, outdoor heat rejection and condensate drainage; type and load-based capacity remain pending.",
+      "climate": "Rear/NW side is open. Use adjustable exterior shade and blackout lining; preserve useful daylight. Screen operable windows and keep the babies’ cots away from cords, windows and direct airflow.",
+      "source": "Dimensions transcribed from supplied image; side veranda from retained Rev 2 plan",
+      "status": "Family sleeping concept; cot dimensions and safe clearances require verification"
+    },
+    {
+      "id": "dressing",
+      "name": "Dressing",
+      "dimensions": "5′6″ × 7′",
+      "bounds": [
+        815,
+        307,
+        927,
+        400
+      ],
+      "title": "One tidy storage wall",
+      "finishes": "Ivory cabinet fronts, light oak handles and a full-height mirror.",
+      "furniture": [
+        "600 mm deep wardrobe on ONE side; opposing full-depth wardrobes are too tight.",
+        "Prefer sliding doors where the final wall length allows.",
+        "Drawers below, seasonal storage above; allow access to loft."
+      ],
+      "lighting": "3500–4000 K vertical mirror light, CRI 90 or higher.",
+      "services": "One grooming socket outside wet zone; ventilate enclosed cupboards.",
+      "climate": "Right/SW neighbour has one floor, separated by at least 3 feet, as reported. Actual height and roof profile are unknown, so shade cannot yet be quantified. Use cupboard ventilation and moisture-aware joinery.",
+      "source": "Dimensions transcribed from supplied image; side veranda from retained Rev 2 plan",
+      "status": "Design proposal; not site-measured"
+    },
+    {
+      "id": "bath",
+      "name": "Bathroom",
+      "dimensions": "5′6″ × 11′1½″",
+      "bounds": [
+        815,
+        410,
+        927,
+        633
+      ],
+      "title": "A clean, dry daily routine",
+      "finishes": "Warm stone slip-resistant tile, ivory ceiling and brushed stainless fittings.",
+      "furniture": [
+        "Vanity near entry, WC in middle, shower at far end.",
+        "Use a glazed shower screen only after door and service clearances are measured.",
+        "Accessible use may require a wider doorway and a revised layout."
+      ],
+      "lighting": "4000 K mirror task lighting; wet-area rated fixtures chosen by installer.",
+      "services": "Provide bathroom exhaust to a confirmed outdoor discharge point, with a roof route considered if the side gap is obstructed; do not exhaust into an enclosed gap or another room. Coordinate duct, geyser circuit, earthing and wet-area fittings before construction.",
+      "climate": "One-floor neighbour on the right/SW side, with a reported gap of at least 3 feet. The drawing places the bathroom window here. Check actual sill levels, privacy, usable daylight and the permitted opening; floor count and gap alone do not establish effective ventilation. Waterproofing and a flood test remain required.",
+      "source": "Dimensions transcribed from supplied image; side veranda from retained Rev 2 plan",
+      "status": "Design proposal; not site-measured"
+    },
+    {
+      "id": "store",
+      "name": "Store",
+      "dimensions": "7′6″ × 8′",
+      "bounds": [
+        648,
+        498,
+        800,
+        633
+      ],
+      "title": "A home for everything",
+      "finishes": "Washable ivory walls and modular oak-tone shelving.",
+      "furniture": [
+        "450 mm deep shelves along two walls; maintain a central aisle.",
+        "Label seasonal, cleaning and pantry storage separately.",
+        "Secure heavy items low; cleaning chemicals away from food."
+      ],
+      "lighting": "3500–4000 K bright ceiling light.",
+      "services": "One general socket and provision for future utility needs after plumbing review.",
+      "climate": "No sealed damp corners; use a vent and an inspectable plinth.",
+      "source": "Dimensions transcribed from supplied image; side veranda from retained Rev 2 plan",
+      "status": "Design proposal; not site-measured"
+    },
+    {
+      "id": "lobby",
+      "name": "Living & dining",
+      "dimensions": "18′9″ × 15′",
+      "bounds": [
+        249,
+        498,
+        632,
+        800
+      ],
+      "title": "The everyday heart of the home",
+      "finishes": "Ivory walls, light stone floor, oak furniture and sage textiles.",
+      "furniture": [
+        "2100 mm sofa along the NE-side inner wall.",
+        "1500 × 850 mm dining table for four to six; confirm occupied-chair clearances.",
+        "Low TV console at stair-side wall; keep the route to every room open."
+      ],
+      "lighting": "3000 K ambient and dining pendant on separate dimmers.",
+      "services": "No AC requested here. Provide fan points with locations and quantities coordinated to room geometry, pendant lights and dining/seating. Preserve TV/data conduits and seating-area sockets.",
+      "climate": "Front/SE, rear/NW and left/NE sides are open, as confirmed by user. Plan controllable ventilation between suitable openings on these sides, subject to actual sizes, door positions, privacy, air quality and outdoor temperature. Do not use the bathroom as a ventilation path.",
+      "source": "Dimensions transcribed from supplied image; side veranda from retained Rev 2 plan",
+      "status": "Design proposal; not site-measured"
+    },
+    {
+      "id": "stairs",
+      "name": "Staircase",
+      "dimensions": "Landing width shown 7′6″",
+      "bounds": [
+        648,
+        648,
+        927,
+        800
+      ],
+      "title": "A safe connection",
+      "finishes": "Pale stone treads, contrasting nosings and a simple metal handrail.",
+      "furniture": [
+        "Geometry shown is illustrative; risers, treads, landings and headroom need a measured stair design.",
+        "Continuous handrail; avoid slippery polished stone.",
+        "Under-stair storage must leave services and circulation accessible."
+      ],
+      "lighting": "Low-level step lighting and two-way switching.",
+      "services": "Foundation/plinth designed by an engineer for a future floor, as confirmed by user. Coordinate the existing structural drawings, stair geometry, headroom, future entry and service risers before continuing construction.",
+      "climate": "Architect to coordinate future upper-floor access and weather protection.",
+      "source": "Dimensions transcribed from supplied image; side veranda from retained Rev 2 plan",
+      "status": "Design proposal; not site-measured"
+    },
+    {
+      "id": "drawing",
+      "name": "Drawing room",
+      "dimensions": "10′9″ × 11′",
+      "bounds": [
+        148,
+        817,
+        365,
+        1038
+      ],
+      "title": "A light, welcoming front room",
+      "finishes": "Ivory walls, oatmeal sofa, light oak and one sage chair.",
+      "furniture": [
+        "Compact 1800–2100 mm sofa, two occasional seats if clearances permit.",
+        "Rounded coffee table and low console; avoid bulky corner sofas.",
+        "Sheer plus blackout curtains at the SE front window."
+      ],
+      "lighting": "3000 K layered light; one floor lamp rather than a heavy false ceiling.",
+      "services": "No AC requested here. Provide a ceiling fan point, general sockets and TV/data provision if needed; keep fan sweep clear of lights and curtains.",
+      "climate": "Front/SE side is open toward the road. Preserve controllable morning daylight and coordinate an exterior overhang from actual window geometry; use sheer and lined curtains for road-facing privacy.",
+      "source": "Dimensions transcribed from supplied image; side veranda from retained Rev 2 plan",
+      "status": "Design proposal; not site-measured"
+    },
+    {
+      "id": "puja",
+      "name": "Puja",
+      "dimensions": "4′ × 5′",
+      "bounds": [
+        382,
+        845,
+        462,
+        957
+      ],
+      "title": "A simple, peaceful niche",
+      "finishes": "Warm ivory, a light stone altar and an oak shelf.",
+      "furniture": [
+        "Shallow altar shelf against back wall, with closed lower storage.",
+        "Keep the opening and floor clear for seated use.",
+        "Use a heat-safe tray and ventilation if using a flame."
+      ],
+      "lighting": "2700–3000 K concealed light with accessible driver.",
+      "services": "One protected light circuit; no loose wiring beside lamps or incense.",
+      "climate": "Puja stays in the location shown in your latest plan; no directional religious claim is made.",
+      "source": "Dimensions transcribed from supplied image; side veranda from retained Rev 2 plan",
+      "status": "Design proposal; not site-measured"
+    },
+    {
+      "id": "kitchen",
+      "name": "Kitchen",
+      "dimensions": "8′ × 7′",
+      "bounds": [
+        470,
+        817,
+        632,
+        957
+      ],
+      "title": "Compact, practical Indian cooking",
+      "finishes": "Ivory upper cabinets, pale oak lower fronts and a light stone worktop.",
+      "furniture": [
+        "L-shaped 600 mm deep counters; final appliance sizes decide usable working space.",
+        "Sink on window leg, hob on side leg; refrigerator at entrance only if clear route remains.",
+        "Use drawers below; avoid a bulky island in this room."
+      ],
+      "lighting": "4000 K under-cabinet task strips plus a ceiling light.",
+      "services": "Separate appliance circuits as required. Route the hood to a confirmed outdoor outlet or coordinated roof termination; do not assume a right-side exit is usable beside the neighbour. Keep the duct accessible for cleaning.",
+      "climate": "Use sealed exterior-grade plywood at wet cabinet zones. Open front/SE space provides a possible hood discharge direction, subject to duct routing and outlet clearances; do not assume the side gap is suitable.",
+      "source": "Dimensions transcribed from supplied image; side veranda from retained Rev 2 plan",
+      "status": "Design proposal; not site-measured"
+    },
+    {
+      "id": "porch",
+      "name": "Porch",
+      "dimensions": "13′9″ × 17′6″",
+      "bounds": [
+        648,
+        817,
+        927,
+        1095
+      ],
+      "title": "A shaded arrival",
+      "finishes": "Light exterior walls, warm-grey outdoor tile and simple planters.",
+      "furniture": [
+        "Keep the vehicle turning and door-opening area clear.",
+        "Place shoe/parcel bench outside vehicle sweep; check real vehicle dimensions.",
+        "Drain away from entrance; use a slip-resistant exterior finish."
+      ],
+      "lighting": "Warm outdoor wall lights with weather-rated fittings.",
+      "services": "Weather-rated socket; EV conduit provision only after supply and load study.",
+      "climate": "Front/SE is open toward the road. Coordinate entry shade and rain protection. The one-floor right/SW neighbour, separated by at least 3 feet, may affect privacy and shade; its actual height and gap still need measurement.",
+      "source": "Dimensions transcribed from supplied image; side veranda from retained Rev 2 plan",
+      "status": "Design proposal; not site-measured"
+    },
+    {
+      "id": "veranda",
+      "name": "Front veranda",
+      "dimensions": "13′ × 6′9″",
+      "bounds": [
+        382,
+        973,
+        632,
+        1095
+      ],
+      "title": "A gentle transition",
+      "finishes": "Light walls, stone-tone outdoor flooring and a small oak-tone bench.",
+      "furniture": [
+        "One compact bench only if the approach remains clear.",
+        "Use washable cushions and outdoor-rated hardware.",
+        "Step-free entry levels should be agreed before construction."
+      ],
+      "lighting": "3000 K outdoor light; shield from glare toward road.",
+      "services": "Doorbell/camera conduit and exterior light control.",
+      "climate": "Protect the SE threshold from driven rain; coordinate slab slope with drainage.",
+      "source": "Dimensions transcribed from supplied image; side veranda from retained Rev 2 plan",
+      "status": "Design proposal; not site-measured"
+    },
+    {
+      "id": "side-veranda",
+      "name": "Side veranda",
+      "dimensions": "5′ × 15′ (existing Rev 2 plan)",
+      "bounds": [
+        108,
+        529,
+        234,
+        790
+      ],
+      "title": "A shaded garden edge",
+      "finishes": "Ivory masonry, stone pavers and restrained planting.",
+      "furniture": [
+        "Keep service and walking access clear.",
+        "Small movable chairs; avoid permanent enclosure without an updated building plan.",
+        "Planting must not trap moisture at walls."
+      ],
+      "lighting": "Soft outdoor light and one shielded pathway fixture.",
+      "services": "Outdoor socket if needed; keep cable routes above standing-water risks.",
+      "climate": "Left/NE side is open, as confirmed by user. Preserve this softer-light edge for screened, controllable openings and shaded seating; architect to verify actual setbacks and drainage.",
+      "source": "Dimensions transcribed from supplied image; side veranda from retained Rev 2 plan",
+      "status": "Design proposal; not site-measured"
+    }
+  ],
+  "budget": [
+    {
+      "category": "Floor finishes & skirting",
+      "low": 150000,
+      "high": 250000,
+      "basis": "Measured tiled area, substrate and labour"
+    },
+    {
+      "category": "Painting & surface preparation",
+      "low": 70000,
+      "high": 130000,
+      "basis": "Wall/ceiling areas, product and number of coats"
+    },
+    {
+      "category": "Kitchen cabinets, worktop & sink",
+      "low": 200000,
+      "high": 350000,
+      "basis": "Final cabinet lengths and hardware"
+    },
+    {
+      "category": "Wardrobe, vanity & storage",
+      "low": 140000,
+      "high": 250000,
+      "basis": "One-sided dressing storage and utility shelves"
+    },
+    {
+      "category": "Beds, mattresses, seating & dining",
+      "low": 220000,
+      "high": 380000,
+      "basis": "All new: two beds and mattresses, two sofas, six-seat dining, study furniture and compact bedside storage; exact products pending"
+    },
+    {
+      "category": "Electrical fit-out, fans & lights",
+      "low": 150000,
+      "high": 260000,
+      "basis": "Point schedule, DB, protection and wiring"
+    },
+    {
+      "category": "Bathroom & plumbing fit-out",
+      "low": 140000,
+      "high": 250000,
+      "basis": "Fixtures, geyser, waterproofing and service labour"
+    },
+    {
+      "category": "Appliances & cooling",
+      "low": 220000,
+      "high": 370000,
+      "basis": "All new: fridge, hob, hood, washing machine, TV and TWO bedroom AC units; type/capacities and remaining quantities pending, no reuse credit"
+    },
+    {
+      "category": "Curtains & soft furnishings",
+      "low": 60000,
+      "high": 110000,
+      "basis": "Measured windows, fabrics and tracks"
+    },
+    {
+      "category": "Interior doors & hardware",
+      "low": 100000,
+      "high": 180000,
+      "basis": "Final opening count and sizes"
+    },
+    {
+      "category": "Two baby cots & safe mattresses",
+      "low": 25000,
+      "high": 60000,
+      "basis": "Two new compliant cots and compatible infant mattresses; exact product dimensions pending, not fabricated from the model"
+    }
+  ],
+  "palette": [
+    {
+      "name": "Warm ivory",
+      "hex": "#F1EDE3",
+      "use": "Main walls; bright without a stark blue cast"
+    },
+    {
+      "name": "Chalk white",
+      "hex": "#FAF8F1",
+      "use": "Ceilings and upper kitchen fronts"
+    },
+    {
+      "name": "Pale oak",
+      "hex": "#C5A57C",
+      "use": "Furniture and limited joinery"
+    },
+    {
+      "name": "Soft stone",
+      "hex": "#C6C1B7",
+      "use": "Floor and worktop colour family"
+    },
+    {
+      "name": "Muted sage",
+      "hex": "#94A18B",
+      "use": "Small textile accents; optional"
+    }
+  ],
+  "sleepingNote": "Parents and both babies in the main bedroom, using separate infant sleep spaces; grandparents aged 55–65 in Bedroom 1. The model shows two cots, not bunk beds. Final cot sizes, safe placement and access must be checked before ordering. Bathroom access stays through the main bedroom/dressing at your request; maintain a clear night route and account for privacy.",
+  "pending": [
+    "Right-side neighbour: gap is at least 3 feet; one-floor neighbour confirmed; measure actual height, roof profile and exact gap; front, rear and left are confirmed open by user.",
+    "Measured plinth, wall thickness, door and window sizes. Ceiling height is undecided; discuss a roughly 10-foot clear height with the architect.",
+    "Exact cot products and dimensions; keep cots away from curtains, cords and AC draughts.",
+    "Confirm clothing, linen and household storage requirements.",
+    "AC is confirmed for both bedrooms only. Confirm AC type, heat-load-based capacities, remaining appliance quantities and local itemised quotations; all purchases are new.",
+    "Safe night route to the retained bathroom; no shared-access alteration approved.",
+    "Coordinate the planned upper floor, staircase and services with the engineer’s existing structural drawings."
+  ]
+}
