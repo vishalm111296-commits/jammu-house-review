@@ -1,4 +1,4 @@
-import { createHouse } from './model.js';
+import { createHouse } from './model.js?v=pdf-review-02';
 const $ = id => document.getElementById(id);
 const esc = value => String(value).replace(/[&<>"']/g,s=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s]));
 const money = n => '₹'+(n/100000).toFixed(2)+' lakh';
@@ -173,7 +173,7 @@ async function init(){
   window.homeReady=true;
 }
 try{
-  const responses=await Promise.all(['home','research','plan'].map(n=>fetch(`data/${n}.json`)));
+  const responses=await Promise.all(['home','research','plan'].map(n=>fetch(`data/${n}.json?v=pdf-review-02`)));
   if(responses.some(r=>!r.ok))throw new Error('Design data could not be loaded');
   [data,research,plan]=await Promise.all(responses.map(r=>r.json()));
   await init();
