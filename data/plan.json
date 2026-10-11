@@ -1,0 +1,1188 @@
+{
+  "source": {
+    "file": "assets/architectural_plan.pdf",
+    "name": "BANSI VERMA_010920.pdf",
+    "sha256": "2c22e21673e9bd704036734eb310a27f706488516e390dbe4e8248f21b1d5fd3",
+    "page": 1,
+    "pdfPageSize": [
+      595,
+      842
+    ],
+    "basis": "Vector wall faces from the uploaded PDF. Drawn footprints are preserved where room labels disagree. Not a site survey.",
+    "calibration": {
+      "metresPerPoint": 0.026675418444371515,
+      "dimensionFeet": 40,
+      "endpointY": [
+        156.26,
+        613.31
+      ],
+      "origin": [
+        75.62,
+        156.26
+      ]
+    },
+    "verticalAssumptions": "Clear height 3.0 m; window sill/head heights and stair rises are illustrative. The PDF has no elevation or door-swing schedule.",
+    "scope": "11 indoor spaces. Porch and verandas remain visible only in the unaltered source plan.",
+    "reviewDate": "11 October 2026"
+  },
+  "rooms": {
+    "bed-left": {
+      "pdfBounds": [
+        84.2,
+        164.84,
+        221.3,
+        290.51
+      ],
+      "bounds": [
+        0.22888,
+        0.22888,
+        3.88607,
+        3.58117
+      ]
+    },
+    "study": {
+      "pdfBounds": [
+        229.85,
+        164.84,
+        305.45,
+        243.86
+      ],
+      "bounds": [
+        4.11415,
+        0.22888,
+        6.13081,
+        2.33677
+      ]
+    },
+    "bed-main": {
+      "pdfBounds": [
+        314.12,
+        164.84,
+        451.34,
+        290.51
+      ],
+      "bounds": [
+        6.36209,
+        0.22888,
+        10.02249,
+        3.58117
+      ]
+    },
+    "dressing": {
+      "pdfBounds": [
+        459.92,
+        164.84,
+        522.74,
+        244.82
+      ],
+      "bounds": [
+        10.25136,
+        0.22888,
+        11.92711,
+        2.36238
+      ]
+    },
+    "bath": {
+      "pdfBounds": [
+        459.92,
+        249.08,
+        522.74,
+        376.19
+      ],
+      "bounds": [
+        10.25136,
+        2.47601,
+        11.92711,
+        5.86672
+      ]
+    },
+    "store": {
+      "pdfBounds": [
+        365.51,
+        299.06,
+        451.34,
+        376.19
+      ],
+      "bounds": [
+        7.73294,
+        3.80925,
+        10.02249,
+        5.86672
+      ]
+    },
+    "lobby": {
+      "pdfBounds": [
+        141.32,
+        299.06,
+        356.96,
+        470.51
+      ],
+      "bounds": [
+        1.75257,
+        3.80925,
+        7.50486,
+        8.38275
+      ]
+    },
+    "stairs": {
+      "pdfBounds": [
+        365.51,
+        384.74,
+        522.74,
+        470.6
+      ],
+      "bounds": [
+        7.73294,
+        6.0948,
+        11.92711,
+        8.38515
+      ]
+    },
+    "drawing": {
+      "pdfBounds": [
+        84.2,
+        479.06,
+        207.02,
+        604.73
+      ],
+      "bounds": [
+        0.22888,
+        8.61083,
+        3.50515,
+        11.96312
+      ]
+    },
+    "puja": {
+      "pdfBounds": [
+        215.57,
+        501.92,
+        261.26,
+        559.04
+      ],
+      "bounds": [
+        3.73322,
+        9.22063,
+        4.95202,
+        10.74433
+      ]
+    },
+    "kitchen": {
+      "pdfBounds": [
+        265.55,
+        479.06,
+        356.96,
+        559.04
+      ],
+      "bounds": [
+        5.06646,
+        8.61083,
+        7.50486,
+        10.74433
+      ]
+    }
+  },
+  "walls": [
+    {
+      "pdf": [
+        75.62,
+        156.26,
+        101.33,
+        164.84
+      ],
+      "bounds": [
+        0.0,
+        0.0,
+        0.68583,
+        0.22888
+      ]
+    },
+    {
+      "pdf": [
+        169.88,
+        156.26,
+        249.44,
+        164.84
+      ],
+      "bounds": [
+        2.51442,
+        0.0,
+        4.63672,
+        0.22888
+      ]
+    },
+    {
+      "pdf": [
+        283.7,
+        156.26,
+        358.55,
+        164.84
+      ],
+      "bounds": [
+        5.55062,
+        0.0,
+        7.54728,
+        0.22888
+      ]
+    },
+    {
+      "pdf": [
+        421.4,
+        156.26,
+        531.32,
+        164.84
+      ],
+      "bounds": [
+        9.22383,
+        0.0,
+        12.15599,
+        0.22888
+      ]
+    },
+    {
+      "pdf": [
+        75.62,
+        164.84,
+        84.2,
+        299.06
+      ],
+      "bounds": [
+        0.0,
+        0.22888,
+        0.22888,
+        3.80925
+      ]
+    },
+    {
+      "pdf": [
+        122.27,
+        290.51,
+        229.85,
+        299.06
+      ],
+      "bounds": [
+        1.24441,
+        3.58117,
+        4.11415,
+        3.80925
+      ]
+    },
+    {
+      "pdf": [
+        221.3,
+        164.84,
+        229.85,
+        252.41
+      ],
+      "bounds": [
+        3.88607,
+        0.22888,
+        4.11415,
+        2.56484
+      ]
+    },
+    {
+      "pdf": [
+        305.45,
+        164.84,
+        314.12,
+        252.41
+      ],
+      "bounds": [
+        6.13081,
+        0.22888,
+        6.36209,
+        2.56484
+      ]
+    },
+    {
+      "pdf": [
+        260.57,
+        243.86,
+        314.12,
+        252.41
+      ],
+      "bounds": [
+        4.93362,
+        2.33677,
+        6.36209,
+        2.56484
+      ]
+    },
+    {
+      "pdf": [
+        451.34,
+        164.84,
+        459.92,
+        193.4
+      ],
+      "bounds": [
+        10.02249,
+        0.22888,
+        10.25136,
+        0.99073
+      ]
+    },
+    {
+      "pdf": [
+        451.34,
+        237.02,
+        459.92,
+        376.19
+      ],
+      "bounds": [
+        10.02249,
+        2.15431,
+        10.25136,
+        5.86672
+      ]
+    },
+    {
+      "pdf": [
+        487.58,
+        244.82,
+        522.74,
+        249.08
+      ],
+      "bounds": [
+        10.98921,
+        2.36238,
+        11.92711,
+        2.47601
+      ]
+    },
+    {
+      "pdf": [
+        522.74,
+        164.84,
+        531.32,
+        307.4
+      ],
+      "bounds": [
+        11.92711,
+        0.22888,
+        12.15599,
+        4.03172
+      ]
+    },
+    {
+      "pdf": [
+        522.74,
+        341.66,
+        531.32,
+        479.15
+      ],
+      "bounds": [
+        11.92711,
+        4.94562,
+        12.15599,
+        8.61323
+      ]
+    },
+    {
+      "pdf": [
+        304.01,
+        290.51,
+        365.51,
+        299.06
+      ],
+      "bounds": [
+        6.0924,
+        3.58117,
+        7.73294,
+        3.80925
+      ]
+    },
+    {
+      "pdf": [
+        406.31,
+        290.51,
+        451.34,
+        299.06
+      ],
+      "bounds": [
+        8.82129,
+        3.58117,
+        10.02249,
+        3.80925
+      ]
+    },
+    {
+      "pdf": [
+        356.96,
+        299.06,
+        365.51,
+        430.52
+      ],
+      "bounds": [
+        7.50486,
+        3.80925,
+        7.73294,
+        7.316
+      ]
+    },
+    {
+      "pdf": [
+        365.51,
+        376.19,
+        522.74,
+        384.74
+      ],
+      "bounds": [
+        7.73294,
+        5.86672,
+        11.92711,
+        6.0948
+      ]
+    },
+    {
+      "pdf": [
+        132.74,
+        347.12,
+        141.32,
+        365.84
+      ],
+      "bounds": [
+        1.5237,
+        5.09127,
+        1.75257,
+        5.59063
+      ]
+    },
+    {
+      "pdf": [
+        132.74,
+        434.39,
+        141.32,
+        479.06
+      ],
+      "bounds": [
+        1.5237,
+        7.41923,
+        1.75257,
+        8.61083
+      ]
+    },
+    {
+      "pdf": [
+        75.62,
+        470.51,
+        132.74,
+        479.06
+      ],
+      "bounds": [
+        0.0,
+        8.38275,
+        1.5237,
+        8.61083
+      ]
+    },
+    {
+      "pdf": [
+        75.62,
+        479.06,
+        84.2,
+        613.31
+      ],
+      "bounds": [
+        0.0,
+        8.61083,
+        0.22888,
+        12.192
+      ]
+    },
+    {
+      "pdf": [
+        84.2,
+        604.73,
+        87.05,
+        613.31
+      ],
+      "bounds": [
+        0.22888,
+        11.96312,
+        0.3049,
+        12.192
+      ]
+    },
+    {
+      "pdf": [
+        155.48,
+        604.73,
+        215.57,
+        613.31
+      ],
+      "bounds": [
+        2.1303,
+        11.96312,
+        3.73322,
+        12.192
+      ]
+    },
+    {
+      "pdf": [
+        207.02,
+        470.51,
+        215.57,
+        567.59
+      ],
+      "bounds": [
+        3.50515,
+        8.38275,
+        3.73322,
+        10.9724
+      ]
+    },
+    {
+      "pdf": [
+        261.26,
+        470.51,
+        265.55,
+        559.04
+      ],
+      "bounds": [
+        4.95202,
+        8.38275,
+        5.06646,
+        10.74433
+      ]
+    },
+    {
+      "pdf": [
+        215.57,
+        493.34,
+        224.54,
+        501.92
+      ],
+      "bounds": [
+        3.73322,
+        8.99175,
+        3.9725,
+        9.22063
+      ]
+    },
+    {
+      "pdf": [
+        253.76,
+        493.34,
+        261.26,
+        501.92
+      ],
+      "bounds": [
+        4.75196,
+        8.99175,
+        4.95202,
+        9.22063
+      ]
+    },
+    {
+      "pdf": [
+        215.57,
+        559.04,
+        322.67,
+        567.59
+      ],
+      "bounds": [
+        3.73322,
+        10.74433,
+        6.59016,
+        10.9724
+      ]
+    },
+    {
+      "pdf": [
+        356.96,
+        479.06,
+        365.51,
+        567.59
+      ],
+      "bounds": [
+        7.50486,
+        8.61083,
+        7.73294,
+        10.9724
+      ]
+    },
+    {
+      "pdf": [
+        322.67,
+        470.51,
+        388.31,
+        479.06
+      ],
+      "bounds": [
+        6.59016,
+        8.38275,
+        8.34114,
+        8.61083
+      ]
+    },
+    {
+      "pdf": [
+        434.36,
+        470.6,
+        475.25,
+        479.15
+      ],
+      "bounds": [
+        9.56954,
+        8.38515,
+        10.6603,
+        8.61323
+      ]
+    }
+  ],
+  "windows": [
+    {
+      "name": "W1 / grandparents",
+      "pdf": [
+        101.33,
+        156.26,
+        169.88,
+        164.84
+      ],
+      "bounds": [
+        0.68583,
+        0.0,
+        2.51442,
+        0.22888
+      ],
+      "sill": 0.9,
+      "head": 2.1,
+      "heightStatus": "proposal"
+    },
+    {
+      "name": "V / study",
+      "pdf": [
+        249.44,
+        156.26,
+        283.7,
+        164.84
+      ],
+      "bounds": [
+        4.63672,
+        0.0,
+        5.55062,
+        0.22888
+      ],
+      "sill": 1.8,
+      "head": 2.4,
+      "heightStatus": "proposal"
+    },
+    {
+      "name": "W1 / family",
+      "pdf": [
+        358.55,
+        156.26,
+        421.4,
+        164.84
+      ],
+      "bounds": [
+        7.54728,
+        0.0,
+        9.22383,
+        0.22888
+      ],
+      "sill": 0.9,
+      "head": 2.1,
+      "heightStatus": "proposal"
+    },
+    {
+      "name": "Bedroom to side opening",
+      "pdf": [
+        84.2,
+        290.51,
+        122.27,
+        299.06
+      ],
+      "bounds": [
+        0.22888,
+        3.58117,
+        1.24441,
+        3.80925
+      ],
+      "sill": 0.9,
+      "head": 2.1,
+      "heightStatus": "proposal"
+    },
+    {
+      "name": "Living side window",
+      "pdf": [
+        132.74,
+        365.84,
+        141.32,
+        434.39
+      ],
+      "bounds": [
+        1.5237,
+        5.59063,
+        1.75257,
+        7.41923
+      ],
+      "sill": 0.9,
+      "head": 2.1,
+      "heightStatus": "proposal"
+    },
+    {
+      "name": "Bathroom side window",
+      "pdf": [
+        522.74,
+        307.4,
+        531.32,
+        341.66
+      ],
+      "bounds": [
+        11.92711,
+        4.03172,
+        12.15599,
+        4.94562
+      ],
+      "sill": 1.5,
+      "head": 2.1,
+      "heightStatus": "proposal"
+    },
+    {
+      "name": "W / drawing",
+      "pdf": [
+        87.05,
+        604.73,
+        155.48,
+        613.31
+      ],
+      "bounds": [
+        0.3049,
+        11.96312,
+        2.1303,
+        12.192
+      ],
+      "sill": 0.9,
+      "head": 2.1,
+      "heightStatus": "proposal"
+    },
+    {
+      "name": "KW / kitchen",
+      "pdf": [
+        322.67,
+        559.04,
+        356.96,
+        567.59
+      ],
+      "bounds": [
+        6.59016,
+        10.74433,
+        7.50486,
+        10.9724
+      ],
+      "sill": 1.1,
+      "head": 2.1,
+      "heightStatus": "proposal"
+    },
+    {
+      "name": "Stair front opening",
+      "pdf": [
+        388.31,
+        470.6,
+        434.36,
+        479.15
+      ],
+      "bounds": [
+        8.34114,
+        8.38515,
+        9.56954,
+        8.61323
+      ],
+      "sill": 0.9,
+      "head": 2.1,
+      "heightStatus": "proposal"
+    }
+  ],
+  "openings": [
+    {
+      "id": "study-entry",
+      "room": "study",
+      "pdf": [
+        229.85,
+        243.86,
+        260.57,
+        252.41
+      ],
+      "note": "D2; swing not shown",
+      "bounds": [
+        4.11415,
+        2.33677,
+        4.93362,
+        2.56484
+      ]
+    },
+    {
+      "id": "dress-entry",
+      "room": "dressing",
+      "pdf": [
+        451.34,
+        193.4,
+        459.92,
+        237.02
+      ],
+      "note": "Bedroom to dressing; open connection drawn",
+      "bounds": [
+        10.02249,
+        0.99073,
+        10.25136,
+        2.15431
+      ]
+    },
+    {
+      "id": "bath-entry",
+      "room": "bath",
+      "pdf": [
+        459.92,
+        244.82,
+        487.58,
+        249.08
+      ],
+      "note": "D2; retained via dressing",
+      "bounds": [
+        10.25136,
+        2.36238,
+        10.98921,
+        2.47601
+      ]
+    },
+    {
+      "id": "store-entry",
+      "room": "store",
+      "pdf": [
+        365.51,
+        290.51,
+        406.31,
+        299.06
+      ],
+      "note": "D; retained at the family-bedroom side",
+      "bounds": [
+        7.73294,
+        3.58117,
+        8.82129,
+        3.80925
+      ]
+    }
+  ],
+  "slab": [
+    [
+      0.22888,
+      0.22888
+    ],
+    [
+      11.92711,
+      0.22888
+    ],
+    [
+      11.92711,
+      8.38515
+    ],
+    [
+      7.50486,
+      8.38515
+    ],
+    [
+      7.50486,
+      10.74433
+    ],
+    [
+      3.73322,
+      10.74433
+    ],
+    [
+      3.73322,
+      11.96312
+    ],
+    [
+      0.22888,
+      11.96312
+    ],
+    [
+      0.22888,
+      8.61083
+    ],
+    [
+      1.75257,
+      8.61083
+    ],
+    [
+      1.75257,
+      3.80925
+    ],
+    [
+      0.22888,
+      3.80925
+    ]
+  ],
+  "audit": [
+    {
+      "room": "bed-left",
+      "pdfBounds": [
+        84.2,
+        164.84,
+        221.3,
+        290.51
+      ],
+      "drawnMm": [
+        3657,
+        3352
+      ],
+      "labelMm": [
+        3657.6,
+        3352.8
+      ],
+      "differenceMm": [
+        -1,
+        -1
+      ],
+      "status": "consistent-at-drawing-scale"
+    },
+    {
+      "room": "study",
+      "pdfBounds": [
+        229.85,
+        164.84,
+        305.45,
+        243.86
+      ],
+      "drawnMm": [
+        2017,
+        2108
+      ],
+      "labelMm": [
+        2019.3,
+        2057.4
+      ],
+      "differenceMm": [
+        -2,
+        51
+      ],
+      "status": "review"
+    },
+    {
+      "room": "bed-main",
+      "pdfBounds": [
+        314.12,
+        164.84,
+        451.34,
+        290.51
+      ],
+      "drawnMm": [
+        3660,
+        3352
+      ],
+      "labelMm": [
+        3657.6,
+        3352.8
+      ],
+      "differenceMm": [
+        2,
+        -1
+      ],
+      "status": "consistent-at-drawing-scale"
+    },
+    {
+      "room": "dressing",
+      "pdfBounds": [
+        459.92,
+        164.84,
+        522.74,
+        244.82
+      ],
+      "drawnMm": [
+        1676,
+        2133
+      ],
+      "labelMm": [
+        1676.4,
+        2133.6
+      ],
+      "differenceMm": [
+        0,
+        -1
+      ],
+      "status": "consistent-at-drawing-scale"
+    },
+    {
+      "room": "bath",
+      "pdfBounds": [
+        459.92,
+        249.08,
+        522.74,
+        376.19
+      ],
+      "drawnMm": [
+        1676,
+        3391
+      ],
+      "labelMm": [
+        1676.4,
+        3390.9
+      ],
+      "differenceMm": [
+        0,
+        0
+      ],
+      "status": "consistent-at-drawing-scale"
+    },
+    {
+      "room": "store",
+      "pdfBounds": [
+        365.51,
+        299.06,
+        451.34,
+        376.19
+      ],
+      "drawnMm": [
+        2290,
+        2057
+      ],
+      "labelMm": [
+        2286,
+        2438.4
+      ],
+      "differenceMm": [
+        4,
+        -381
+      ],
+      "status": "review"
+    },
+    {
+      "room": "lobby",
+      "pdfBounds": [
+        141.32,
+        299.06,
+        356.96,
+        470.51
+      ],
+      "drawnMm": [
+        5752,
+        4574
+      ],
+      "labelMm": [
+        5715,
+        4572
+      ],
+      "differenceMm": [
+        37,
+        2
+      ],
+      "status": "review"
+    },
+    {
+      "room": "stairs",
+      "pdfBounds": [
+        365.51,
+        384.74,
+        522.74,
+        470.6
+      ],
+      "drawnMm": [
+        4194,
+        2290
+      ],
+      "labelMm": null,
+      "differenceMm": null,
+      "status": "no-room-size"
+    },
+    {
+      "room": "drawing",
+      "pdfBounds": [
+        84.2,
+        479.06,
+        207.02,
+        604.73
+      ],
+      "drawnMm": [
+        3276,
+        3352
+      ],
+      "labelMm": [
+        3276.6,
+        3352.8
+      ],
+      "differenceMm": [
+        -1,
+        -1
+      ],
+      "status": "consistent-at-drawing-scale"
+    },
+    {
+      "room": "puja",
+      "pdfBounds": [
+        215.57,
+        501.92,
+        261.26,
+        559.04
+      ],
+      "drawnMm": [
+        1219,
+        1524
+      ],
+      "labelMm": [
+        1219.2,
+        1524
+      ],
+      "differenceMm": [
+        0,
+        0
+      ],
+      "status": "consistent-at-drawing-scale"
+    },
+    {
+      "room": "kitchen",
+      "pdfBounds": [
+        265.55,
+        479.06,
+        356.96,
+        559.04
+      ],
+      "drawnMm": [
+        2438,
+        2133
+      ],
+      "labelMm": [
+        2438.4,
+        2133.6
+      ],
+      "differenceMm": [
+        0,
+        -1
+      ],
+      "status": "consistent-at-drawing-scale"
+    }
+  ],
+  "issues": [
+    {
+      "id": "D01",
+      "room": "store",
+      "title": "Store depth does not agree",
+      "detail": "The PDF label says 8 feet (2438 mm). Its vector wall faces scale to about 2057 mm (6 feet 9 inches): a difference of about 381 mm. The model follows the drawn walls; obtain architect confirmation before shelves are ordered."
+    },
+    {
+      "id": "D02",
+      "room": "study",
+      "title": "Study depth needs checking",
+      "detail": "The label says 6 feet 9 inches (2057 mm); the vector depth is about 2108 mm. Verify the roughly 50 mm difference at the shell."
+    },
+    {
+      "id": "D03",
+      "room": "lobby",
+      "title": "Living width needs checking",
+      "detail": "The label says 18 feet 9 inches (5715 mm); the inner wall faces scale to about 5752 mm. Reconcile this roughly 37 mm difference before flooring or joinery quantities."
+    },
+    {
+      "id": "F01",
+      "room": "bed-main",
+      "title": "Two-cot layout is still a fit study",
+      "detail": "The room also carries the dressing and store routes. Cot footprints are reservation blocks, not approved products. Rear-window separation, curtain cords, door swings and caregiver access must be resolved before either cot position is approved."
+    },
+    {
+      "id": "V01",
+      "room": null,
+      "title": "Heights are not in this PDF",
+      "detail": "The 3D model uses 3.0 m walls. Ceiling, sill, head, wardrobe and stair heights are proposals, not dimensions supplied by the architect."
+    }
+  ]
+}

@@ -9,7 +9,7 @@
     "bearingStatus": "Approximate user-supplied compass annotation, not surveyed true north",
     "ceilingHeight": 3.0,
     "ceilingStatus": "3.0 m model assumption; not a construction instruction",
-    "modelBasis": "Image-traced conceptual model. Room labels carry drawing dimensions; mesh positions are approximate and are not reconciled survey geometry.",
+    "modelBasis": "Vector wall faces from the uploaded PDF. Drawn footprints are preserved where room labels disagree. Not a site survey.",
     "sleeping": "Parents and children in main bedroom; grandparents in Bedroom 1",
     "children": "One baby aged 6 months; second baby not yet born",
     "grandparents": "55–65 years",
@@ -46,157 +46,23 @@
       "capacity": "Not selected; calculate each bedroom heat load after shell, glazing and roof-insulation design",
       "placement": "Final unit and service positions require coordination; keep bedroom airflow away from the infant cots"
     },
-    "lastRequirementsUpdate": "11 October 2026"
+    "lastRequirementsUpdate": "11 October 2026",
+    "sourcePdf": "BANSI VERMA_010920.pdf",
+    "sourceSha256": "2c22e21673e9bd704036734eb310a27f706488516e390dbe4e8248f21b1d5fd3",
+    "scope": "Inside the house only; 11 indoor spaces",
+    "kitchenUse": "One person usually cooks, confirmed by user on 11 October 2026",
+    "bedPreference": "Awaiting 5-foot versus 6-foot bed choice; 1524 × 2032 mm illustrative bed footprint"
   },
   "rooms": [
-    {
-      "id": "bed-left",
-      "name": "Bedroom 1",
-      "dimensions": "12′ × 11′",
-      "bounds": [
-        148,
-        260,
-        391,
-        481
-      ],
-      "title": "A quiet, flexible bedroom",
-      "finishes": "Warm ivory walls, a soft sage headboard and pale oak bedside tables.",
-      "furniture": [
-        "1500 × 2000 mm bed; check at least 750 mm passage at accessible sides and preserve the route to the door.",
-        "Two compact bedside tables, blackout curtain and a shallow chest.",
-        "Parents report no difficulty with walking or steps; retain convenient switches, night lighting and clear floors.",
-        "Storage shared with dressing room; add a wardrobe only after checking circulation."
-      ],
-      "lighting": "3000 K dimmable ceiling light; reading lamps with separate switches.",
-      "services": "AC confirmed for this bedroom: dedicated circuit and protection sized by the electrician; equipment type and capacity pending. Coordinate power, outdoor heat rejection and condensate drainage before plaster. Keep bedside sockets and switches convenient.",
-      "climate": "Rear/NW side is open, as confirmed by user. Preserve the rear window and provide adjustable exterior shade for late summer sun, insect screens and controllable curtains. Ventilation depends on actual openings and outdoor conditions.",
-      "source": "Dimensions transcribed from supplied image; side veranda from retained Rev 2 plan",
-      "status": "Design proposal; not site-measured"
-    },
-    {
-      "id": "study",
-      "name": "Study",
-      "dimensions": "6′7½″ × 6′9″",
-      "bounds": [
-        406,
-        260,
-        540,
-        400
-      ],
-      "title": "A compact work corner",
-      "finishes": "Ivory, light oak desk and a small sage pinboard.",
-      "furniture": [
-        "1200 × 550 mm desk at the side wall, facing across the room.",
-        "Shallow shelves above desk; leave a clear door swing.",
-        "Ergonomic chair; avoid a full-depth bed in this compact room."
-      ],
-      "lighting": "4000 K desk light, 3000 K ambient; control glare on screens.",
-      "services": "Desk sockets, data conduit and router route before plaster.",
-      "climate": "Open rear/NW side offers a possible daylight and ventilation route. The plan labels a vent; architect to confirm its size and whether a suitable glazed opening fits the approved wall design.",
-      "source": "Dimensions transcribed from supplied image; side veranda from retained Rev 2 plan",
-      "status": "Design proposal; not site-measured"
-    },
-    {
-      "id": "bed-main",
-      "name": "Main bedroom",
-      "dimensions": "12′ × 11′",
-      "bounds": [
-        557,
-        260,
-        800,
-        481
-      ],
-      "title": "A calm retreat",
-      "finishes": "Warm ivory, pale oak and a textured stone-colour headboard.",
-      "furniture": [
-        "1500 × 2000 mm parent bed with headboard at the rear wall.",
-        "Two separate baby cots (illustrative outer footprint 700 × 1300 mm each) along the side wall; verify product sizes and clear passages.",
-        "Firm, flat, empty infant sleep surfaces; no adult-bed or bunk-bed assumption. Keep cots away from windows, cords and direct AC airflow."
-      ],
-      "lighting": "3000 K dimmable light; low-level night light toward bathroom.",
-      "services": "AC confirmed for the parents’ and babies’ bedroom. Choose unit position and adjustable airflow to avoid direct draughts at both cots. Coordinate a dedicated circuit, outdoor heat rejection and condensate drainage; type and load-based capacity remain pending.",
-      "climate": "Rear/NW side is open. Use adjustable exterior shade and blackout lining; preserve useful daylight. Screen operable windows and keep the babies’ cots away from cords, windows and direct airflow.",
-      "source": "Dimensions transcribed from supplied image; side veranda from retained Rev 2 plan",
-      "status": "Family sleeping concept; cot dimensions and safe clearances require verification"
-    },
-    {
-      "id": "dressing",
-      "name": "Dressing",
-      "dimensions": "5′6″ × 7′",
-      "bounds": [
-        815,
-        307,
-        927,
-        400
-      ],
-      "title": "One tidy storage wall",
-      "finishes": "Ivory cabinet fronts, light oak handles and a full-height mirror.",
-      "furniture": [
-        "600 mm deep wardrobe on ONE side; opposing full-depth wardrobes are too tight.",
-        "Prefer sliding doors where the final wall length allows.",
-        "Drawers below, seasonal storage above; allow access to loft."
-      ],
-      "lighting": "3500–4000 K vertical mirror light, CRI 90 or higher.",
-      "services": "One grooming socket outside wet zone; ventilate enclosed cupboards.",
-      "climate": "Right/SW neighbour has one floor, separated by at least 3 feet, as reported. Actual height and roof profile are unknown, so shade cannot yet be quantified. Use cupboard ventilation and moisture-aware joinery.",
-      "source": "Dimensions transcribed from supplied image; side veranda from retained Rev 2 plan",
-      "status": "Design proposal; not site-measured"
-    },
-    {
-      "id": "bath",
-      "name": "Bathroom",
-      "dimensions": "5′6″ × 11′1½″",
-      "bounds": [
-        815,
-        410,
-        927,
-        633
-      ],
-      "title": "A clean, dry daily routine",
-      "finishes": "Warm stone slip-resistant tile, ivory ceiling and brushed stainless fittings.",
-      "furniture": [
-        "Vanity near entry, WC in middle, shower at far end.",
-        "Use a glazed shower screen only after door and service clearances are measured.",
-        "Accessible use may require a wider doorway and a revised layout."
-      ],
-      "lighting": "4000 K mirror task lighting; wet-area rated fixtures chosen by installer.",
-      "services": "Provide bathroom exhaust to a confirmed outdoor discharge point, with a roof route considered if the side gap is obstructed; do not exhaust into an enclosed gap or another room. Coordinate duct, geyser circuit, earthing and wet-area fittings before construction.",
-      "climate": "One-floor neighbour on the right/SW side, with a reported gap of at least 3 feet. The drawing places the bathroom window here. Check actual sill levels, privacy, usable daylight and the permitted opening; floor count and gap alone do not establish effective ventilation. Waterproofing and a flood test remain required.",
-      "source": "Dimensions transcribed from supplied image; side veranda from retained Rev 2 plan",
-      "status": "Design proposal; not site-measured"
-    },
-    {
-      "id": "store",
-      "name": "Store",
-      "dimensions": "7′6″ × 8′",
-      "bounds": [
-        648,
-        498,
-        800,
-        633
-      ],
-      "title": "A home for everything",
-      "finishes": "Washable ivory walls and modular oak-tone shelving.",
-      "furniture": [
-        "450 mm deep shelves along two walls; maintain a central aisle.",
-        "Label seasonal, cleaning and pantry storage separately.",
-        "Secure heavy items low; cleaning chemicals away from food."
-      ],
-      "lighting": "3500–4000 K bright ceiling light.",
-      "services": "One general socket and provision for future utility needs after plumbing review.",
-      "climate": "No sealed damp corners; use a vent and an inspectable plinth.",
-      "source": "Dimensions transcribed from supplied image; side veranda from retained Rev 2 plan",
-      "status": "Design proposal; not site-measured"
-    },
     {
       "id": "lobby",
       "name": "Living & dining",
       "dimensions": "18′9″ × 15′",
       "bounds": [
-        249,
-        498,
-        632,
-        800
+        1.75257,
+        3.80925,
+        7.50486,
+        8.38275
       ],
       "title": "The everyday heart of the home",
       "finishes": "Ivory walls, light stone floor, oak furniture and sage textiles.",
@@ -208,41 +74,191 @@
       "lighting": "3000 K ambient and dining pendant on separate dimmers.",
       "services": "No AC requested here. Provide fan points with locations and quantities coordinated to room geometry, pendant lights and dining/seating. Preserve TV/data conduits and seating-area sockets.",
       "climate": "Front/SE, rear/NW and left/NE sides are open, as confirmed by user. Plan controllable ventilation between suitable openings on these sides, subject to actual sizes, door positions, privacy, air quality and outdoor temperature. Do not use the bathroom as a ventilation path.",
-      "source": "Dimensions transcribed from supplied image; side veranda from retained Rev 2 plan",
-      "status": "Design proposal; not site-measured"
-    },
-    {
-      "id": "stairs",
-      "name": "Staircase",
-      "dimensions": "Landing width shown 7′6″",
-      "bounds": [
-        648,
-        648,
-        927,
-        800
+      "source": "Uploaded BANSI VERMA_010920.pdf · page 1 · vector wall faces and printed room label",
+      "status": "Interior proposal · architectural footprint from PDF · verify at the shell",
+      "pdfBounds": [
+        141.32,
+        299.06,
+        356.96,
+        470.51
       ],
-      "title": "A safe connection",
-      "finishes": "Pale stone treads, contrasting nosings and a simple metal handrail.",
-      "furniture": [
-        "Geometry shown is illustrative; risers, treads, landings and headroom need a measured stair design.",
-        "Continuous handrail; avoid slippery polished stone.",
-        "Under-stair storage must leave services and circulation accessible."
+      "issues": [
+        "D03"
       ],
-      "lighting": "Low-level step lighting and two-way switching.",
-      "services": "Foundation/plinth designed by an engineer for a future floor, as confirmed by user. Coordinate the existing structural drawings, stair geometry, headroom, future entry and service risers before continuing construction.",
-      "climate": "Architect to coordinate future upper-floor access and weather protection.",
-      "source": "Dimensions transcribed from supplied image; side veranda from retained Rev 2 plan",
-      "status": "Design proposal; not site-measured"
+      "finishCodes": [
+        "P01",
+        "P02",
+        "F01",
+        "J01"
+      ],
+      "furnitureItems": [
+        {
+          "code": "SO-01",
+          "label": "Family sofa",
+          "kind": "sofa-west",
+          "x": 0.1,
+          "z": 1.35,
+          "w": 0.85,
+          "d": 2.1,
+          "h": 0.8,
+          "finish": "T01",
+          "quantity": 1,
+          "placed": true,
+          "note": "Proposed size; confirm product and clearances before ordering"
+        },
+        {
+          "code": "CT-01",
+          "label": "Rounded coffee table",
+          "kind": "table",
+          "x": 1.55,
+          "z": 1.92,
+          "w": 0.65,
+          "d": 1.0,
+          "h": 0.4,
+          "finish": "J01",
+          "quantity": 1,
+          "placed": true,
+          "note": "Proposed size; confirm product and clearances before ordering"
+        },
+        {
+          "code": "TV-01",
+          "label": "TV console",
+          "kind": "media",
+          "x": 5.36,
+          "z": 2.36,
+          "w": 0.32,
+          "d": 1.1,
+          "h": 0.45,
+          "finish": "J01",
+          "quantity": 1,
+          "placed": true,
+          "note": "Compact console stays within the PDF stair-side wall span. Confirm the TV size, eye level, sockets and seated viewing distance."
+        },
+        {
+          "code": "DT-01",
+          "label": "Six-seat dining table",
+          "kind": "table",
+          "x": 3.75,
+          "z": 0.75,
+          "w": 0.85,
+          "d": 1.5,
+          "h": 0.75,
+          "finish": "J01",
+          "quantity": 1,
+          "placed": true,
+          "note": "Proposed size; confirm product and clearances before ordering"
+        },
+        {
+          "code": "DCH-01",
+          "label": "Dining chair",
+          "kind": "chair",
+          "x": 3.15,
+          "z": 0.78,
+          "w": 0.43,
+          "d": 0.43,
+          "h": 0.82,
+          "finish": "T01",
+          "quantity": 1,
+          "placed": true,
+          "note": "Proposed size; confirm product and clearances before ordering"
+        },
+        {
+          "code": "DCH-02",
+          "label": "Dining chair",
+          "kind": "chair",
+          "x": 3.15,
+          "z": 1.63,
+          "w": 0.43,
+          "d": 0.43,
+          "h": 0.82,
+          "finish": "T01",
+          "quantity": 1,
+          "placed": true,
+          "note": "Proposed size; confirm product and clearances before ordering"
+        },
+        {
+          "code": "DCH-03",
+          "label": "Dining chair",
+          "kind": "chair",
+          "x": 4.77,
+          "z": 0.78,
+          "w": 0.43,
+          "d": 0.43,
+          "h": 0.82,
+          "finish": "T01",
+          "quantity": 1,
+          "placed": true,
+          "note": "Proposed size; confirm product and clearances before ordering"
+        },
+        {
+          "code": "DCH-04",
+          "label": "Dining chair",
+          "kind": "chair",
+          "x": 4.77,
+          "z": 1.63,
+          "w": 0.43,
+          "d": 0.43,
+          "h": 0.82,
+          "finish": "T01",
+          "quantity": 1,
+          "placed": true,
+          "note": "Proposed size; confirm product and clearances before ordering"
+        },
+        {
+          "code": "DCH-05",
+          "label": "Dining chair",
+          "kind": "chair",
+          "x": 3.96,
+          "z": 0.18,
+          "w": 0.43,
+          "d": 0.43,
+          "h": 0.82,
+          "finish": "T01",
+          "quantity": 1,
+          "placed": true,
+          "note": "Proposed size; confirm product and clearances before ordering"
+        },
+        {
+          "code": "DCH-06",
+          "label": "Dining chair",
+          "kind": "chair",
+          "x": 3.96,
+          "z": 2.4,
+          "w": 0.43,
+          "d": 0.43,
+          "h": 0.82,
+          "finish": "T01",
+          "quantity": 1,
+          "placed": true,
+          "note": "Proposed size; confirm product and clearances before ordering"
+        }
+      ],
+      "lightingPlan": [
+        {
+          "x": 1.8,
+          "z": 2.4,
+          "code": "L01",
+          "label": "Ambient + fan zone"
+        },
+        {
+          "x": 4.175,
+          "z": 1.5,
+          "code": "L02",
+          "label": "Dining pendant"
+        }
+      ],
+      "joineryNote": "Final joinery sizes follow shell measurement, hardware selection and a signed workshop drawing.",
+      "serviceNote": "Positions shown are coordination proposals. The installer must confirm circuit design, cable sizes, mounting heights, protection and service access."
     },
     {
       "id": "drawing",
       "name": "Drawing room",
       "dimensions": "10′9″ × 11′",
       "bounds": [
-        148,
-        817,
-        365,
-        1038
+        0.22888,
+        8.61083,
+        3.50515,
+        11.96312
       ],
       "title": "A light, welcoming front room",
       "finishes": "Ivory walls, oatmeal sofa, light oak and one sage chair.",
@@ -254,18 +270,226 @@
       "lighting": "3000 K layered light; one floor lamp rather than a heavy false ceiling.",
       "services": "No AC requested here. Provide a ceiling fan point, general sockets and TV/data provision if needed; keep fan sweep clear of lights and curtains.",
       "climate": "Front/SE side is open toward the road. Preserve controllable morning daylight and coordinate an exterior overhang from actual window geometry; use sheer and lined curtains for road-facing privacy.",
-      "source": "Dimensions transcribed from supplied image; side veranda from retained Rev 2 plan",
-      "status": "Design proposal; not site-measured"
+      "source": "Uploaded BANSI VERMA_010920.pdf · page 1 · vector wall faces and printed room label",
+      "status": "Interior proposal · architectural footprint from PDF · verify at the shell",
+      "pdfBounds": [
+        84.2,
+        479.06,
+        207.02,
+        604.73
+      ],
+      "issues": [],
+      "finishCodes": [
+        "P01",
+        "P02",
+        "F01",
+        "J01"
+      ],
+      "furnitureItems": [
+        {
+          "code": "SO-02",
+          "label": "Guest sofa",
+          "kind": "sofa-west",
+          "x": 0.1,
+          "z": 0.76,
+          "w": 0.82,
+          "d": 1.85,
+          "h": 0.8,
+          "finish": "T01",
+          "quantity": 1,
+          "placed": true,
+          "note": "Proposed size; confirm product and clearances before ordering"
+        },
+        {
+          "code": "CT-02",
+          "label": "Coffee table",
+          "kind": "table",
+          "x": 1.55,
+          "z": 1.21,
+          "w": 0.6,
+          "d": 0.9,
+          "h": 0.4,
+          "finish": "J01",
+          "quantity": 1,
+          "placed": true,
+          "note": "Proposed size; confirm product and clearances before ordering"
+        },
+        {
+          "code": "AC-01",
+          "label": "Occasional chair",
+          "kind": "armchair",
+          "x": 2.3,
+          "z": 0.35,
+          "w": 0.65,
+          "d": 0.7,
+          "h": 0.82,
+          "finish": "T02",
+          "quantity": 1,
+          "placed": true,
+          "note": "Proposed size; confirm product and clearances before ordering"
+        },
+        {
+          "code": "AC-02",
+          "label": "Occasional chair",
+          "kind": "armchair",
+          "x": 2.3,
+          "z": 2.3,
+          "w": 0.65,
+          "d": 0.7,
+          "h": 0.82,
+          "finish": "T02",
+          "quantity": 1,
+          "placed": true,
+          "note": "Proposed size; confirm product and clearances before ordering"
+        }
+      ],
+      "lightingPlan": [
+        {
+          "x": 1.65,
+          "z": 1.65,
+          "code": "L01",
+          "label": "Ambient + fan zone"
+        }
+      ],
+      "joineryNote": "Final joinery sizes follow shell measurement, hardware selection and a signed workshop drawing.",
+      "serviceNote": "Positions shown are coordination proposals. The installer must confirm circuit design, cable sizes, mounting heights, protection and service access."
+    },
+    {
+      "id": "kitchen",
+      "name": "Kitchen",
+      "dimensions": "8′ × 7′",
+      "bounds": [
+        5.06646,
+        8.61083,
+        7.50486,
+        10.74433
+      ],
+      "title": "Compact, practical Indian cooking",
+      "finishes": "Ivory wall-cabinet front, pale oak base fronts and a light stone worktop.",
+      "furniture": [
+        "L-shaped 600 mm-deep counters for one main cook; no island.",
+        "Keep the hob on the right-hand counter and sink on the front counter as a service proposal. Confirm manufacturer separation, landing areas and the hood route.",
+        "A 600 × 650 mm refrigerator reservation at the left of the entrance leaves about 1178 mm to the opposite counter; door opening, ventilation and appliance cut-outs remain to be checked."
+      ],
+      "lighting": "4000 K under-cabinet task strips plus a ceiling light.",
+      "services": "For one main cook. Coordinate sink/waste, filtered-water point, fridge, hob fuel choice and hood exhaust. No circuit ratings or gas route are selected without appliance data. Place accessible isolation outside hot/wet zones. Do not discharge the hood into another room.",
+      "climate": "Use sealed exterior-grade plywood at wet cabinet zones. Open front/SE space provides a possible hood discharge direction, subject to duct routing and outlet clearances; do not assume the side gap is suitable.",
+      "source": "Uploaded BANSI VERMA_010920.pdf · page 1 · vector wall faces and printed room label",
+      "status": "Interior proposal · architectural footprint from PDF · verify at the shell",
+      "pdfBounds": [
+        265.55,
+        479.06,
+        356.96,
+        559.04
+      ],
+      "issues": [],
+      "finishCodes": [
+        "P01",
+        "F01",
+        "J02",
+        "S01",
+        "M01"
+      ],
+      "furnitureItems": [
+        {
+          "code": "KB-01",
+          "label": "Front base-cabinet run",
+          "kind": "counter",
+          "x": 0,
+          "z": 1.533,
+          "w": 1.838,
+          "d": 0.6,
+          "h": 0.9,
+          "finish": "J01",
+          "quantity": 1,
+          "placed": true,
+          "note": "Proposed size; confirm product and clearances before ordering"
+        },
+        {
+          "code": "KB-02",
+          "label": "Right base-cabinet run",
+          "kind": "counter-hob",
+          "x": 1.838,
+          "z": 0.68,
+          "w": 0.6,
+          "d": 1.453,
+          "h": 0.9,
+          "finish": "J01",
+          "quantity": 1,
+          "placed": true,
+          "note": "Proposed size; confirm product and clearances before ordering"
+        },
+        {
+          "code": "FR-01",
+          "label": "Refrigerator reservation",
+          "kind": "fridge",
+          "x": 0.06,
+          "z": 0.03,
+          "w": 0.6,
+          "d": 0.65,
+          "h": 1.8,
+          "finish": "C01",
+          "quantity": 1,
+          "placed": true,
+          "note": "Proposed size; confirm product and clearances before ordering"
+        },
+        {
+          "code": "SK-01",
+          "label": "Sink reservation",
+          "kind": "sink",
+          "x": 0.62,
+          "z": 1.61,
+          "w": 0.55,
+          "d": 0.43,
+          "h": 0.2,
+          "finish": "M01",
+          "quantity": 1,
+          "placed": true,
+          "note": "Illustrative 200 mm bowl depth; proposed worktop level 900 mm, bowl underside 700 mm. Confirm sink product, landing space and cut-outs.",
+          "base": 0.7
+        },
+        {
+          "code": "KU-01",
+          "label": "Above-fridge cabinet",
+          "kind": "wall-cabinet",
+          "x": 0.06,
+          "z": 0.03,
+          "w": 0.6,
+          "d": 0.35,
+          "h": 0.6,
+          "base": 2.0,
+          "finish": "J02",
+          "quantity": 1,
+          "placed": true,
+          "note": "Proposed underside 2000 mm above finished floor; confirm fridge ventilation and access. No cupboard is placed across KW."
+        }
+      ],
+      "lightingPlan": [
+        {
+          "x": 1.35,
+          "z": 0.95,
+          "code": "L03",
+          "label": "General work light"
+        },
+        {
+          "x": 1.0,
+          "z": 1.72,
+          "code": "L04",
+          "label": "Counter task light"
+        }
+      ],
+      "joineryNote": "Proposed base-counter height 900 mm. Right run 1450 mm; front run 1838 mm to the corner return. 600 mm nominal depth. Drawer divisions, corner access, countertop joints, sink bowl and hob clearances need the selected appliances and workshop drawings. No cabinet is added over KW.",
+      "serviceNote": "Positions shown are coordination proposals. The installer must confirm circuit design, cable sizes, mounting heights, protection and service access."
     },
     {
       "id": "puja",
       "name": "Puja",
       "dimensions": "4′ × 5′",
       "bounds": [
-        382,
-        845,
-        462,
-        957
+        3.73322,
+        9.22063,
+        4.95202,
+        10.74433
       ],
       "title": "A simple, peaceful niche",
       "finishes": "Warm ivory, a light stone altar and an oak shelf.",
@@ -277,100 +501,655 @@
       "lighting": "2700–3000 K concealed light with accessible driver.",
       "services": "One protected light circuit; no loose wiring beside lamps or incense.",
       "climate": "Puja stays in the location shown in your latest plan; no directional religious claim is made.",
-      "source": "Dimensions transcribed from supplied image; side veranda from retained Rev 2 plan",
-      "status": "Design proposal; not site-measured"
+      "source": "Uploaded BANSI VERMA_010920.pdf · page 1 · vector wall faces and printed room label",
+      "status": "Interior proposal · architectural footprint from PDF · verify at the shell",
+      "pdfBounds": [
+        215.57,
+        501.92,
+        261.26,
+        559.04
+      ],
+      "issues": [],
+      "finishCodes": [
+        "P01",
+        "P02",
+        "F01",
+        "J01"
+      ],
+      "furnitureItems": [
+        {
+          "code": "PJ-01",
+          "label": "Altar cabinet",
+          "kind": "altar",
+          "x": 0.11,
+          "z": 1.1,
+          "w": 1.0,
+          "d": 0.35,
+          "h": 0.65,
+          "finish": "S01",
+          "quantity": 1,
+          "placed": true,
+          "note": "Proposed size; confirm product and clearances before ordering"
+        }
+      ],
+      "lightingPlan": [
+        {
+          "x": 0.6,
+          "z": 1.35,
+          "code": "L05",
+          "label": "Altar accent"
+        }
+      ],
+      "joineryNote": "Proposed 1000 W × 350 D × 650 H mm altar cabinet with a 450 mm-deep high-level shelf omitted until flame/ventilation use is confirmed. Keep the small floor area open.",
+      "serviceNote": "Positions shown are coordination proposals. The installer must confirm circuit design, cable sizes, mounting heights, protection and service access."
     },
     {
-      "id": "kitchen",
-      "name": "Kitchen",
-      "dimensions": "8′ × 7′",
+      "id": "bed-main",
+      "name": "Family bedroom",
+      "dimensions": "12′ × 11′",
       "bounds": [
-        470,
-        817,
-        632,
-        957
+        6.36209,
+        0.22888,
+        10.02249,
+        3.58117
       ],
-      "title": "Compact, practical Indian cooking",
-      "finishes": "Ivory upper cabinets, pale oak lower fronts and a light stone worktop.",
+      "title": "A room for a growing family",
+      "finishes": "Warm ivory, pale oak and a textured stone-colour headboard.",
       "furniture": [
-        "L-shaped 600 mm deep counters; final appliance sizes decide usable working space.",
-        "Sink on window leg, hob on side leg; refrigerator at entrance only if clear route remains.",
-        "Use drawers below; avoid a bulky island in this room."
+        "1524 × 2032 mm parent bed proposal, retaining the PDF headboard direction. Final bed width is awaiting your choice.",
+        "Two separate baby cots are included in the item list, but their positions are held for a measured fit check. The previous side-wall placement obstructed the dressing route.",
+        "Keep dressing and store access open. No cot is shown as approved in the 3D room; product dimensions and safe placement must be resolved first."
       ],
-      "lighting": "4000 K under-cabinet task strips plus a ceiling light.",
-      "services": "Separate appliance circuits as required. Route the hood to a confirmed outdoor outlet or coordinated roof termination; do not assume a right-side exit is usable beside the neighbour. Keep the duct accessible for cleaning.",
-      "climate": "Use sealed exterior-grade plywood at wet cabinet zones. Open front/SE space provides a possible hood discharge direction, subject to duct routing and outlet clearances; do not assume the side gap is suitable.",
-      "source": "Dimensions transcribed from supplied image; side veranda from retained Rev 2 plan",
-      "status": "Design proposal; not site-measured"
+      "lighting": "3000 K dimmable light; low-level night light toward bathroom.",
+      "services": "AC confirmed for the parents’ and babies’ bedroom. Choose unit position and adjustable airflow to avoid direct draughts at both cots. Coordinate a dedicated circuit, outdoor heat rejection and condensate drainage; type and load-based capacity remain pending.",
+      "climate": "Rear/NW side is open. Use adjustable exterior shade and blackout lining; preserve useful daylight. Screen operable windows and keep the babies’ cots away from cords, windows and direct airflow.",
+      "source": "Uploaded BANSI VERMA_010920.pdf · page 1 · vector wall faces and printed room label",
+      "status": "Cot placement unresolved · bed size pending · keep the PDF access routes",
+      "pdfBounds": [
+        314.12,
+        164.84,
+        451.34,
+        290.51
+      ],
+      "issues": [
+        "F01"
+      ],
+      "finishCodes": [
+        "P01",
+        "P02",
+        "F01",
+        "J01",
+        "T01"
+      ],
+      "furnitureItems": [
+        {
+          "code": "BED-02",
+          "label": "Parent bed",
+          "kind": "bed-west",
+          "x": 0.06,
+          "z": 0.84,
+          "w": 2.032,
+          "d": 1.524,
+          "h": 1.13,
+          "finish": "J01",
+          "quantity": 1,
+          "placed": true,
+          "note": "Illustrative overall size includes 1130 mm headboard; mattress top about 520 mm. Final product and bed width pending."
+        },
+        {
+          "code": "BT-03",
+          "label": "Compact bedside table",
+          "kind": "cabinet",
+          "x": 0.06,
+          "z": 0.34,
+          "w": 0.4,
+          "d": 0.36,
+          "h": 0.5,
+          "finish": "J01",
+          "quantity": 1,
+          "placed": true,
+          "note": "Proposed size; confirm product and clearances before ordering"
+        },
+        {
+          "code": "COT-01",
+          "label": "Separate infant cots + matched mattresses",
+          "kind": "cot",
+          "x": 0,
+          "z": 0,
+          "w": 0.7,
+          "d": 1.3,
+          "h": 1.1,
+          "finish": "J01",
+          "quantity": 2,
+          "placed": false,
+          "note": "Location held: confirm outer product size, safe distance from windows/cords, caregiver access and both access routes. No loose bedding. Not a fabrication specification."
+        }
+      ],
+      "lightingPlan": [
+        {
+          "x": 1.8,
+          "z": 1.65,
+          "code": "L01",
+          "label": "Dimmable ambient"
+        },
+        {
+          "x": 0.35,
+          "z": 2.55,
+          "code": "L06",
+          "label": "Low night-route light"
+        }
+      ],
+      "joineryNote": "Final joinery sizes follow shell measurement, hardware selection and a signed workshop drawing.",
+      "serviceNote": "Positions shown are coordination proposals. The installer must confirm circuit design, cable sizes, mounting heights, protection and service access."
     },
     {
-      "id": "porch",
-      "name": "Porch",
-      "dimensions": "13′9″ × 17′6″",
+      "id": "bed-left",
+      "name": "Grandparents’ bedroom",
+      "dimensions": "12′ × 11′",
       "bounds": [
-        648,
-        817,
-        927,
-        1095
+        0.22888,
+        0.22888,
+        3.88607,
+        3.58117
       ],
-      "title": "A shaded arrival",
-      "finishes": "Light exterior walls, warm-grey outdoor tile and simple planters.",
+      "title": "Restful, simple and easy to use",
+      "finishes": "Warm ivory walls, a soft sage headboard and pale oak bedside tables.",
       "furniture": [
-        "Keep the vehicle turning and door-opening area clear.",
-        "Place shoe/parcel bench outside vehicle sweep; check real vehicle dimensions.",
-        "Drain away from entrance; use a slip-resistant exterior finish."
+        "1524 × 2032 mm bed proposal, retaining the west-side headboard direction shown in the PDF.",
+        "Two compact bedside tables; no loose rug on the night route.",
+        "A shallow chest for daily clothing. Full hanging storage is in the shared dressing area; wardrobe allocation is still to be agreed."
       ],
-      "lighting": "Warm outdoor wall lights with weather-rated fittings.",
-      "services": "Weather-rated socket; EV conduit provision only after supply and load study.",
-      "climate": "Front/SE is open toward the road. Coordinate entry shade and rain protection. The one-floor right/SW neighbour, separated by at least 3 feet, may affect privacy and shade; its actual height and gap still need measurement.",
-      "source": "Dimensions transcribed from supplied image; side veranda from retained Rev 2 plan",
-      "status": "Design proposal; not site-measured"
+      "lighting": "3000 K dimmable ceiling light; reading lamps with separate switches.",
+      "services": "AC confirmed for this bedroom: dedicated circuit and protection sized by the electrician; equipment type and capacity pending. Coordinate power, outdoor heat rejection and condensate drainage before plaster. Keep bedside sockets and switches convenient.",
+      "climate": "Rear/NW side is open, as confirmed by user. Preserve the rear window and provide adjustable exterior shade for late summer sun, insect screens and controllable curtains. Ventilation depends on actual openings and outdoor conditions.",
+      "source": "Uploaded BANSI VERMA_010920.pdf · page 1 · vector wall faces and printed room label",
+      "status": "Interior proposal · architectural footprint from PDF · verify at the shell",
+      "pdfBounds": [
+        84.2,
+        164.84,
+        221.3,
+        290.51
+      ],
+      "issues": [],
+      "finishCodes": [
+        "P01",
+        "P02",
+        "F01",
+        "J01",
+        "T02"
+      ],
+      "furnitureItems": [
+        {
+          "code": "BED-01",
+          "label": "Grandparents’ bed",
+          "kind": "bed-west",
+          "x": 0.08,
+          "z": 0.82,
+          "w": 2.032,
+          "d": 1.524,
+          "h": 1.13,
+          "finish": "J01",
+          "quantity": 1,
+          "placed": true,
+          "note": "Illustrative overall size includes 1130 mm headboard; mattress top about 520 mm. Final product and bed width pending."
+        },
+        {
+          "code": "BT-01",
+          "label": "Bedside table",
+          "kind": "cabinet",
+          "x": 0.1,
+          "z": 0.36,
+          "w": 0.4,
+          "d": 0.38,
+          "h": 0.5,
+          "finish": "J01",
+          "quantity": 1,
+          "placed": true,
+          "note": "Proposed size; confirm product and clearances before ordering"
+        },
+        {
+          "code": "BT-02",
+          "label": "Bedside table",
+          "kind": "cabinet",
+          "x": 0.1,
+          "z": 2.43,
+          "w": 0.4,
+          "d": 0.38,
+          "h": 0.5,
+          "finish": "J01",
+          "quantity": 1,
+          "placed": true,
+          "note": "Proposed size; confirm product and clearances before ordering"
+        },
+        {
+          "code": "CH-01",
+          "label": "Shallow chest",
+          "kind": "cabinet",
+          "x": 3.2,
+          "z": 0.45,
+          "w": 0.4,
+          "d": 1.1,
+          "h": 1.0,
+          "finish": "J01",
+          "quantity": 1,
+          "placed": true,
+          "note": "Proposed size; confirm product and clearances before ordering"
+        }
+      ],
+      "lightingPlan": [
+        {
+          "x": 1.85,
+          "z": 1.65,
+          "code": "L01",
+          "label": "Dimmable ambient"
+        },
+        {
+          "x": 0.3,
+          "z": 2.85,
+          "code": "L06",
+          "label": "Low night-route light"
+        }
+      ],
+      "joineryNote": "Final joinery sizes follow shell measurement, hardware selection and a signed workshop drawing.",
+      "serviceNote": "Positions shown are coordination proposals. The installer must confirm circuit design, cable sizes, mounting heights, protection and service access."
     },
     {
-      "id": "veranda",
-      "name": "Front veranda",
-      "dimensions": "13′ × 6′9″",
+      "id": "dressing",
+      "name": "Dressing",
+      "dimensions": "5′6″ × 7′",
       "bounds": [
-        382,
-        973,
-        632,
-        1095
+        10.25136,
+        0.22888,
+        11.92711,
+        2.36238
       ],
-      "title": "A gentle transition",
-      "finishes": "Light walls, stone-tone outdoor flooring and a small oak-tone bench.",
+      "title": "One tidy storage wall",
+      "finishes": "Ivory cabinet fronts, light oak handles and a full-height mirror.",
       "furniture": [
-        "One compact bench only if the approach remains clear.",
-        "Use washable cushions and outdoor-rated hardware.",
-        "Step-free entry levels should be agreed before construction."
+        "One 600 mm-deep wardrobe run against the rear wall, where storage hatching appears in the PDF.",
+        "Clear central route from the family bedroom to the bathroom; do not place cabinets beside both doorways.",
+        "Sliding fronts proposed; internal hanging, drawer and loft allocation still to be agreed."
       ],
-      "lighting": "3000 K outdoor light; shield from glare toward road.",
-      "services": "Doorbell/camera conduit and exterior light control.",
-      "climate": "Protect the SE threshold from driven rain; coordinate slab slope with drainage.",
-      "source": "Dimensions transcribed from supplied image; side veranda from retained Rev 2 plan",
-      "status": "Design proposal; not site-measured"
+      "lighting": "3500–4000 K vertical mirror light, CRI 90 or higher.",
+      "services": "One grooming socket outside wet zone; ventilate enclosed cupboards.",
+      "climate": "Right/SW neighbour has one floor, separated by at least 3 feet, as reported. Actual height and roof profile are unknown, so shade cannot yet be quantified. Use cupboard ventilation and moisture-aware joinery.",
+      "source": "Uploaded BANSI VERMA_010920.pdf · page 1 · vector wall faces and printed room label",
+      "status": "Interior proposal · architectural footprint from PDF · verify at the shell",
+      "pdfBounds": [
+        459.92,
+        164.84,
+        522.74,
+        244.82
+      ],
+      "issues": [],
+      "finishCodes": [
+        "P01",
+        "P02",
+        "F01",
+        "J01"
+      ],
+      "furnitureItems": [
+        {
+          "code": "WR-01",
+          "label": "Rear-wall wardrobe",
+          "kind": "wardrobe",
+          "x": 0.04,
+          "z": 0.02,
+          "w": 1.6,
+          "d": 0.6,
+          "h": 2.4,
+          "finish": "J01",
+          "quantity": 1,
+          "placed": true,
+          "note": "Proposed size; confirm product and clearances before ordering"
+        },
+        {
+          "code": "MR-01",
+          "label": "Wall mirror",
+          "kind": "mirror",
+          "x": 1.63,
+          "z": 0.95,
+          "w": 0.02,
+          "d": 0.6,
+          "h": 1.3,
+          "finish": "M01",
+          "quantity": 1,
+          "placed": true,
+          "note": "Mirror is 1300 mm high; proposed lower edge 700 mm above finished floor. Confirm reach and reflections.",
+          "base": 0.7
+        }
+      ],
+      "lightingPlan": [
+        {
+          "x": 0.84,
+          "z": 1.2,
+          "code": "L03",
+          "label": "Mirror / wardrobe light"
+        }
+      ],
+      "joineryNote": "Proposed 1600 W × 600 D × 2400 H mm wardrobe. Two sliding fronts, one long-hanging bay, one double-hanging bay and lower drawers. Internal allocation and ventilation are pending; rear wall position follows the PDF hatch.",
+      "serviceNote": "Positions shown are coordination proposals. The installer must confirm circuit design, cable sizes, mounting heights, protection and service access."
     },
     {
-      "id": "side-veranda",
-      "name": "Side veranda",
-      "dimensions": "5′ × 15′ (existing Rev 2 plan)",
+      "id": "bath",
+      "name": "Bathroom",
+      "dimensions": "5′6″ × 11′1½″",
       "bounds": [
-        108,
-        529,
-        234,
-        790
+        10.25136,
+        2.47601,
+        11.92711,
+        5.86672
       ],
-      "title": "A shaded garden edge",
-      "finishes": "Ivory masonry, stone pavers and restrained planting.",
+      "title": "A clean, dry daily routine",
+      "finishes": "Warm stone slip-resistant tile, ivory ceiling and brushed stainless fittings.",
       "furniture": [
-        "Keep service and walking access clear.",
-        "Small movable chairs; avoid permanent enclosure without an updated building plan.",
-        "Planting must not trap moisture at walls."
+        "800 × 450 mm vanity near the dressing entry, WC in the middle and a 900 mm-deep shower zone at the far end.",
+        "Wet/dry division is proposed; screen opening, drain, waterproofing build-up and fixture clearances need a coordinated bathroom drawing.",
+        "Bathroom access remains exactly via the dressing area; no new common doorway is introduced."
       ],
-      "lighting": "Soft outdoor light and one shielded pathway fixture.",
-      "services": "Outdoor socket if needed; keep cable routes above standing-water risks.",
-      "climate": "Left/NE side is open, as confirmed by user. Preserve this softer-light edge for screened, controllable openings and shaded seating; architect to verify actual setbacks and drainage.",
-      "source": "Dimensions transcribed from supplied image; side veranda from retained Rev 2 plan",
-      "status": "Design proposal; not site-measured"
+      "lighting": "4000 K mirror task lighting; wet-area rated fixtures chosen by installer.",
+      "services": "Provide bathroom exhaust to a confirmed outdoor discharge point, with a roof route considered if the side gap is obstructed; do not exhaust into an enclosed gap or another room. Coordinate duct, geyser circuit, earthing and wet-area fittings before construction.",
+      "climate": "One-floor neighbour on the right/SW side, with a reported gap of at least 3 feet. The drawing places the bathroom window here. Check actual sill levels, privacy, usable daylight and the permitted opening; floor count and gap alone do not establish effective ventilation. Waterproofing and a flood test remain required.",
+      "source": "Uploaded BANSI VERMA_010920.pdf · page 1 · vector wall faces and printed room label",
+      "status": "Interior proposal · architectural footprint from PDF · verify at the shell",
+      "pdfBounds": [
+        459.92,
+        249.08,
+        522.74,
+        376.19
+      ],
+      "issues": [],
+      "finishCodes": [
+        "P02",
+        "F02",
+        "J02",
+        "S01",
+        "M01"
+      ],
+      "furnitureItems": [
+        {
+          "code": "VA-01",
+          "label": "Wall-mounted vanity",
+          "kind": "vanity",
+          "x": 1.206,
+          "z": 0.2,
+          "w": 0.45,
+          "d": 0.8,
+          "h": 0.95,
+          "finish": "J01",
+          "quantity": 1,
+          "placed": true,
+          "note": "Cabinet and basin reservation, approximately 950 mm to basin rim in the model. Mirror position is illustrative; confirm product sizes and user reach."
+        },
+        {
+          "code": "WC-01",
+          "label": "WC reservation",
+          "kind": "wc",
+          "x": 0.04,
+          "z": 1.2,
+          "w": 0.68,
+          "d": 0.4,
+          "h": 0.75,
+          "finish": "C01",
+          "quantity": 1,
+          "placed": true,
+          "note": "Proposed size; confirm product and clearances before ordering"
+        },
+        {
+          "code": "SW-01",
+          "label": "Shower zone",
+          "kind": "shower",
+          "x": 0.02,
+          "z": 2.47,
+          "w": 1.636,
+          "d": 0.9,
+          "h": 2.1,
+          "finish": "F02",
+          "quantity": 1,
+          "placed": true,
+          "note": "Proposed size; confirm product and clearances before ordering"
+        }
+      ],
+      "lightingPlan": [
+        {
+          "x": 0.55,
+          "z": 0.6,
+          "code": "L03",
+          "label": "Mirror light"
+        },
+        {
+          "x": 0.84,
+          "z": 2.7,
+          "code": "L07",
+          "label": "Wet-area light"
+        }
+      ],
+      "joineryNote": "Final joinery sizes follow shell measurement, hardware selection and a signed workshop drawing.",
+      "serviceNote": "Positions shown are coordination proposals. The installer must confirm circuit design, cable sizes, mounting heights, protection and service access."
+    },
+    {
+      "id": "study",
+      "name": "Study",
+      "dimensions": "6′7½″ × 6′9″",
+      "bounds": [
+        4.11415,
+        0.22888,
+        6.13081,
+        2.33677
+      ],
+      "title": "A compact work corner",
+      "finishes": "Ivory, light oak desk and a small sage pinboard.",
+      "furniture": [
+        "1200 × 550 mm desk with one chair and a shallow shelf.",
+        "Keep the D2 entry clear. The PDF labels the rear opening V; a full-height picture window is not assumed.",
+        "The printed depth differs from the vector drawing by about 50 mm; check before desk fabrication."
+      ],
+      "lighting": "4000 K desk light, 3000 K ambient; control glare on screens.",
+      "services": "Desk sockets, data conduit and router route before plaster.",
+      "climate": "Open rear/NW side offers a possible daylight and ventilation route. The plan labels a vent; architect to confirm its size and whether a suitable glazed opening fits the approved wall design.",
+      "source": "Uploaded BANSI VERMA_010920.pdf · page 1 · vector wall faces and printed room label",
+      "status": "Interior proposal · architectural footprint from PDF · verify at the shell",
+      "pdfBounds": [
+        229.85,
+        164.84,
+        305.45,
+        243.86
+      ],
+      "issues": [
+        "D02"
+      ],
+      "finishCodes": [
+        "P01",
+        "P02",
+        "F01",
+        "J01"
+      ],
+      "furnitureItems": [
+        {
+          "code": "DS-01",
+          "label": "Desk",
+          "kind": "desk",
+          "x": 0.12,
+          "z": 0.18,
+          "w": 1.2,
+          "d": 0.55,
+          "h": 0.74,
+          "finish": "J01",
+          "quantity": 1,
+          "placed": true,
+          "note": "Proposed size; confirm product and clearances before ordering"
+        },
+        {
+          "code": "DC-01",
+          "label": "Task chair",
+          "kind": "chair",
+          "x": 0.47,
+          "z": 0.93,
+          "w": 0.48,
+          "d": 0.48,
+          "h": 0.85,
+          "finish": "T01",
+          "quantity": 1,
+          "placed": true,
+          "note": "Proposed size; confirm product and clearances before ordering"
+        },
+        {
+          "code": "SH-01",
+          "label": "Shallow wall shelf",
+          "kind": "shelf",
+          "x": 0.12,
+          "z": 0.05,
+          "w": 1.2,
+          "d": 0.22,
+          "h": 0.035,
+          "finish": "J01",
+          "quantity": 1,
+          "placed": true,
+          "note": "Shelf thickness 35 mm; proposed underside 1600 mm above finished floor. Confirm fixings and reach.",
+          "base": 1.6
+        }
+      ],
+      "lightingPlan": [
+        {
+          "x": 0.72,
+          "z": 0.38,
+          "code": "L04",
+          "label": "Desk task light"
+        },
+        {
+          "x": 1.3,
+          "z": 1.35,
+          "code": "L01",
+          "label": "Ambient"
+        }
+      ],
+      "joineryNote": "Final joinery sizes follow shell measurement, hardware selection and a signed workshop drawing.",
+      "serviceNote": "Positions shown are coordination proposals. The installer must confirm circuit design, cable sizes, mounting heights, protection and service access."
+    },
+    {
+      "id": "store",
+      "name": "Store",
+      "dimensions": "7′6″ × 8′",
+      "bounds": [
+        7.73294,
+        3.80925,
+        10.02249,
+        5.86672
+      ],
+      "title": "A home for everything",
+      "finishes": "Washable ivory walls and modular oak-tone shelving.",
+      "furniture": [
+        "Two 400 mm-deep shelf runs proposed along the side and rear.",
+        "Use the smaller drawn depth for this fit study, keeping the doorway open.",
+        "The 8-foot label disagrees with the drawn 6-foot-9-inch depth. No shelf order until the architect resolves it."
+      ],
+      "lighting": "3500–4000 K bright ceiling light.",
+      "services": "One general socket and provision for future utility needs after plumbing review.",
+      "climate": "No sealed damp corners; use a vent and an inspectable plinth.",
+      "source": "Uploaded BANSI VERMA_010920.pdf · page 1 · vector wall faces and printed room label",
+      "status": "Interior proposal · architectural footprint from PDF · verify at the shell",
+      "pdfBounds": [
+        365.51,
+        299.06,
+        451.34,
+        376.19
+      ],
+      "issues": [
+        "D01"
+      ],
+      "finishCodes": [
+        "P01",
+        "P02",
+        "F01",
+        "J01"
+      ],
+      "furnitureItems": [
+        {
+          "code": "ST-01",
+          "label": "Side shelving",
+          "kind": "shelving",
+          "x": 1.87,
+          "z": 0.1,
+          "w": 0.4,
+          "d": 1.45,
+          "h": 2.1,
+          "finish": "J01",
+          "quantity": 1,
+          "placed": true,
+          "note": "Proposed size; confirm product and clearances before ordering"
+        },
+        {
+          "code": "ST-02",
+          "label": "Rear shelving",
+          "kind": "shelving",
+          "x": 0.02,
+          "z": 1.63,
+          "w": 1.83,
+          "d": 0.4,
+          "h": 2.1,
+          "finish": "J01",
+          "quantity": 1,
+          "placed": true,
+          "note": "Proposed size; confirm product and clearances before ordering"
+        }
+      ],
+      "lightingPlan": [
+        {
+          "x": 1.2,
+          "z": 0.95,
+          "code": "L03",
+          "label": "General light"
+        }
+      ],
+      "joineryNote": "Final joinery sizes follow shell measurement, hardware selection and a signed workshop drawing.",
+      "serviceNote": "Positions shown are coordination proposals. The installer must confirm circuit design, cable sizes, mounting heights, protection and service access."
+    },
+    {
+      "id": "stairs",
+      "name": "Staircase",
+      "dimensions": "7′6″ dimension shown; not a tread or rise schedule",
+      "bounds": [
+        7.73294,
+        6.0948,
+        11.92711,
+        8.38515
+      ],
+      "title": "A safe connection",
+      "finishes": "Pale stone treads, contrasting nosings and a simple metal handrail.",
+      "furniture": [
+        "The PDF stair footprint is retained. The model leaves the flight as a plan outline because floor height and risers are not supplied.",
+        "Provide a continuous handrail, slip-resistant treads and low-level lighting after the architect fixes the stair section.",
+        "Future upper floor stays in the brief; no new outdoor staircase or entrance is added."
+      ],
+      "lighting": "Low-level step lighting and two-way switching.",
+      "services": "Foundation/plinth designed by an engineer for a future floor, as confirmed by user. Coordinate the existing structural drawings, stair geometry, headroom, future entry and service risers before continuing construction.",
+      "climate": "Architect to coordinate future upper-floor access and weather protection.",
+      "source": "Uploaded BANSI VERMA_010920.pdf · page 1 · vector wall faces and printed room label",
+      "status": "Interior proposal · architectural footprint from PDF · verify at the shell",
+      "pdfBounds": [
+        365.51,
+        384.74,
+        522.74,
+        470.6
+      ],
+      "issues": [],
+      "finishCodes": [
+        "P01",
+        "P02",
+        "F01",
+        "J01"
+      ],
+      "furnitureItems": [],
+      "lightingPlan": [
+        {
+          "x": 0.4,
+          "z": 1.7,
+          "code": "L06",
+          "label": "Step-light provision"
+        }
+      ],
+      "joineryNote": "Final joinery sizes follow shell measurement, hardware selection and a signed workshop drawing.",
+      "serviceNote": "Positions shown are coordination proposals. The installer must confirm circuit design, cable sizes, mounting heights, protection and service access."
     }
   ],
   "budget": [
@@ -468,14 +1247,154 @@
       "use": "Small textile accents; optional"
     }
   ],
-  "sleepingNote": "Parents and both babies in the main bedroom, using separate infant sleep spaces; grandparents aged 55–65 in Bedroom 1. The model shows two cots, not bunk beds. Final cot sizes, safe placement and access must be checked before ordering. Bathroom access stays through the main bedroom/dressing at your request; maintain a clear night route and account for privacy.",
+  "sleepingNote": "Parents and both babies share the family bedroom; grandparents use the other bedroom. Two separate infant sleep spaces remain in the purchase scope. Cot placement is deliberately held for a safe measured fit check. Keep the PDF route through the family bedroom and dressing to the bathroom.",
   "pending": [
-    "Right-side neighbour: gap is at least 3 feet; one-floor neighbour confirmed; measure actual height, roof profile and exact gap; front, rear and left are confirmed open by user.",
-    "Measured plinth, wall thickness, door and window sizes. Ceiling height is undecided; discuss a roughly 10-foot clear height with the architect.",
-    "Exact cot products and dimensions; keep cots away from curtains, cords and AC draughts.",
-    "Confirm clothing, linen and household storage requirements.",
-    "AC is confirmed for both bedrooms only. Confirm AC type, heat-load-based capacities, remaining appliance quantities and local itemised quotations; all purchases are new.",
-    "Safe night route to the retained bathroom; no shared-access alteration approved.",
-    "Coordinate the planned upper floor, staircase and services with the engineer’s existing structural drawings."
+    "Resolve the store, study and living-room label-versus-drawing discrepancies with the architect.",
+    "Confirm parent-bed width and exact outer sizes of both cots; approve a safe arrangement with both access routes clear.",
+    "Choose hob fuel, fridge size, oven/microwave needs and washing-machine location.",
+    "Confirm how clothing and linen storage will be split between the two families.",
+    "Confirm ceiling, window sill/head and door details from architectural elevations; no heights are supplied in this PDF.",
+    "Obtain itemised Jammu quotations, including labour, taxes, delivery, installation and warranty."
+  ],
+  "materials": [
+    {
+      "code": "P01",
+      "name": "Warm ivory",
+      "hex": "#F1EDE3",
+      "application": "Main interior walls",
+      "spec": "Low-sheen washable paint; approve an actual sample on a dry, prepared wall.",
+      "care": "Wipe gently; fix moisture before repainting."
+    },
+    {
+      "code": "P02",
+      "name": "Chalk white",
+      "hex": "#FAF8F1",
+      "application": "Ceilings",
+      "spec": "Matt ceiling finish. Plain ceiling is the default; no invented beam concealment.",
+      "care": "Keep access to drivers and service points."
+    },
+    {
+      "code": "F01",
+      "name": "Soft stone",
+      "hex": "#C6C1B7",
+      "application": "Dry-area floors",
+      "spec": "Matte porcelain proposal. Select slip performance, module and grout from samples; no quantity until the shell is checked.",
+      "care": "Neutral cleaner; protect edges during fit-out."
+    },
+    {
+      "code": "F02",
+      "name": "Wet-area stone",
+      "hex": "#AAA99F",
+      "application": "Bathroom floor",
+      "spec": "Wet slip performance and drain slopes to be specified as a system. Colour alone does not establish safety.",
+      "care": "Clean soap residue; inspect grout and seals."
+    },
+    {
+      "code": "J01",
+      "name": "Pale oak",
+      "hex": "#C5A57C",
+      "application": "Dry joinery",
+      "spec": "Oak-tone laminate or veneer proposal. Confirm core grade, emissions, edges, hardware and warranty.",
+      "care": "Dry-wipe edges; avoid standing water."
+    },
+    {
+      "code": "J02",
+      "name": "Ivory wet-zone joinery",
+      "hex": "#E5DFCF",
+      "application": "Kitchen + vanity",
+      "spec": "Moisture-appropriate documented board grade, sealed cuts, raised or protected base and service access. Approve supplier specification.",
+      "care": "Ventilate and repair leaks promptly."
+    },
+    {
+      "code": "S01",
+      "name": "Light mineral surface",
+      "hex": "#DBD7CC",
+      "application": "Counter + altar",
+      "spec": "Light stone family; choose the actual surface after stain, heat and cleaning demonstrations. No brand or performance assumed.",
+      "care": "Use heat trivets and product-specific cleaning."
+    },
+    {
+      "code": "T01",
+      "name": "Oatmeal textile",
+      "hex": "#D8CDB9",
+      "application": "Sofas + headboards",
+      "spec": "Removable washable or documented easy-clean upholstery, tested on a physical sample.",
+      "care": "Vacuum and follow the fabric label."
+    },
+    {
+      "code": "T02",
+      "name": "Muted sage",
+      "hex": "#94A18B",
+      "application": "Limited textile accents",
+      "spec": "Small accents keep the palette light. Match in daylight and under the selected lamps.",
+      "care": "Check colourfastness before wet cleaning."
+    },
+    {
+      "code": "M01",
+      "name": "Brushed metal",
+      "hex": "#9A9E96",
+      "application": "Fittings + mirror details",
+      "spec": "Consistent finish with documented wet-area suitability where needed.",
+      "care": "Avoid abrasive pads."
+    },
+    {
+      "code": "C01",
+      "name": "Soft white",
+      "hex": "#EFEDE4",
+      "application": "Appliances + sanitaryware",
+      "spec": "Appliance and fixture sizes remain product reservations, not endorsed selections.",
+      "care": "Follow manufacturer instructions."
+    }
+  ],
+  "lightingSchedule": [
+    {
+      "code": "L01",
+      "name": "Soft general light",
+      "temperature": "3000 K",
+      "control": "Dimmable where supported; bedroom control at entry and bed",
+      "status": "Point locations proposed; output and count need calculation"
+    },
+    {
+      "code": "L02",
+      "name": "Dining pendant",
+      "temperature": "3000 K",
+      "control": "Own switch/dimmer; coordinate with fan sweep",
+      "status": "Height and glare to be checked with table and users"
+    },
+    {
+      "code": "L03",
+      "name": "Clear task / storage light",
+      "temperature": "3500–4000 K",
+      "control": "Separate task switching",
+      "status": "CRI 90+ proposed for mirror and colour-critical tasks"
+    },
+    {
+      "code": "L04",
+      "name": "Desk / counter task light",
+      "temperature": "4000 K",
+      "control": "Local switch; accessible driver",
+      "status": "Avoid glare and shadows; no lux performance claim"
+    },
+    {
+      "code": "L05",
+      "name": "Altar accent",
+      "temperature": "2700–3000 K",
+      "control": "Separate switch; driver accessible",
+      "status": "Keep fixtures clear of heat and flame"
+    },
+    {
+      "code": "L06",
+      "name": "Low night light",
+      "temperature": "2700 K",
+      "control": "Two-way or optional sensor control",
+      "status": "Trial brightness; avoid direct view from beds"
+    },
+    {
+      "code": "L07",
+      "name": "Wet-area light",
+      "temperature": "4000 K",
+      "control": "Switch outside wet zone where appropriate",
+      "status": "Installer to select zone-appropriate ingress protection"
+    }
   ]
 }

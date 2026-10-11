@@ -1,225 +1,210 @@
-# Your Jammu house: current design brief
+# Jammu House — interior design review 02
 
-## Confirmed requirements
+Updated 11 October 2026. Architectural source: **BANSI VERMA_010920.pdf**, page 1. Only this uploaded PDF supplies the plan geometry. Porch and verandas appear only as context in the unaltered source drawing; the designed scope is the 11 indoor spaces.
 
-- Location: Jammu.
-- Stage: only the plinth is built.
-- Style: light, modern, minimal.
-- Household: four adults and two babies; grandparents aged 55–65.
-- Main room: parents and babies, with two separate cots; Bedroom 1: grandparents.
-- Kitchen, puja and bathroom access stay as in the latest supplied picture.
-- Front SE approximately 121°, rear NW approximately 301°; not a surveyed true-north bearing.
-- A future upper floor is planned; the user confirms an engineer designed foundation/plinth for it; drawings have not been independently reviewed.
-- No fixed budget; include furniture, kitchen, paint, lighting and appliances.
+## Confirmed family and site brief
 
-## Whole-home schedule
+- Jammu; light, modern and minimal. Only the plinth is built.
+- Four adults and two babies: one six months old, the second expected. Parents and babies share the family bedroom; grandparents aged 55–65 use the other bedroom. Neither grandparent reports difficulty walking or using steps.
+- Keep kitchen and puja positions and the bathroom route through the family bedroom/dressing. No common-bathroom doorway is introduced.
+- One person usually cooks (new answer, 11 October 2026).
+- Another floor later. The user confirms the foundation/plinth was engineer-designed for it; those structural drawings have not been reviewed here.
+- All furniture and appliances new. AC in both bedrooms only; equipment type and load-based capacities remain open.
+- No fixed budget. The unquoted interior allowance is ₹16.96–29.79 lakh including 15% contingency. Shell construction, exterior works, design fees and statutory approvals are outside it.
+- Front SE approximately 121°, from the user's compass image, not the PDF or a survey. Right/SW neighbour has one floor with a reported gap of at least three feet. Front, rear and left are open; actual heights and setbacks are not measured.
+- Ceiling height is undecided. 3.0 m is the display assumption, not a construction instruction.
 
-### Bedroom 1 — 12′ × 11′
+## Accuracy and remaining decisions
 
-Warm ivory walls, a soft sage headboard and pale oak bedside tables.
+The 40-foot dimension calibrates CAD vector coordinates. The model preserves the PDF wall footprints instead of mixing revisions or forcing contradictory labels to fit. The store is labelled 8 feet deep but drawn about 6 feet 9 inches deep. Study depth differs by about 50 mm; living width by about 37 mm. Obtain architect clarification and verify the shell before fabrication.
 
-Furniture: 1500 × 2000 mm bed; check at least 750 mm passage at accessible sides and preserve the route to the door. Two compact bedside tables, blackout curtain and a shallow chest. Parents report no difficulty with walking or steps; retain convenient switches, night lighting and clear floors. Storage shared with dressing room; add a wardrobe only after checking circulation.
+Both parent-bed width and cot products are still open. The display uses a proposed 1524 × 2032 mm bed footprint with a 1130 mm headboard. Two separate cots remain in the purchase plan; their locations are deliberately not approved or placed in the 3D model because the earlier arrangement conflicted with the dressing route. Resolve window/cord separation, caregiver access and both dressing/store routes using actual cot products.
 
-Lighting: 3000 K dimmable ceiling light; reading lamps with separate switches.
+Furniture reservations are proposals; envelope and overlap checks do not certify door swings, accessibility, occupied-chair movement or product installation clearances. The PDF does not supply door swings, window elevations, a stair section, electrical loads or plumbing drawings. Those are technical coordination tasks before procurement.
 
-Services: AC confirmed for this bedroom: dedicated circuit and protection sized by the electrician; equipment type and capacity pending. Coordinate power, outdoor heat rejection and condensate drainage before plaster. Keep bedside sockets and switches convenient.
-
-Climate: Rear/NW side is open, as confirmed by user. Preserve the rear window and provide adjustable exterior shade for late summer sun, insect screens and controllable curtains. Ventilation depends on actual openings and outdoor conditions.
-
-### Study — 6′7½″ × 6′9″
-
-Ivory, light oak desk and a small sage pinboard.
-
-Furniture: 1200 × 550 mm desk at the side wall, facing across the room. Shallow shelves above desk; leave a clear door swing. Ergonomic chair; avoid a full-depth bed in this compact room.
-
-Lighting: 4000 K desk light, 3000 K ambient; control glare on screens.
-
-Services: Desk sockets, data conduit and router route before plaster.
-
-Climate: Open rear/NW side offers a possible daylight and ventilation route. The plan labels a vent; architect to confirm its size and whether a suitable glazed opening fits the approved wall design.
-
-### Main bedroom — 12′ × 11′
-
-Warm ivory, pale oak and a textured stone-colour headboard.
-
-Furniture: 1500 × 2000 mm parent bed with headboard at the rear wall. Two separate baby cots (illustrative outer footprint 700 × 1300 mm each) along the side wall; verify product sizes and clear passages. Firm, flat, empty infant sleep surfaces; no adult-bed or bunk-bed assumption. Keep cots away from windows, cords and direct AC airflow.
-
-Lighting: 3000 K dimmable light; low-level night light toward bathroom.
-
-Services: AC confirmed for the parents’ and babies’ bedroom. Choose unit position and adjustable airflow to avoid direct draughts at both cots. Coordinate a dedicated circuit, outdoor heat rejection and condensate drainage; type and load-based capacity remain pending.
-
-Climate: Rear/NW side is open. Use adjustable exterior shade and blackout lining; preserve useful daylight. Screen operable windows and keep the babies’ cots away from cords, windows and direct airflow.
-
-### Dressing — 5′6″ × 7′
-
-Ivory cabinet fronts, light oak handles and a full-height mirror.
-
-Furniture: 600 mm deep wardrobe on ONE side; opposing full-depth wardrobes are too tight. Prefer sliding doors where the final wall length allows. Drawers below, seasonal storage above; allow access to loft.
-
-Lighting: 3500–4000 K vertical mirror light, CRI 90 or higher.
-
-Services: One grooming socket outside wet zone; ventilate enclosed cupboards.
-
-Climate: Right/SW neighbour has one floor, separated by at least 3 feet, as reported. Actual height and roof profile are unknown, so shade cannot yet be quantified. Use cupboard ventilation and moisture-aware joinery.
-
-### Bathroom — 5′6″ × 11′1½″
-
-Warm stone slip-resistant tile, ivory ceiling and brushed stainless fittings.
-
-Furniture: Vanity near entry, WC in middle, shower at far end. Use a glazed shower screen only after door and service clearances are measured. Accessible use may require a wider doorway and a revised layout.
-
-Lighting: 4000 K mirror task lighting; wet-area rated fixtures chosen by installer.
-
-Services: Provide bathroom exhaust to a confirmed outdoor discharge point, with a roof route considered if the side gap is obstructed; do not exhaust into an enclosed gap or another room. Coordinate duct, geyser circuit, earthing and wet-area fittings before construction.
-
-Climate: One-floor neighbour on the right/SW side, with a reported gap of at least 3 feet. The drawing places the bathroom window here. Check actual sill levels, privacy, usable daylight and the permitted opening; floor count and gap alone do not establish effective ventilation. Waterproofing and a flood test remain required.
-
-### Store — 7′6″ × 8′
-
-Washable ivory walls and modular oak-tone shelving.
-
-Furniture: 450 mm deep shelves along two walls; maintain a central aisle. Label seasonal, cleaning and pantry storage separately. Secure heavy items low; cleaning chemicals away from food.
-
-Lighting: 3500–4000 K bright ceiling light.
-
-Services: One general socket and provision for future utility needs after plumbing review.
-
-Climate: No sealed damp corners; use a vent and an inspectable plinth.
+## Room sheets
 
 ### Living & dining — 18′9″ × 15′
 
 Ivory walls, light stone floor, oak furniture and sage textiles.
 
-Furniture: 2100 mm sofa along the NE-side inner wall. 1500 × 850 mm dining table for four to six; confirm occupied-chair clearances. Low TV console at stair-side wall; keep the route to every room open.
+- 2100 mm sofa along the NE-side inner wall.
+- 1500 × 850 mm dining table for four to six; confirm occupied-chair clearances.
+- Low TV console at stair-side wall; keep the route to every room open.
 
 Lighting: 3000 K ambient and dining pendant on separate dimmers.
 
 Services: No AC requested here. Provide fan points with locations and quantities coordinated to room geometry, pendant lights and dining/seating. Preserve TV/data conduits and seating-area sockets.
 
-Climate: Front/SE, rear/NW and left/NE sides are open, as confirmed by user. Plan controllable ventilation between suitable openings on these sides, subject to actual sizes, door positions, privacy, air quality and outdoor temperature. Do not use the bathroom as a ventilation path.
+Joinery: Final joinery sizes follow shell measurement, hardware selection and a signed workshop drawing.
 
-### Staircase — Landing width shown 7′6″
-
-Pale stone treads, contrasting nosings and a simple metal handrail.
-
-Furniture: Geometry shown is illustrative; risers, treads, landings and headroom need a measured stair design. Continuous handrail; avoid slippery polished stone. Under-stair storage must leave services and circulation accessible.
-
-Lighting: Low-level step lighting and two-way switching.
-
-Services: Foundation/plinth designed by an engineer for a future floor, as confirmed by user. Coordinate the existing structural drawings, stair geometry, headroom, future entry and service risers before continuing construction.
-
-Climate: Architect to coordinate future upper-floor access and weather protection.
+Finish codes: P01, P02, F01, J01.
 
 ### Drawing room — 10′9″ × 11′
 
 Ivory walls, oatmeal sofa, light oak and one sage chair.
 
-Furniture: Compact 1800–2100 mm sofa, two occasional seats if clearances permit. Rounded coffee table and low console; avoid bulky corner sofas. Sheer plus blackout curtains at the SE front window.
+- Compact 1800–2100 mm sofa, two occasional seats if clearances permit.
+- Rounded coffee table and low console; avoid bulky corner sofas.
+- Sheer plus blackout curtains at the SE front window.
 
 Lighting: 3000 K layered light; one floor lamp rather than a heavy false ceiling.
 
 Services: No AC requested here. Provide a ceiling fan point, general sockets and TV/data provision if needed; keep fan sweep clear of lights and curtains.
 
-Climate: Front/SE side is open toward the road. Preserve controllable morning daylight and coordinate an exterior overhang from actual window geometry; use sheer and lined curtains for road-facing privacy.
+Joinery: Final joinery sizes follow shell measurement, hardware selection and a signed workshop drawing.
+
+Finish codes: P01, P02, F01, J01.
+
+### Kitchen — 8′ × 7′
+
+Ivory wall-cabinet front, pale oak base fronts and a light stone worktop.
+
+- L-shaped 600 mm-deep counters for one main cook; no island.
+- Keep the hob on the right-hand counter and sink on the front counter as a service proposal. Confirm manufacturer separation, landing areas and the hood route.
+- A 600 × 650 mm refrigerator reservation at the left of the entrance leaves about 1178 mm to the opposite counter; door opening, ventilation and appliance cut-outs remain to be checked.
+
+Lighting: 4000 K under-cabinet task strips plus a ceiling light.
+
+Services: For one main cook. Coordinate sink/waste, filtered-water point, fridge, hob fuel choice and hood exhaust. No circuit ratings or gas route are selected without appliance data. Place accessible isolation outside hot/wet zones. Do not discharge the hood into another room.
+
+Joinery: Proposed base-counter height 900 mm. Right run 1450 mm; front run 1838 mm to the corner return. 600 mm nominal depth. Drawer divisions, corner access, countertop joints, sink bowl and hob clearances need the selected appliances and workshop drawings. No cabinet is added over KW.
+
+Finish codes: P01, F01, J02, S01, M01.
 
 ### Puja — 4′ × 5′
 
 Warm ivory, a light stone altar and an oak shelf.
 
-Furniture: Shallow altar shelf against back wall, with closed lower storage. Keep the opening and floor clear for seated use. Use a heat-safe tray and ventilation if using a flame.
+- Shallow altar shelf against back wall, with closed lower storage.
+- Keep the opening and floor clear for seated use.
+- Use a heat-safe tray and ventilation if using a flame.
 
 Lighting: 2700–3000 K concealed light with accessible driver.
 
 Services: One protected light circuit; no loose wiring beside lamps or incense.
 
-Climate: Puja stays in the location shown in your latest plan; no directional religious claim is made.
+Joinery: Proposed 1000 W × 350 D × 650 H mm altar cabinet with a 450 mm-deep high-level shelf omitted until flame/ventilation use is confirmed. Keep the small floor area open.
 
-### Kitchen — 8′ × 7′
+Finish codes: P01, P02, F01, J01.
 
-Ivory upper cabinets, pale oak lower fronts and a light stone worktop.
+### Family bedroom — 12′ × 11′
 
-Furniture: L-shaped 600 mm deep counters; final appliance sizes decide usable working space. Sink on window leg, hob on side leg; refrigerator at entrance only if clear route remains. Use drawers below; avoid a bulky island in this room.
+Warm ivory, pale oak and a textured stone-colour headboard.
 
-Lighting: 4000 K under-cabinet task strips plus a ceiling light.
+- 1524 × 2032 mm parent bed proposal, retaining the PDF headboard direction. Final bed width is awaiting your choice.
+- Two separate baby cots are included in the item list, but their positions are held for a measured fit check. The previous side-wall placement obstructed the dressing route.
+- Keep dressing and store access open. No cot is shown as approved in the 3D room; product dimensions and safe placement must be resolved first.
 
-Services: Separate appliance circuits as required. Route the hood to a confirmed outdoor outlet or coordinated roof termination; do not assume a right-side exit is usable beside the neighbour. Keep the duct accessible for cleaning.
+Lighting: 3000 K dimmable light; low-level night light toward bathroom.
 
-Climate: Use sealed exterior-grade plywood at wet cabinet zones. Open front/SE space provides a possible hood discharge direction, subject to duct routing and outlet clearances; do not assume the side gap is suitable.
+Services: AC confirmed for the parents’ and babies’ bedroom. Choose unit position and adjustable airflow to avoid direct draughts at both cots. Coordinate a dedicated circuit, outdoor heat rejection and condensate drainage; type and load-based capacity remain pending.
 
-### Porch — 13′9″ × 17′6″
+Joinery: Final joinery sizes follow shell measurement, hardware selection and a signed workshop drawing.
 
-Light exterior walls, warm-grey outdoor tile and simple planters.
+Finish codes: P01, P02, F01, J01, T01.
 
-Furniture: Keep the vehicle turning and door-opening area clear. Place shoe/parcel bench outside vehicle sweep; check real vehicle dimensions. Drain away from entrance; use a slip-resistant exterior finish.
+### Grandparents’ bedroom — 12′ × 11′
 
-Lighting: Warm outdoor wall lights with weather-rated fittings.
+Warm ivory walls, a soft sage headboard and pale oak bedside tables.
 
-Services: Weather-rated socket; EV conduit provision only after supply and load study.
+- 1524 × 2032 mm bed proposal, retaining the west-side headboard direction shown in the PDF.
+- Two compact bedside tables; no loose rug on the night route.
+- A shallow chest for daily clothing. Full hanging storage is in the shared dressing area; wardrobe allocation is still to be agreed.
 
-Climate: Front/SE is open toward the road. Coordinate entry shade and rain protection. The one-floor right/SW neighbour, separated by at least 3 feet, may affect privacy and shade; its actual height and gap still need measurement.
+Lighting: 3000 K dimmable ceiling light; reading lamps with separate switches.
 
-### Front veranda — 13′ × 6′9″
+Services: AC confirmed for this bedroom: dedicated circuit and protection sized by the electrician; equipment type and capacity pending. Coordinate power, outdoor heat rejection and condensate drainage before plaster. Keep bedside sockets and switches convenient.
 
-Light walls, stone-tone outdoor flooring and a small oak-tone bench.
+Joinery: Final joinery sizes follow shell measurement, hardware selection and a signed workshop drawing.
 
-Furniture: One compact bench only if the approach remains clear. Use washable cushions and outdoor-rated hardware. Step-free entry levels should be agreed before construction.
+Finish codes: P01, P02, F01, J01, T02.
 
-Lighting: 3000 K outdoor light; shield from glare toward road.
+### Dressing — 5′6″ × 7′
 
-Services: Doorbell/camera conduit and exterior light control.
+Ivory cabinet fronts, light oak handles and a full-height mirror.
 
-Climate: Protect the SE threshold from driven rain; coordinate slab slope with drainage.
+- One 600 mm-deep wardrobe run against the rear wall, where storage hatching appears in the PDF.
+- Clear central route from the family bedroom to the bathroom; do not place cabinets beside both doorways.
+- Sliding fronts proposed; internal hanging, drawer and loft allocation still to be agreed.
 
-### Side veranda — 5′ × 15′ (existing Rev 2 plan)
+Lighting: 3500–4000 K vertical mirror light, CRI 90 or higher.
 
-Ivory masonry, stone pavers and restrained planting.
+Services: One grooming socket outside wet zone; ventilate enclosed cupboards.
 
-Furniture: Keep service and walking access clear. Small movable chairs; avoid permanent enclosure without an updated building plan. Planting must not trap moisture at walls.
+Joinery: Proposed 1600 W × 600 D × 2400 H mm wardrobe. Two sliding fronts, one long-hanging bay, one double-hanging bay and lower drawers. Internal allocation and ventilation are pending; rear wall position follows the PDF hatch.
 
-Lighting: Soft outdoor light and one shielded pathway fixture.
+Finish codes: P01, P02, F01, J01.
 
-Services: Outdoor socket if needed; keep cable routes above standing-water risks.
+### Bathroom — 5′6″ × 11′1½″
 
-Climate: Left/NE side is open, as confirmed by user. Preserve this softer-light edge for screened, controllable openings and shaded seating; architect to verify actual setbacks and drainage.
+Warm stone slip-resistant tile, ivory ceiling and brushed stainless fittings.
 
-## Budget
+- 800 × 450 mm vanity near the dressing entry, WC in the middle and a 900 mm-deep shower zone at the far end.
+- Wet/dry division is proposed; screen opening, drain, waterproofing build-up and fixture clearances need a coordinated bathroom drawing.
+- Bathroom access remains exactly via the dressing area; no new common doorway is introduced.
 
-Broad, unquoted interior allowances: ₹1475000–₹2590000 before contingency; ₹1696250–₹2978500 with 15% contingency. Includes two cots. Building shell, external windows/doors, site works, design fees and approvals are separate. Obtain measured civil and interior BOQs and local itemised quotations.
+Lighting: 4000 K mirror task lighting; wet-area rated fixtures chosen by installer.
 
-## Before construction
+Services: Provide bathroom exhaust to a confirmed outdoor discharge point, with a roof route considered if the side gap is obstructed; do not exhaust into an enclosed gap or another room. Coordinate duct, geyser circuit, earthing and wet-area fittings before construction.
 
-1. Architect reconciles the plinth, room dimensions, boundary, setbacks, doors/windows, heights and stairs.
-2. Coordinate climate envelope, roof insulation, shade, drainage and waterproofing.
-3. Prepare lighting and electrical point schedules, load/protection design and plumbing/ventilation routes.
-4. Measure the finished shell before releasing furniture and joinery orders.
-5. Approve material samples, quotations, waterproofing and service tests.
+Joinery: Final joinery sizes follow shell measurement, hardware selection and a signed workshop drawing.
 
-## Model limits
+Finish codes: P02, F02, J02, S01, M01.
 
-Image-traced conceptual model. Room labels carry drawing dimensions; mesh positions are approximate and are not reconciled survey geometry. Ceiling assumed at 3.0 m. Infant furniture models are not manufacturing specifications.
+### Study — 6′7½″ × 6′9″
 
-Research limits: secondary-source climate table; primary IMD retrieval and YouTube review remain outstanding. See RESEARCH.md.
+Ivory, light oak desk and a small sage pinboard.
 
-Future-floor coordination: coordinate with the existing engineer-designed foundation/plinth and structure and reserve stair headroom, access and service risers.
+- 1200 × 550 mm desk with one chair and a shallow shelf.
+- Keep the D2 entry clear. The PDF labels the rear opening V; a full-height picture window is not assumed.
+- The printed depth differs from the vector drawing by about 50 mm; check before desk fabrication.
 
-## Site update: neighbour on the right
+Lighting: 4000 K desk light, 3000 K ambient; control glare on screens.
 
-User reports a neighbour on the plan’s right/SW side, separated by 3 feet or more. This is a lower bound, not a measured exact setback. The latest user correction identifies a one-floor neighbour. Actual neighbour height and roof profile are not measured. The user confirms front, rear and left are open; their exact setbacks are not measured. No neighbouring building volume is invented in the model. Check bathroom daylight, privacy and ventilation, plus hood/exhaust outlets and outdoor equipment, against the actual site.
+Services: Desk sockets, data conduit and router route before plaster.
 
-Ventilation refinement: coordinate operable front, rear and left-side openings for controllable ventilation without routing bathroom air through the bedrooms. Actual airflow and shade performance require measured opening geometry and site assessment.
+Joinery: Final joinery sizes follow shell measurement, hardware selection and a signed workshop drawing.
 
-## Ceiling height
+Finish codes: P01, P02, F01, J01.
 
-The user confirms it is not decided yet. The model stays at a 3.0 m display assumption. Discuss about 10 feet of clear height with the architect, coordinated with the engineer’s beam/slab design, stair headroom and future floor levels. This is a design suggestion, not an approved construction dimension.
+### Store — 7′6″ × 8′
 
-## Parents’ mobility
+Washable ivory walls and modular oak-tone shelving.
 
-The user reports neither parent has difficulty walking or using steps. No mobility impairment is assumed. Retain unobstructed passages, convenient controls, night lighting, a continuous stair handrail and slip-resistant wet-area floors.
+- Two 400 mm-deep shelf runs proposed along the side and rear.
+- Use the smaller drawn depth for this fit study, keeping the doorway open.
+- The 8-foot label disagrees with the drawn 6-foot-9-inch depth. No shelf order until the architect resolves it.
 
-## Purchase scope
+Lighting: 3500–4000 K bright ceiling light.
 
-The user confirms all furniture and appliances will be bought new. Retain full purchase allowances for two adult beds and mattresses, two new baby cots and suitable mattresses, living/drawing seating, six-seat dining and study furniture. Appliance allowance includes a new fridge, hob/hood, washing machine, TV and AC; two bedroom AC units are confirmed; capacities, remaining quantities and product choices remain to be confirmed. No reuse saving is assumed. Existing broad allowances already cover new purchases, so this confirmation does not itself justify increasing them. Obtain local itemised quotations before committing.
+Services: One general socket and provision for future utility needs after plumbing review.
 
-## Cooling scope
+Joinery: Final joinery sizes follow shell measurement, hardware selection and a signed workshop drawing.
 
-AC is confirmed for both bedrooms only, with two units. Equipment type and capacity remain unselected. Drawing room and lobby use fans and controllable ventilation. Cooling performance is not guaranteed without a room heat-load calculation covering windows, roof insulation, ceiling height, occupancy and outdoor conditions. Plan circuits, outdoor heat rejection and condensate drainage before plaster; keep direct airflow away from the infant cots. No numerical saving is claimed because the previous appliance range had no fixed AC count.
+Finish codes: P01, P02, F01, J01.
+
+### Staircase — 7′6″ dimension shown; not a tread or rise schedule
+
+Pale stone treads, contrasting nosings and a simple metal handrail.
+
+- The PDF stair footprint is retained. The model leaves the flight as a plan outline because floor height and risers are not supplied.
+- Provide a continuous handrail, slip-resistant treads and low-level lighting after the architect fixes the stair section.
+- Future upper floor stays in the brief; no new outdoor staircase or entrance is added.
+
+Lighting: Low-level step lighting and two-way switching.
+
+Services: Foundation/plinth designed by an engineer for a future floor, as confirmed by user. Coordinate the existing structural drawings, stair geometry, headroom, future entry and service risers before continuing construction.
+
+Joinery: Final joinery sizes follow shell measurement, hardware selection and a signed workshop drawing.
+
+Finish codes: P01, P02, F01, J01.
+
+## Next decisions
+
+- Resolve the store, study and living-room label-versus-drawing discrepancies with the architect.
+- Confirm parent-bed width and exact outer sizes of both cots; approve a safe arrangement with both access routes clear.
+- Choose hob fuel, fridge size, oven/microwave needs and washing-machine location.
+- Confirm how clothing and linen storage will be split between the two families.
+- Confirm ceiling, window sill/head and door details from architectural elevations; no heights are supplied in this PDF.
+- Obtain itemised Jammu quotations, including labour, taxes, delivery, installation and warranty.

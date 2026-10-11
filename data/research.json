@@ -100,6 +100,18 @@
   },
   "references": [
     {
+      "title": "What to expect from an interior designer",
+      "url": "https://www.houzz.in/professionals/interior-designers-and-decorators/probr0-bo~t_26677",
+      "status": "Professional hiring guidance read · 11 Oct 2026",
+      "finding": "Houzz asks clients to establish scope, budget, material samples, illustrations, a work schedule, progress meetings and site inspections. Applied here: a recorded brief, separate room sheets, finish codes, an item list and visible review decisions. A website cannot replace site inspection or project management."
+    },
+    {
+      "title": "Beautiful Homes — interior service presentation",
+      "url": "https://www.asianpaints.com/services/interior-design-solutions.html",
+      "status": "Official service page read · 11 Oct 2026",
+      "finding": "Asian Paints presents room-specific interiors, modular kitchen/wardrobe choices, customization and 3D visualization before purchase. Applied here: room-by-room exploration and coordinated material/item schedules. This is a presentation reference, not a product endorsement, price quote or claim of local service availability."
+    },
+    {
       "title": "Jammu: the yearly climate",
       "url": "https://en.wikipedia.org/wiki/Jammu#Climate",
       "status": "Monthly table read · secondary source",
@@ -130,22 +142,10 @@
       "finding": "The Delhi mandir uses symmetry, warm concealed light, marble and carved wood. Applied here: symmetry and warm task light. Heavy ornament is simplified for your compact 4 by 5 foot puja and minimal preference."
     },
     {
-      "title": "Indian interior projects",
-      "url": "https://www.archdaily.com/search/projects/categories/interiors/country/india",
-      "status": "Category index read · projects pending",
-      "finding": "India interior category index is accessible; project results need separate review. It is a discovery source, not evidence for dimensions, construction details or a Jammu-specific thermal design."
-    },
-    {
       "title": "YouTube: compact Indian homes",
-      "url": "https://www.youtube.com/results?search_query=small+indian+home+interior+light+minimal+storage",
+      "url": "https://www.youtube.com/@Buildofy/videos",
       "status": "Videos not reviewed · access still blocked",
-      "finding": "Direct YouTube pages and video metadata requests returned proxy 403 on 11 October 2026. The link remains a search prompt, not a watched or endorsed video. No design claim in this site is attributed to an unseen video."
-    },
-    {
-      "title": "Colour and thermal comfort",
-      "url": "../docs/RESEARCH.md",
-      "status": "Design reasoning · no product endorsement",
-      "finding": "Light interiors support brightness. Exterior solar reflectance, insulation, shading, ventilation and humidity control determine thermal performance; paint colour alone is not a cooling system."
+      "finding": "The Buildofy channel request returned a network proxy 403 again on 11 October 2026. No video was watched or transcript reviewed. This is a channel for your own browsing; no dimensions or design claims are attributed to it."
     },
     {
       "title": "Safe cot placement for your babies",
@@ -163,5 +163,17 @@
     "winterSolsticeSunriseAzimuthDeg": 118.2,
     "winterSolsticeSunsetAzimuthDeg": 241.8,
     "interpretation": "Approximate summer sunset aligns with the NW rear; winter sunrise is near the SE front. This supports adjustable shading rather than permanently closing rear glazing. Actual obstruction survey is required."
-  }
+  },
+  "architecturalSource": {
+    "name": "BANSI VERMA_010920.pdf",
+    "url": "assets/architectural_plan.pdf",
+    "sha256": "2c22e21673e9bd704036734eb310a27f706488516e390dbe4e8248f21b1d5fd3",
+    "priority": "Sole architectural source, as requested by user",
+    "notes": "Three room-label discrepancies documented in plan.json. Uploaded compass image supplies orientation only; no other plan revision supplies geometry."
+  },
+  "researchLimits": [
+    "YouTube and BIID/RIBA/NKBA pages could not be retrieved from this environment. Do not claim video or guidance review for them.",
+    "Professional delivery references are accessible Houzz guidance and the official Asian Paints service page.",
+    "Climate values remain the previously read secondary-source 1991–2020 table; primary IMD verification is outstanding."
+  ]
 }
