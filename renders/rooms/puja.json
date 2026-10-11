@@ -1,0 +1,36 @@
+{
+  "view": "puja",
+  "room": "puja",
+  "sourcePdfSha256": "2c22e21673e9bd704036734eb310a27f706488516e390dbe4e8248f21b1d5fd3",
+  "planSha256": "e306b9b752b21df7c21ec8267b4368c508e47e5e5855ee052b71637e17f341f2",
+  "homeSha256": "e779e8040ddb241d1cfb06b29b9db58358c5ce3d8b1feb05a889c47c825baf37",
+  "scriptSha256": "1e70448736184adc0e85cf80583467aeb88ead21d530bd1c26ea315ee76c409a",
+  "cameraLocalXYZ": [
+    0.6,
+    0.14,
+    1.48
+  ],
+  "targetLocalXYZ": [
+    0.6,
+    1.25,
+    1.1
+  ],
+  "lensMm": 21,
+  "panorama": false,
+  "evening": false,
+  "samples": 24,
+  "dimensions": [
+    1500,
+    1050
+  ],
+  "renderer": "Blender 4.3.2 / Cycles CPU",
+  "geometry": "All 32 PDF wall footprints retained. Shared placed furniture reservations; no cots placed.",
+  "proposals": "3 m ceiling; 2.2 m doorway heads/frames and closed leaves within existing PDF gaps, swings not selected; window heights; finishes; light positions; decorative furniture detailing; textiles and accessories. No measured photometric simulation or product endorsement.",
+  "finishing": {
+    "denoiser": "Open Image Denoise 1.4.3, linear RGB RT filter",
+    "sourcePngSha256": "527d25da01c315abfbbe80bc06c409977a54de3d10fd92ba0984957afbe7bb9f",
+    "webpSha256": "6f40209b2239c4b1cf7ebb4f843bf1b3394dc78f39dcc82c97c3cdc621b72b14",
+    "quality": 90,
+    "generativeEdits": false
+  }
+}

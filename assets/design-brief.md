@@ -1,4 +1,4 @@
-# Jammu House — interior design review 02
+# Jammu House — interior design review 03
 
 Updated 11 October 2026. Architectural source: **BANSI VERMA_010920.pdf**, page 1. Only this uploaded PDF supplies the plan geometry. Porch and verandas appear only as context in the unaltered source drawing; the designed scope is the 11 indoor spaces.
 
@@ -61,12 +61,12 @@ Finish codes: P01, P02, F01, J01.
 Ivory wall-cabinet front, pale oak base fronts and a light stone worktop.
 
 - L-shaped 600 mm-deep counters for one main cook; no island.
-- Keep the hob on the right-hand counter and sink on the front counter as a service proposal. Confirm manufacturer separation, landing areas and the hood route.
+- A fixed three-burner gas hob and a separate fixed single-zone induction unit on the right counter; sink on the front counter. The two product reservations have 190 mm between them, subject to manufacturer approval.
 - A 600 × 650 mm refrigerator reservation at the left of the entrance leaves about 1178 mm to the opposite counter; door opening, ventilation and appliance cut-outs remain to be checked.
 
 Lighting: 4000 K under-cabinet task strips plus a ceiling light.
 
-Services: For one main cook. Coordinate sink/waste, filtered-water point, fridge, hob fuel choice and hood exhaust. No circuit ratings or gas route are selected without appliance data. Place accessible isolation outside hot/wet zones. Do not discharge the hood into another room.
+Services: For one main cook, with BOTH cooking units fixed in the counter: three gas burners and one induction zone. Coordinate gas supply/isolation, induction circuit and ventilation beneath the unit, sink/waste, filtered water, fridge and externally ducted extraction. Circuit ratings, duct size and gas route require chosen product instructions. Place accessible isolation outside hot/wet zones; do not discharge the hood into another room.
 
 Joinery: Proposed base-counter height 900 mm. Right run 1450 mm; front run 1838 mm to the corner return. 600 mm nominal depth. Drawer divisions, corner access, countertop joints, sink bowl and hob clearances need the selected appliances and workshop drawings. No cabinet is added over KW.
 
@@ -204,7 +204,12 @@ Finish codes: P01, P02, F01, J01.
 
 - Resolve the store, study and living-room label-versus-drawing discrepancies with the architect.
 - Confirm parent-bed width and exact outer sizes of both cots; approve a safe arrangement with both access routes clear.
-- Choose hob fuel, fridge size, oven/microwave needs and washing-machine location.
+- Choose actual three-burner gas and single-zone induction models (both fixed), extractor, fridge size, oven/microwave needs and washing-machine location.
 - Confirm how clothing and linen storage will be split between the two families.
 - Confirm ceiling, window sill/head and door details from architectural elevations; no heights are supplied in this PDF.
 - Obtain itemised Jammu quotations, including labour, taxes, delivery, installation and warranty.
+
+
+## Latest cooking confirmation — 11 October 2026
+
+Confirmed: a fixed three-burner gas hob and a separate fixed single-zone induction unit, for one main cook. Rendered sizes are product reservations, not selected models or countertop cut-out instructions. A 190 mm proposed gap separates them; manufacturer rules, extraction and under-counter services must be resolved before fabrication.

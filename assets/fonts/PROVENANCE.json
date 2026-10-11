@@ -1,0 +1,16 @@
+[
+  {
+    "family": "CormorantGaramond",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/cormorantgaramond/",
+    "sourceSha256": "b20b7d9626dd956b2c5e558692ad328b1f19e3275e2782db4fa07670d83f35e0",
+    "license": "SIL Open Font License 1.1",
+    "subset": "Latin, punctuation, rupee, navigation arrows"
+  },
+  {
+    "family": "Manrope",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/",
+    "sourceSha256": "3ae11c49db0455a3cc33e37d380f20fdb8c7f8b41dc07625c177e3d87a9d6ae6",
+    "license": "SIL Open Font License 1.1",
+    "subset": "Latin, punctuation, rupee, navigation arrows"
+  }
+]

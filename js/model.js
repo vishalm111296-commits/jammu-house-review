@@ -118,19 +118,26 @@ export function createHouse(container, data, plan, onSelect) {
     } else if(['cabinet','wall-cabinet','media','wardrobe','counter','counter-hob','altar'].includes(f.kind)) {
       B(0,(h-.06)/2,0,w,h-.06,d,m);
       B(0,h-.025,0,w+.015,.05,d+.015, f.kind.startsWith('counter')||f.kind==='altar'?finishes.S01:m);
-      const frontAlongX=w>=d, frontZ=['wardrobe','wall-cabinet'].includes(f.kind)?d/2+.004:-d/2-.004, span=frontAlongX?w:d, n=Math.max(1,Math.round(span/.5));
+      const frontAlongX=w>=d, frontZ=(f.kind==='wardrobe'||(f.kind==='wall-cabinet'&&f.z<1.5))?d/2+.004:-d/2-.004, span=frontAlongX?w:d, n=Math.max(1,Math.round(span/.5));
       for(let i=1;i<n;i++) {
         const off=-span/2+i*span/n;
         B(frontAlongX?off:-w/2-.004,h/2,frontAlongX?frontZ:off,frontAlongX?.008:.006,h-.16,frontAlongX?.006:.008,finishes.F02);
       }
       if(f.kind==='wardrobe') {B(0,.09,d/2+.006,w-.06,.025,.014,dark);B(0,h-.05,d/2+.006,w-.06,.025,.014,dark);}
       if(f.kind==='media') {B(w/2-.03,1.15,0,.035,.68,d*.85,dark);B(w/2-.01,1.15,0,.008,.62,d*.79,mat('#24322e'));}
-      if(f.kind==='counter-hob') {
-        B(0,h+.02,-d*.14,w*.86,.025,.55,dark);
-        for(const dx of [-.12,.12])for(const dz of [-.14,.14])cyl(g,x+dx,h+.04,z-d*.14+dz,.074,.012,metal);
-        B(0,1.88,-d*.14,.55,.12,.62,metal);B(w*.27,2.14,-d*.14,.18,.45,.22,metal);
-      }
       if(f.kind==='altar') {B(0,1.10,d/2-.02,w*.90,.70,.025,ivory);cyl(g,x, h+.07,z,.10,.12,finishes.S01);}
+    } else if(f.kind==='gas-hob') {
+      B(0,.012,0,w,.024,d,dark);
+      for(const [dx,dz,r] of [[w*.12,-d*.27,.065],[w*.12,d*.27,.055],[-w*.18,0,.047]]) {
+        cyl(g,x+dx,.038,z+dz,r+.009,.020,metal);cyl(g,x+dx,.05,z+dz,r,.012,dark);
+        for(const off of [-.09,.09]) {B(dx+off,.07,dz,.024,.024,.20,dark);B(dx,.07,dz+off,.20,.024,.024,dark);}
+      }
+      for(const dz of [-d*.23,0,d*.23])cyl(g,x-w/2+.042,.043,z+dz,.019,.032,metal);
+    } else if(f.kind==='induction-hob') {
+      B(0,h/2,0,w,h,d,dark);
+      const ring=new THREE.Mesh(new THREE.TorusGeometry(.10,.0012,6,48),metal);ring.rotation.x=-Math.PI/2;ring.position.set(x,h+.002,z);g.add(ring);
+    } else if(f.kind==='extractor') {
+      B(0,.05,0,w,.10,d,metal);B(w/2-.11,(h+.1)/2,-d*.14,.22,h-.1,.28,metal);
     } else if(f.kind==='shelf'||f.kind==='shelving') {
       const ys=f.kind==='shelf'?[h/2]:[.16,.61,1.06,1.51,1.96];
       for(const y of ys)B(0,y,0,w,.035,d,wood);

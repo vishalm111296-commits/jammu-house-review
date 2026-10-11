@@ -1,4 +1,5 @@
-import { createHouse } from './model.js?v=pdf-review-02';
+import { createHouse } from './model.js?v=interiors-03';
+const roomFinishCodes=r=>[...new Set([...r.finishCodes,...r.furnitureItems.map(f=>f.finish)])];
 const $ = id => document.getElementById(id);
 const esc = value => String(value).replace(/[&<>"']/g,s=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s]));
 const money = n => '₹'+(n/100000).toFixed(2)+' lakh';
@@ -75,7 +76,7 @@ function renderStudio(){
   $('sheet-title').textContent=r.name;$('sheet-dimension').textContent=`${r.dimensions} · PDF label · ${r.issues.length?'dimension / layout review required':'furniture and heights proposed'}`;
   $('room-drawing').innerHTML=roomSVG(r,layer);
   $('drawing-key').innerHTML=`<span>${layer==='lighting'?'Faint furniture footprint':'Proposed furniture'}</span><span>PDF opening span</span><span>${layer==='lighting'?'Proposed light point':'Final products pending'}</span>`;
-  const finishChips='<div class="finish-chips">'+r.finishCodes.map(code=>{const m=data.materials.find(m=>m.code===code);return `<span class="finish-chip"><i style="background:${m.hex}"></i>${code} ${esc(m.name)}</span>`;}).join('')+'</div>';
+  const finishChips='<div class="finish-chips">'+roomFinishCodes(r).map(code=>{const m=data.materials.find(m=>m.code===code);return `<span class="finish-chip"><i style="background:${m.hex}"></i>${code} ${esc(m.name)}</span>`;}).join('')+'</div>';
   const held=r.furnitureItems.filter(f=>!f.placed);
   const layouts={
     furniture:`<p class="eyebrow">THE FURNITURE STORY</p><h4>${esc(r.title)}</h4><ul>${r.furniture.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>${held.map(f=>`<p class="hold-note"><b>${esc(f.code)} / ${f.quantity} items held for fit check.</b> ${esc(f.note)}</p>`).join('')}<div class="sheet-divider"><h4>Finish direction</h4><p>${esc(r.finishes)}</p>${finishChips}</div>`,
@@ -106,14 +107,14 @@ function renderReview(){
   function persist(){try{localStorage.setItem(storageKey,JSON.stringify(notes));return true;}catch{return false;}}
   $('review-form').addEventListener('submit',e=>{e.preventDefault();const text=$('review-note').value.trim();if(!text){$('review-status').textContent='Write a short note before saving.';return;}if(notes.length>=100){$('review-status').textContent='Download your notes, then remove older ones to make room.';return;}notes.push({room:$('review-room').value,text,created:new Date().toISOString()});const saved=persist();$('review-note').value='';paint();$('review-status').textContent=saved?'Saved on this device. Download your notes to share them in our chat.':'Browser storage is unavailable. Download your notes before closing this page.';});
   $('saved-notes').addEventListener('click',e=>{if(e.target.dataset.remove===undefined)return;notes.splice(Number(e.target.dataset.remove),1);const saved=persist();paint();$('review-status').textContent=saved?'Note removed from this device.':'Removed for this session; browser storage is unavailable.';});
-  $('export-review').addEventListener('click',()=>saveFile('jammu-interior-review-notes.json',JSON.stringify({project:'Jammu House',sourcePdfSha256:plan.source.sha256,edition:2,notes},null,2)));
+  $('export-review').addEventListener('click',()=>saveFile('jammu-interior-review-notes.json',JSON.stringify({project:'Jammu House',sourcePdfSha256:plan.source.sha256,edition:3,notes},null,2)));
   paint();
 }
 function renderPrintBook(){
-  const head='<div class="book-head"><b>JH / JAMMU HOUSE</b><span>INTERIOR DESIGN REVIEW 02 · 11 OCT 2026</span></div>';
+  const head='<div class="book-head"><b>JH / JAMMU HOUSE</b><span>INTERIOR DESIGN REVIEW 03 · 11 OCT 2026</span></div>';
   const foot='<p class="book-foot">PDF-derived horizontal footprint · proposed furniture, finishes and heights · not for construction or fabrication. Confirm dimensions at the shell and obtain coordinated technical drawings.</p>';
   const cover=`<article class="book-page">${head}<p class="eyebrow" style="margin-top:38px">YOUR FAMILY / YOUR PLAN / YOUR HOME</p><h1>The interior<br>of your everyday.</h1><p class="book-title-note">Eleven indoor spaces. A warm ivory, pale oak and soft stone palette. Room plans, furniture reservations, material and lighting intent, and the decisions still to settle.</p><img class="book-cover-plan" src="assets/source-plan.png" alt="Uploaded architectural plan"><p><b>Source:</b> BANSI VERMA_010920.pdf · page 1. Parents and two babies in the family bedroom; grandparents in the other bedroom. Kitchen, puja and bathroom access retained.</p>${foot}</article>`;
-  const pages=data.rooms.map((r,i)=>`<article class="book-page">${head}<h2>${String(i+1).padStart(2,'0')} / ${esc(r.name)}</h2><p>${esc(r.dimensions)} · printed PDF label · diagram dimensions are the scaled PDF footprint</p><div class="book-plan">${roomSVG(r)}</div><div class="book-columns"><div><h3>Layout & finishes</h3><p>${esc(r.finishes)}</p><ul>${r.furniture.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div><div><h3>Light & services</h3><p>${esc(r.lighting)}</p><p>${esc(r.services)}</p><p><b>Finish codes:</b> ${r.finishCodes.join(' · ')}</p></div></div>${issuesHtml(plan.issues.filter(x=>x.room===r.id))}${foot}</article>`).join('');
+  const pages=data.rooms.map((r,i)=>`<article class="book-page">${head}<h2>${String(i+1).padStart(2,'0')} / ${esc(r.name)}</h2><p>${esc(r.dimensions)} · printed PDF label · diagram dimensions are the scaled PDF footprint</p><div class="book-plan">${roomSVG(r)}</div><div class="book-columns"><div><h3>Layout & finishes</h3><p>${esc(r.finishes)}</p><ul>${r.furniture.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div><div><h3>Light & services</h3><p>${esc(r.lighting)}</p><p>${esc(r.services)}</p><p><b>Finish codes:</b> ${roomFinishCodes(r).join(' · ')}</p></div></div>${issuesHtml(plan.issues.filter(x=>x.room===r.id))}${foot}</article>`).join('');
   const materialPage=`<article class="book-page">${head}<h2>The material schedule</h2><table class="schedule-table"><thead><tr><th>Code / material</th><th>Application</th><th>Specification to approve</th></tr></thead><tbody>${data.materials.map(m=>`<tr><td>${m.code} / ${esc(m.name)}</td><td>${esc(m.application)}</td><td>${esc(m.spec)}</td></tr>`).join('')}</tbody></table><h2>Lighting intent</h2><table class="schedule-table"><thead><tr><th>Code / purpose</th><th>Temperature</th><th>Before sign-off</th></tr></thead><tbody>${data.lightingSchedule.map(l=>`<tr><td>${l.code} / ${esc(l.name)}</td><td>${esc(l.temperature)}</td><td>${esc(l.status)}</td></tr>`).join('')}</tbody></table>${foot}</article>`;
   const costPage=`<article class="book-page">${head}<h2>The cost & decision plan</h2><p>Indicative interior allowance: ${$('budget-total').textContent}, including 15% contingency. All purchases are new. These are unquoted planning allowances, not a supplier offer.</p><table class="schedule-table"><thead><tr><th>Category</th><th>Planning range</th><th>Basis</th></tr></thead><tbody>${data.budget.map(b=>`<tr><td>${esc(b.category)}</td><td>${money(b.low)}–${money(b.high)}</td><td>${esc(b.basis)}</td></tr>`).join('')}</tbody></table><p>Shell construction, roof, structural work, exterior openings, design fees and statutory approvals are excluded. Obtain a separate civil BOQ; only the plinth exists.</p><h3>Before design sign-off</h3><ul>${data.pending.map(p=>`<li>${esc(p)}</li>`).join('')}</ul><p>Original source SHA-256:<br><small>${plan.source.sha256}</small></p><p>Furniture CSV, full room sheets and research sources: <a href="https://vishalm111296-commits.github.io/jammu-house-review/">Open the review website</a>.</p>${foot}</article>`;
   $('print-book').innerHTML=cover+pages+materialPage+costPage;
@@ -170,10 +171,12 @@ async function init(){
     const note=document.createElement('p');note.className='fallback';note.textContent='3D is unavailable on this device. The original PDF and all room design sheets are ready to explore.';$('viewport').append(note);
     for(const id of ['iso','top','room-view','walls','night','download'])$(id).disabled=true;
   }
+  const requestedRoom=new URLSearchParams(location.search).get('room');
+  if(data.rooms.some(r=>r.id===requestedRoom))choose(requestedRoom);
   window.homeReady=true;
 }
 try{
-  const responses=await Promise.all(['home','research','plan'].map(n=>fetch(`data/${n}.json?v=pdf-review-02`)));
+  const responses=await Promise.all(['home','research','plan'].map(n=>fetch(`data/${n}.json?v=interiors-03`)));
   if(responses.some(r=>!r.ok))throw new Error('Design data could not be loaded');
   [data,research,plan]=await Promise.all(responses.map(r=>r.json()));
   await init();

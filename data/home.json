@@ -51,7 +51,18 @@
     "sourceSha256": "2c22e21673e9bd704036734eb310a27f706488516e390dbe4e8248f21b1d5fd3",
     "scope": "Inside the house only; 11 indoor spaces",
     "kitchenUse": "One person usually cooks, confirmed by user on 11 October 2026",
-    "bedPreference": "Awaiting 5-foot versus 6-foot bed choice; 1524 × 2032 mm illustrative bed footprint"
+    "bedPreference": "Awaiting 5-foot versus 6-foot bed choice; 1524 × 2032 mm illustrative bed footprint",
+    "cookingEquipment": {
+      "gas": {
+        "installation": "Fixed in the countertop",
+        "burners": 3
+      },
+      "induction": {
+        "installation": "Separate fixed unit in the countertop",
+        "zones": 1
+      },
+      "status": "Confirmed by user; actual products, cut-outs, clearances and extractor selection pending"
+    }
   },
   "rooms": [
     {
@@ -368,11 +379,12 @@
       "finishes": "Ivory wall-cabinet front, pale oak base fronts and a light stone worktop.",
       "furniture": [
         "L-shaped 600 mm-deep counters for one main cook; no island.",
-        "Keep the hob on the right-hand counter and sink on the front counter as a service proposal. Confirm manufacturer separation, landing areas and the hood route.",
-        "A 600 × 650 mm refrigerator reservation at the left of the entrance leaves about 1178 mm to the opposite counter; door opening, ventilation and appliance cut-outs remain to be checked."
+        "A fixed three-burner gas hob and a separate fixed single-zone induction unit on the right counter; sink on the front counter. The two product reservations have 190 mm between them, subject to manufacturer approval.",
+        "A 600 × 650 mm refrigerator reservation at the left of the entrance leaves about 1178 mm to the opposite counter; door opening, ventilation and appliance cut-outs remain to be checked.",
+        "A 1400 mm ivory upper-cabinet run on the solid front wall, with a proposed 650 mm gap above the 900 mm worktop; it stops before KW."
       ],
       "lighting": "4000 K under-cabinet task strips plus a ceiling light.",
-      "services": "For one main cook. Coordinate sink/waste, filtered-water point, fridge, hob fuel choice and hood exhaust. No circuit ratings or gas route are selected without appliance data. Place accessible isolation outside hot/wet zones. Do not discharge the hood into another room.",
+      "services": "For one main cook, with BOTH cooking units fixed in the counter: three gas burners and one induction zone. Coordinate gas supply/isolation, induction circuit and ventilation beneath the unit, sink/waste, filtered water, fridge and externally ducted extraction. Circuit ratings, duct size and gas route require chosen product instructions. Place accessible isolation outside hot/wet zones; do not discharge the hood into another room.",
       "climate": "Use sealed exterior-grade plywood at wet cabinet zones. Open front/SE space provides a possible hood discharge direction, subject to duct routing and outlet clearances; do not assume the side gap is suitable.",
       "source": "Uploaded BANSI VERMA_010920.pdf · page 1 · vector wall faces and printed room label",
       "status": "Interior proposal · architectural footprint from PDF · verify at the shell",
@@ -408,7 +420,7 @@
         {
           "code": "KB-02",
           "label": "Right base-cabinet run",
-          "kind": "counter-hob",
+          "kind": "counter",
           "x": 1.838,
           "z": 0.68,
           "w": 0.6,
@@ -462,6 +474,66 @@
           "quantity": 1,
           "placed": true,
           "note": "Proposed underside 2000 mm above finished floor; confirm fridge ventilation and access. No cupboard is placed across KW."
+        },
+        {
+          "code": "KU-02",
+          "label": "Front upper-cabinet run",
+          "kind": "wall-cabinet",
+          "x": 0.03,
+          "z": 1.78,
+          "w": 1.4,
+          "d": 0.33,
+          "h": 0.75,
+          "base": 1.55,
+          "finish": "J02",
+          "quantity": 1,
+          "placed": true,
+          "note": "Ivory upper cabinets proposed on the solid wall left of KW. Underside 1550 mm, top 2300 mm; confirm worktop reach and cabinet hardware. The opening starts at local x≈1524 mm; the cabinet ends at 1430 mm."
+        },
+        {
+          "quantity": 1,
+          "placed": true,
+          "code": "GH-01",
+          "label": "Fixed three-burner gas hob reservation",
+          "kind": "gas-hob",
+          "x": 1.888,
+          "z": 0.78,
+          "w": 0.5,
+          "d": 0.65,
+          "h": 0.085,
+          "base": 0.9,
+          "finish": "M01",
+          "note": "Generic 650 × 500 mm surface reservation, with controls facing the aisle; NOT a cut-out size or selected product. Confirm orientation, heat clearances, stone edge distances, gas access and separation from induction before fabrication."
+        },
+        {
+          "quantity": 1,
+          "placed": true,
+          "code": "IH-01",
+          "label": "Fixed single-zone induction reservation",
+          "kind": "induction-hob",
+          "x": 1.988,
+          "z": 1.62,
+          "w": 0.3,
+          "d": 0.3,
+          "h": 0.015,
+          "base": 0.9,
+          "finish": "M01",
+          "note": "Generic 300 × 300 mm glass-top reservation; NOT a cut-out size or selected product. 190 mm gap to the gas reservation is a proposed fit, not a certified minimum. Confirm under-counter ventilation, circuit, cookware space and manufacturer gas-adjacency rules."
+        },
+        {
+          "quantity": 1,
+          "placed": true,
+          "code": "EX-01",
+          "label": "Cooking-run extractor reservation",
+          "kind": "extractor",
+          "x": 1.938,
+          "z": 0.74,
+          "w": 0.5,
+          "d": 1.2,
+          "h": 1.15,
+          "base": 1.8,
+          "finish": "M01",
+          "note": "Proposed 1200 mm-wide extraction envelope across both cooking reservations, lower edge 1800 mm above floor. Actual hood, installation height above gas supports, capture, duct route and discharge must be designed to appliance instructions; no airflow rating selected."
         }
       ],
       "lightingPlan": [
@@ -478,7 +550,7 @@
           "label": "Counter task light"
         }
       ],
-      "joineryNote": "Proposed base-counter height 900 mm. Right run 1450 mm; front run 1838 mm to the corner return. 600 mm nominal depth. Drawer divisions, corner access, countertop joints, sink bowl and hob clearances need the selected appliances and workshop drawings. No cabinet is added over KW.",
+      "joineryNote": "Proposed base-counter height 900 mm. Right run 1450 mm; front run 1838 mm to the corner return. 600 mm nominal depth. Drawer divisions, corner access, countertop joints, sink bowl and hob clearances need the selected appliances and workshop drawings. No cabinet is added over KW. Front upper cabinets: 1400 W × 330 D × 750 H mm, underside 1550 mm. Keep the source KW opening clear; approve workshop elevations and hardware before manufacture. Two separate fixed cooking units now confirmed: three-burner gas plus single-zone induction. Generic surface reservations only; never cut the stone to these illustrative dimensions. Keep gas/induction services accessible and coordinate drawer depth below both units.",
       "serviceNote": "Positions shown are coordination proposals. The installer must confirm circuit design, cable sizes, mounting heights, protection and service access."
     },
     {
@@ -1199,7 +1271,7 @@
       "category": "Appliances & cooling",
       "low": 220000,
       "high": 370000,
-      "basis": "All new: fridge, hob, hood, washing machine, TV and TWO bedroom AC units; type/capacities and remaining quantities pending, no reuse credit"
+      "basis": "All new: fridge, separate built-in three-burner gas hob and single-zone induction unit, extractor, washing machine, TV and TWO bedroom AC units. Unquoted planning allowance; selected products, ductwork, installation and capacities may change it. No reuse credit."
     },
     {
       "category": "Curtains & soft furnishings",
@@ -1251,7 +1323,7 @@
   "pending": [
     "Resolve the store, study and living-room label-versus-drawing discrepancies with the architect.",
     "Confirm parent-bed width and exact outer sizes of both cots; approve a safe arrangement with both access routes clear.",
-    "Choose hob fuel, fridge size, oven/microwave needs and washing-machine location.",
+    "Choose actual three-burner gas and single-zone induction models (both fixed), extractor, fridge size, oven/microwave needs and washing-machine location.",
     "Confirm how clothing and linen storage will be split between the two families.",
     "Confirm ceiling, window sill/head and door details from architectural elevations; no heights are supplied in this PDF.",
     "Obtain itemised Jammu quotations, including labour, taxes, delivery, installation and warranty."
