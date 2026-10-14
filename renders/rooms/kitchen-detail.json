@@ -3,8 +3,8 @@
   "room": "kitchen",
   "sourcePdfSha256": "2c22e21673e9bd704036734eb310a27f706488516e390dbe4e8248f21b1d5fd3",
   "planSha256": "e306b9b752b21df7c21ec8267b4368c508e47e5e5855ee052b71637e17f341f2",
-  "homeSha256": "e779e8040ddb241d1cfb06b29b9db58358c5ce3d8b1feb05a889c47c825baf37",
-  "scriptSha256": "1e70448736184adc0e85cf80583467aeb88ead21d530bd1c26ea315ee76c409a",
+  "homeSha256": "915115d95f9cc1f10c5e1949f001bd480ebd61f53a92b45adb46fd3b969ec590",
+  "scriptSha256": "2220d4e27a0cf3947b58a91b548d9428dccd3a213f31cb5ea7a23dc29ebc6201",
   "cameraLocalXYZ": [
     1.5,
     0.25,
@@ -28,8 +28,8 @@
   "proposals": "3 m ceiling; 2.2 m doorway heads/frames and closed leaves within existing PDF gaps, swings not selected; window heights; finishes; light positions; decorative furniture detailing; textiles and accessories. No measured photometric simulation or product endorsement.",
   "finishing": {
     "denoiser": "Open Image Denoise 1.4.3, linear RGB RT filter",
-    "sourcePngSha256": "6e8965d4b70c42a14ddba09901dc56a2b96c8e5489ee472eacef56d9cc8e8f3a",
-    "webpSha256": "be1fa173206f9bf499882cb67f171014d7e8e1cc13e4b17c2a345d164c31ec14",
+    "sourcePngSha256": "d79d5b166edbb3e963246822e871085d38e6e4a0009f16506f37a8ecfdcac904",
+    "webpSha256": "8c9514bf7523515e97b0f229962f25234d2c4e337a48909e438ef21df1697577",
     "quality": 90,
     "generativeEdits": false
   }

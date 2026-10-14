@@ -46,22 +46,31 @@
       "capacity": "Not selected; calculate each bedroom heat load after shell, glazing and roof-insulation design",
       "placement": "Final unit and service positions require coordination; keep bedroom airflow away from the infant cots"
     },
-    "lastRequirementsUpdate": "11 October 2026",
+    "lastRequirementsUpdate": "12 October 2026",
     "sourcePdf": "BANSI VERMA_010920.pdf",
     "sourceSha256": "2c22e21673e9bd704036734eb310a27f706488516e390dbe4e8248f21b1d5fd3",
     "scope": "Inside the house only; 11 indoor spaces",
     "kitchenUse": "One person usually cooks, confirmed by user on 11 October 2026",
-    "bedPreference": "Awaiting 5-foot versus 6-foot bed choice; 1524 × 2032 mm illustrative bed footprint",
+    "bedPreference": "6-foot-wide bed confirmed by owner on 12 October 2026. Proposed overall frame envelope 1900 × 2100 mm; actual product and mattress length pending.",
     "cookingEquipment": {
       "gas": {
         "installation": "Fixed in the countertop",
-        "burners": 3
+        "burners": 3,
+        "fuel": "LPG cylinder, confirmed by owner; cylinder location and installation details pending"
       },
       "induction": {
         "installation": "Separate fixed unit in the countertop",
         "zones": 1
       },
       "status": "Confirmed by user; actual products, cut-outs, clearances and extractor selection pending"
+    },
+    "workingDrawings": "User confirms only the shared PDF is available.",
+    "plinthMatch": "User confirms the built plinth matches the PDF; measured site record not supplied.",
+    "hotWater": {
+      "type": "Electric geyser, confirmed by owner on 12 October 2026",
+      "capacity": "Pending household demand and selected product",
+      "location": "Pending coordinated wet-area and electrical layout",
+      "installation": "Selected manual, wall support, water pressure, relief discharge, electrical protection/isolation and maintenance access to be coordinated by installers"
     }
   },
   "rooms": [
@@ -628,15 +637,15 @@
       "title": "A room for a growing family",
       "finishes": "Warm ivory, pale oak and a textured stone-colour headboard.",
       "furniture": [
-        "1524 × 2032 mm parent bed proposal, retaining the PDF headboard direction. Final bed width is awaiting your choice.",
+        "6-foot-wide parent bed confirmed. A proposed 1900 × 2100 mm overall frame allowance retains the PDF headboard direction; choose the actual frame and mattress before ordering.",
         "Two separate baby cots are included in the item list, but their positions are held for a measured fit check. The previous side-wall placement obstructed the dressing route.",
-        "Keep dressing and store access open. No cot is shown as approved in the 3D room; product dimensions and safe placement must be resolved first."
+        "The larger frame is shifted toward the rear, clear of the original family-entry span. Approximately 1052 mm remains to the lower room face and 1500 mm at its foot. These geometric gaps are not approved circulation clearances. Resolve both cot positions and dressing/store access before bedroom fit-out."
       ],
       "lighting": "3000 K dimmable light; low-level night light toward bathroom.",
       "services": "AC confirmed for the parents’ and babies’ bedroom. Choose unit position and adjustable airflow to avoid direct draughts at both cots. Coordinate a dedicated circuit, outdoor heat rejection and condensate drainage; type and load-based capacity remain pending.",
       "climate": "Rear/NW side is open. Use adjustable exterior shade and blackout lining; preserve useful daylight. Screen operable windows and keep the babies’ cots away from cords, windows and direct airflow.",
       "source": "Uploaded BANSI VERMA_010920.pdf · page 1 · vector wall faces and printed room label",
-      "status": "Cot placement unresolved · bed size pending · keep the PDF access routes",
+      "status": "6-foot bed confirmed · frame size proposed · cot placement and circulation unresolved",
       "pdfBounds": [
         314.12,
         164.84,
@@ -656,24 +665,24 @@
       "furnitureItems": [
         {
           "code": "BED-02",
-          "label": "Parent bed",
+          "label": "Six-foot parent bed / frame reservation",
           "kind": "bed-west",
           "x": 0.06,
-          "z": 0.84,
-          "w": 2.032,
-          "d": 1.524,
+          "z": 0.4,
+          "w": 2.1,
+          "d": 1.9,
           "h": 1.13,
           "finish": "J01",
           "quantity": 1,
           "placed": true,
-          "note": "Illustrative overall size includes 1130 mm headboard; mattress top about 520 mm. Final product and bed width pending."
+          "note": "6-foot nominal bed width confirmed. Proposed overall frame allowance 1900 wide × 2100 long × 1130 high mm, not selected product dimensions; mattress length and frame details pending. Approximately 1052 mm remains to the lower room face in this arrangement; circulation and both cots are unresolved. The frame is shifted toward the rear to clear the PDF family-entry span; door swing and both cot positions still require coordination."
         },
         {
           "code": "BT-03",
           "label": "Compact bedside table",
           "kind": "cabinet",
           "x": 0.06,
-          "z": 0.34,
+          "z": 0.01,
           "w": 0.4,
           "d": 0.36,
           "h": 0.5,
@@ -920,7 +929,7 @@
         "Bathroom access remains exactly via the dressing area; no new common doorway is introduced."
       ],
       "lighting": "4000 K mirror task lighting; wet-area rated fixtures chosen by installer.",
-      "services": "Provide bathroom exhaust to a confirmed outdoor discharge point, with a roof route considered if the side gap is obstructed; do not exhaust into an enclosed gap or another room. Coordinate duct, geyser circuit, earthing and wet-area fittings before construction.",
+      "services": "Provide bathroom exhaust to a confirmed outdoor discharge point, with a roof route considered if the side gap is obstructed; do not exhaust into an enclosed gap or another room. Coordinate duct, geyser circuit, earthing and wet-area fittings before construction. Electric geyser confirmed by owner; capacity, location, nameplate load, mounting support, relief discharge and accessible service arrangements remain to be coordinated.",
       "climate": "One-floor neighbour on the right/SW side, with a reported gap of at least 3 feet. The drawing places the bathroom window here. Check actual sill levels, privacy, usable daylight and the permitted opening; floor count and gap alone do not establish effective ventilation. Waterproofing and a flood test remain required.",
       "source": "Uploaded BANSI VERMA_010920.pdf · page 1 · vector wall faces and printed room label",
       "status": "Interior proposal · architectural footprint from PDF · verify at the shell",
@@ -1322,7 +1331,7 @@
   "sleepingNote": "Parents and both babies share the family bedroom; grandparents use the other bedroom. Two separate infant sleep spaces remain in the purchase scope. Cot placement is deliberately held for a safe measured fit check. Keep the PDF route through the family bedroom and dressing to the bathroom.",
   "pending": [
     "Resolve the store, study and living-room label-versus-drawing discrepancies with the architect.",
-    "Confirm parent-bed width and exact outer sizes of both cots; approve a safe arrangement with both access routes clear.",
+    "Choose the actual 6-foot parent-bed frame and both cot products; demonstrate a safe arrangement with dressing and store routes clear.",
     "Choose actual three-burner gas and single-zone induction models (both fixed), extractor, fridge size, oven/microwave needs and washing-machine location.",
     "Confirm how clothing and linen storage will be split between the two families.",
     "Confirm ceiling, window sill/head and door details from architectural elevations; no heights are supplied in this PDF.",

@@ -99,7 +99,7 @@ export function createHouse(container, data, plan, onSelect) {
     if(f.kind==='bed-west') {
       B(0,.20,0,w,.30,d,wood); B(0,.41,0,w-.035,.18,d-.035,white);
       B(w*.19,.515,0,w*.58,.045,d-.04,m);
-      B(-w/2+.05,.59,0,.10,1.08,d+.03,wood);
+      B(-w/2+.05,.59,0,.10,1.08,d,wood);
       for(const dz of [-d*.245,d*.245]) B(-w/2+.35,.535,dz,.48,.105,d*.42,finishes.T01);
       for(const dz of [-d/2+.04,d/2-.04]) B(w*.05,.24,dz,w*.90,.04,.02,dark);
     } else if(f.kind==='sofa-west') {

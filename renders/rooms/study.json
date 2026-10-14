@@ -3,8 +3,8 @@
   "room": "study",
   "sourcePdfSha256": "2c22e21673e9bd704036734eb310a27f706488516e390dbe4e8248f21b1d5fd3",
   "planSha256": "e306b9b752b21df7c21ec8267b4368c508e47e5e5855ee052b71637e17f341f2",
-  "homeSha256": "e779e8040ddb241d1cfb06b29b9db58358c5ce3d8b1feb05a889c47c825baf37",
-  "scriptSha256": "1e70448736184adc0e85cf80583467aeb88ead21d530bd1c26ea315ee76c409a",
+  "homeSha256": "915115d95f9cc1f10c5e1949f001bd480ebd61f53a92b45adb46fd3b969ec590",
+  "scriptSha256": "2220d4e27a0cf3947b58a91b548d9428dccd3a213f31cb5ea7a23dc29ebc6201",
   "cameraLocalXYZ": [
     1.75,
     1.85,
@@ -28,8 +28,8 @@
   "proposals": "3 m ceiling; 2.2 m doorway heads/frames and closed leaves within existing PDF gaps, swings not selected; window heights; finishes; light positions; decorative furniture detailing; textiles and accessories. No measured photometric simulation or product endorsement.",
   "finishing": {
     "denoiser": "Open Image Denoise 1.4.3, linear RGB RT filter",
-    "sourcePngSha256": "5bef04b540cd453e742d9139477addf43ecfb0c95b6a159b48a8a37a11299885",
-    "webpSha256": "75672844813ea9d3185aa0d4bccdeb271ac620e2324343edac3e45a96f73d8c4",
+    "sourcePngSha256": "769186c02bb93119080c0a6b5400ca7aabdfcd7aab76ed8106bc945e58aa62ae",
+    "webpSha256": "f378ddc630bb7d2b590ab15f404bbf6cd457984f58fcb22de63c3ae242f332f3",
     "quality": 90,
     "generativeEdits": false
   }

@@ -1,0 +1,574 @@
+{
+  "edition": "DD-04",
+  "date": "12 October 2026",
+  "status": "Design development — not for construction",
+  "sourceSha256": "2c22e21673e9bd704036734eb310a27f706488516e390dbe4e8248f21b1d5fd3",
+  "confirmed": {
+    "workingDrawings": "User confirmed on 12 October 2026: only the shared PDF is available.",
+    "plinthSurvey": "User confirms the plinth matches the PDF; no measured site record supplied.",
+    "hotWater": "Electric geyser confirmed by the owner on 12 October 2026; capacity, location and product pending.",
+    "parentBed": "6-foot width confirmed; 1900 × 2100 mm frame allowance proposed, actual product pending.",
+    "gasFuel": "LPG cylinder, confirmed by the user on 12 October 2026; location and installation details pending."
+  },
+  "issues": [
+    {
+      "id": "R01",
+      "room": "all",
+      "title": "Record measured plinth and wall set-out",
+      "owner": "Architect / site surveyor",
+      "before": "Before walls and service sleeves",
+      "needed": "A dimensioned site check, diagonals, wall faces and the exact drawing revision used on site.",
+      "reason": "The owner confirms the built plinth matches this PDF. A measured site record is still needed to reconcile the drawing conflicts."
+    },
+    {
+      "id": "R02",
+      "room": "all",
+      "title": "Confirm levels, columns and beams",
+      "owner": "Architect + structural engineer",
+      "before": "Before wall and slab work",
+      "needed": "Coordinated structural plans, finished floor levels, beam depths, clear ceiling height and future-floor stair section.",
+      "reason": "The user reports an engineered foundation, but the drawings have not been supplied. No columns or beam penetrations may be inferred from this interior plan."
+    },
+    {
+      "id": "D01",
+      "room": "store",
+      "title": "Resolve the store depth conflict",
+      "owner": "Architect",
+      "before": "Before setting out the store walls",
+      "needed": "Confirm whether the 2438 mm printed depth or approximately 2057 mm drawn depth is intended; issue a revised drawing.",
+      "reason": "Difference is approximately 381 mm. The website preserves the drawn footprint."
+    },
+    {
+      "id": "D02",
+      "room": "study",
+      "title": "Resolve the study depth conflict",
+      "owner": "Architect",
+      "before": "Before setting out the study walls",
+      "needed": "Confirm the 2057 mm printed depth against the approximately 2108 mm drawn depth.",
+      "reason": "Do not stretch the model or order a desk from the conflicting labels."
+    },
+    {
+      "id": "D03",
+      "room": "lobby",
+      "title": "Resolve the living-room width conflict",
+      "owner": "Architect",
+      "before": "Before setting out internal walls",
+      "needed": "Confirm the 5715 mm printed width against the approximately 5752 mm drawn width.",
+      "reason": "The rounded drawing comparison is not a site measurement."
+    },
+    {
+      "id": "R03",
+      "room": "all",
+      "title": "Issue a complete opening schedule",
+      "owner": "Architect + window / door supplier",
+      "before": "Before door and window openings are built",
+      "needed": "Rough openings, frames, shutter sizes, sill/head levels, swings, ventilation and safety glazing where applicable.",
+      "reason": "The source has opening spans but no complete door/window height or swing schedule."
+    },
+    {
+      "id": "K01",
+      "room": "kitchen",
+      "title": "Select both fixed cooking appliances",
+      "owner": "Owner + kitchen supplier + installers",
+      "before": "Before electrical rough-in and worktop cutting",
+      "needed": "Exact three-burner gas hob and single-zone induction manuals, cut-outs, edge clearances, under-counter ventilation and service access.",
+      "reason": "The 190 mm illustrated separation and extractor reservation are proposals, not manufacturer-approved installation dimensions."
+    },
+    {
+      "id": "K02",
+      "room": "kitchen",
+      "title": "Coordinate gas and external extraction",
+      "owner": "Gas installer + kitchen supplier + architect",
+      "before": "Before service sleeves and cabinets",
+      "needed": "Gas source and accessible isolation, tested supply route, selected hood coverage, duct route and an allowed outdoor termination.",
+      "reason": "No cylinder position, gas pipe size, duct diameter or penetration through structure has been designed."
+    },
+    {
+      "id": "F01",
+      "room": "bed-main",
+      "title": "Prove the six-foot bed and two-cot arrangement",
+      "owner": "Owner + interior designer",
+      "before": "Before bedroom joinery and sockets",
+      "needed": "Chosen overall six-foot bed frame and both cot products; a measured layout retaining the dressing and store routes, caregiver access and separation from cords/windows.",
+      "reason": "Two cots are in purchase scope but are not placed or approved. Six-foot width is confirmed. The proposed 1900 × 2100 mm frame leaves about 1052 mm to the lower room face and 1500 mm at the foot; safe circulation is unresolved."
+    },
+    {
+      "id": "E01",
+      "room": "all",
+      "title": "Issue coordinated electrical drawings",
+      "owner": "Qualified electrical designer / electrician",
+      "before": "Before wiring and plaster",
+      "needed": "Appliance loads, board/circuits, protective devices, earthing, outlet and switch set-out, fan clearances, AC services and test requirements.",
+      "reason": "Lighting dots are intent only. They do not specify wiring, circuit ratings, cable sizes or installation heights."
+    },
+    {
+      "id": "P01",
+      "room": "bath",
+      "title": "Coordinate wet-area levels and plumbing",
+      "owner": "Architect + plumbing / waterproofing installers",
+      "before": "Before pipework and floor build-up",
+      "needed": "Selected sanitaryware and electric-geyser rough-ins, supply/waste/vent routes, pressure-relief discharge, drain positions, falls, finished levels, waterproofing system, thresholds and test method.",
+      "reason": "Fixture envelopes are proposals. Drainage and waterproofing construction details are not supplied."
+    },
+    {
+      "id": "J01",
+      "room": "all",
+      "title": "Approve measured joinery shop drawings",
+      "owner": "Interior designer + joinery supplier",
+      "before": "After shell measurement; before manufacture",
+      "needed": "Carcass/panel specifications, actual widths, clearances, hardware, hinges, drawer and door divisions, fixings, cut-outs and maintenance access.",
+      "reason": "The elevations in this issue show design envelopes, not cutting lists or fabrication approval."
+    }
+  ],
+  "services": [
+    {
+      "room": "kitchen",
+      "code": "KS01",
+      "item": "Three-burner gas hob / LPG cylinder",
+      "provision": "LPG cylinder supply, accessible isolation and ventilation",
+      "confirm": "LPG cylinder confirmed by owner. Cylinder location, approved regulator/connection, routing, ventilation and commissioning require the gas installer and selected hob manual. No cylinder location is approved.",
+      "status": "Design brief; set-out pending"
+    },
+    {
+      "room": "kitchen",
+      "code": "KS02",
+      "item": "Single-zone fixed induction",
+      "provision": "Electrical supply and under-counter ventilation",
+      "confirm": "Selected nameplate load, dedicated supply/protection requirements, isolation and drawer clearances.",
+      "status": "Design brief; set-out pending"
+    },
+    {
+      "room": "kitchen",
+      "code": "KS03",
+      "item": "Sink and filtered water",
+      "provision": "Water supply, accessible shut-off and trapped waste",
+      "confirm": "Sink/tap dimensions, filter product, waste route and final wall/floor service entries.",
+      "status": "Design brief; set-out pending"
+    },
+    {
+      "room": "kitchen",
+      "code": "KS04",
+      "item": "Refrigerator",
+      "provision": "Power and product ventilation space",
+      "confirm": "Actual fridge size, plug access, door swing and manufacturer side/top/rear clearances.",
+      "status": "Design brief; set-out pending"
+    },
+    {
+      "room": "kitchen",
+      "code": "KS05",
+      "item": "Extractor",
+      "provision": "Power and duct to an approved outdoor outlet",
+      "confirm": "Hood product, installation height, coverage of both units, duct losses, access and building opening approval.",
+      "status": "Design brief; set-out pending"
+    },
+    {
+      "room": "kitchen",
+      "code": "KS06",
+      "item": "Small-appliance work area",
+      "provision": "Accessible countertop outlets",
+      "confirm": "Your appliance list and simultaneous loads; socket location clear of heat and water, confirmed by electrical designer.",
+      "status": "Design brief; set-out pending"
+    },
+    {
+      "room": "bath",
+      "code": "BS01",
+      "item": "WC",
+      "provision": "Water isolation, soil connection and vent coordination",
+      "confirm": "Chosen pan/cistern, floor or wall outlet, rough-in and maintenance access; no outlet dimension assumed.",
+      "status": "Design brief; set-out pending"
+    },
+    {
+      "room": "bath",
+      "code": "BS02",
+      "item": "Vanity",
+      "provision": "Water, waste and mirror-light provision",
+      "confirm": "Chosen basin/tap, trap clearance, storage conflict and electrical wet-zone assessment.",
+      "status": "Design brief; set-out pending"
+    },
+    {
+      "room": "bath",
+      "code": "BS03",
+      "item": "Shower",
+      "provision": "Hot/cold supply, mixer, drain and waterproofing",
+      "confirm": "Mixer manual, waterproofing/threshold detail, floor falls, drain outlet and water test sequence.",
+      "status": "Design brief; set-out pending"
+    },
+    {
+      "room": "bath",
+      "code": "BS04",
+      "item": "Electric geyser and ventilation",
+      "provision": "Electric geyser confirmed; hot water, power and service access",
+      "confirm": "Capacity, selected product, mounting support, nameplate load, protection/isolation, pressure relief discharge and maintenance access require electrical/plumbing coordination. Location and ventilation details are not approved.",
+      "status": "Design brief; set-out pending"
+    },
+    {
+      "room": "bed-main",
+      "code": "MS-bed-main",
+      "item": "Bedroom AC",
+      "provision": "One AC for this room, confirmed by owner",
+      "confirm": "Heat-load calculation, equipment type/capacity, power, drain, refrigerant route and outdoor unit; avoid infant sleep positions.",
+      "status": "Design brief; set-out pending"
+    },
+    {
+      "room": "bed-main",
+      "code": "ES-bed-main",
+      "item": "Bedside and room controls",
+      "provision": "Accessible switching, charging and night-route light",
+      "confirm": "Final bed/cot layout, switch reach, cord management, fan/light coordination and circuit design.",
+      "status": "Design brief; set-out pending"
+    },
+    {
+      "room": "bed-left",
+      "code": "MS-bed-left",
+      "item": "Bedroom AC",
+      "provision": "One AC for this room, confirmed by owner",
+      "confirm": "Heat-load calculation, equipment type/capacity, power, drain, refrigerant route and outdoor unit; avoid infant sleep positions.",
+      "status": "Design brief; set-out pending"
+    },
+    {
+      "room": "bed-left",
+      "code": "ES-bed-left",
+      "item": "Bedside and room controls",
+      "provision": "Accessible switching, charging and night-route light",
+      "confirm": "Final bed/cot layout, switch reach, cord management, fan/light coordination and circuit design.",
+      "status": "Design brief; set-out pending"
+    },
+    {
+      "room": "lobby",
+      "code": "LS01",
+      "item": "TV and seating",
+      "provision": "Power, data and accessible cable route",
+      "confirm": "TV dimensions, furniture positions and socket heights; no AC requested.",
+      "status": "Design brief; set-out pending"
+    },
+    {
+      "room": "lobby",
+      "code": "LS02",
+      "item": "Dining and general comfort",
+      "provision": "Separate pendant/general controls and fan provision",
+      "confirm": "Occupied-chair clearances, fan sweep and pendant height; ceiling structure is unconfirmed.",
+      "status": "Design brief; set-out pending"
+    },
+    {
+      "room": "drawing",
+      "code": "DS01",
+      "item": "Guest seating",
+      "provision": "General sockets, fan/light controls; optional TV/data",
+      "confirm": "Confirm whether a second TV is wanted and coordinate curtain/fan clearances; no AC requested.",
+      "status": "Design brief; set-out pending"
+    },
+    {
+      "room": "study",
+      "code": "SS01",
+      "item": "Desk",
+      "provision": "Task light, power and data",
+      "confirm": "Actual computer/charging equipment, outlet reach and ventilation; verify the source depth conflict.",
+      "status": "Design brief; set-out pending"
+    },
+    {
+      "room": "dressing",
+      "code": "WS01",
+      "item": "Wardrobe and mirror",
+      "provision": "Mirror light and accessible drivers",
+      "confirm": "Wardrobe divisions, mirror positions and door access to bathroom; maintenance access.",
+      "status": "Design brief; set-out pending"
+    },
+    {
+      "room": "puja",
+      "code": "PS01",
+      "item": "Altar",
+      "provision": "Protected accent lighting with accessible driver",
+      "confirm": "Confirm flame/incense use, heat separation and ventilation before upper shelves or wiring.",
+      "status": "Design brief; set-out pending"
+    },
+    {
+      "room": "store",
+      "code": "ST01",
+      "item": "Storage",
+      "provision": "General light and accessible control",
+      "confirm": "Resolve room depth first; confirm stored items and any appliance loads.",
+      "status": "Design brief; set-out pending"
+    },
+    {
+      "room": "stairs",
+      "code": "SC01",
+      "item": "Future stair",
+      "provision": "Continuous lighting and switching intent",
+      "confirm": "Floor-to-floor levels, stair section, headroom, guardrail and final step arrangement from architect/engineer.",
+      "status": "Design brief; set-out pending"
+    }
+  ],
+  "drawings": [
+    {
+      "code": "A-101",
+      "room": "lobby",
+      "title": "Living & dining / furniture layout",
+      "view": "layout",
+      "status": "Coordination",
+      "basis": "PDF footprint + proposed furniture"
+    },
+    {
+      "code": "A-102",
+      "room": "drawing",
+      "title": "Drawing room / furniture layout",
+      "view": "layout",
+      "status": "Coordination",
+      "basis": "PDF footprint + proposed furniture"
+    },
+    {
+      "code": "A-103",
+      "room": "kitchen",
+      "title": "Kitchen / furniture layout",
+      "view": "layout",
+      "status": "Coordination",
+      "basis": "PDF footprint + proposed furniture"
+    },
+    {
+      "code": "A-104",
+      "room": "puja",
+      "title": "Puja / furniture layout",
+      "view": "layout",
+      "status": "Coordination",
+      "basis": "PDF footprint + proposed furniture"
+    },
+    {
+      "code": "A-105",
+      "room": "bed-main",
+      "title": "Family bedroom / furniture layout",
+      "view": "layout",
+      "status": "Coordination",
+      "basis": "PDF footprint + proposed furniture"
+    },
+    {
+      "code": "A-106",
+      "room": "bed-left",
+      "title": "Grandparents’ bedroom / furniture layout",
+      "view": "layout",
+      "status": "Coordination",
+      "basis": "PDF footprint + proposed furniture"
+    },
+    {
+      "code": "A-107",
+      "room": "dressing",
+      "title": "Dressing / furniture layout",
+      "view": "layout",
+      "status": "Coordination",
+      "basis": "PDF footprint + proposed furniture"
+    },
+    {
+      "code": "A-108",
+      "room": "bath",
+      "title": "Bathroom / furniture layout",
+      "view": "layout",
+      "status": "Coordination",
+      "basis": "PDF footprint + proposed furniture"
+    },
+    {
+      "code": "A-109",
+      "room": "study",
+      "title": "Study / furniture layout",
+      "view": "layout",
+      "status": "Coordination",
+      "basis": "PDF footprint + proposed furniture"
+    },
+    {
+      "code": "A-110",
+      "room": "store",
+      "title": "Store / furniture layout",
+      "view": "layout",
+      "status": "Coordination",
+      "basis": "PDF footprint + proposed furniture"
+    },
+    {
+      "code": "A-111",
+      "room": "stairs",
+      "title": "Staircase / furniture layout",
+      "view": "layout",
+      "status": "Coordination",
+      "basis": "PDF footprint + proposed furniture"
+    },
+    {
+      "code": "L-201",
+      "room": "lobby",
+      "title": "Living & dining / lighting intent",
+      "view": "lighting",
+      "status": "Intent only",
+      "basis": "Proposed light zones; no electrical set-out"
+    },
+    {
+      "code": "L-202",
+      "room": "drawing",
+      "title": "Drawing room / lighting intent",
+      "view": "lighting",
+      "status": "Intent only",
+      "basis": "Proposed light zones; no electrical set-out"
+    },
+    {
+      "code": "L-203",
+      "room": "kitchen",
+      "title": "Kitchen / lighting intent",
+      "view": "lighting",
+      "status": "Intent only",
+      "basis": "Proposed light zones; no electrical set-out"
+    },
+    {
+      "code": "L-204",
+      "room": "puja",
+      "title": "Puja / lighting intent",
+      "view": "lighting",
+      "status": "Intent only",
+      "basis": "Proposed light zones; no electrical set-out"
+    },
+    {
+      "code": "L-205",
+      "room": "bed-main",
+      "title": "Family bedroom / lighting intent",
+      "view": "lighting",
+      "status": "Intent only",
+      "basis": "Proposed light zones; no electrical set-out"
+    },
+    {
+      "code": "L-206",
+      "room": "bed-left",
+      "title": "Grandparents’ bedroom / lighting intent",
+      "view": "lighting",
+      "status": "Intent only",
+      "basis": "Proposed light zones; no electrical set-out"
+    },
+    {
+      "code": "L-207",
+      "room": "dressing",
+      "title": "Dressing / lighting intent",
+      "view": "lighting",
+      "status": "Intent only",
+      "basis": "Proposed light zones; no electrical set-out"
+    },
+    {
+      "code": "L-208",
+      "room": "bath",
+      "title": "Bathroom / lighting intent",
+      "view": "lighting",
+      "status": "Intent only",
+      "basis": "Proposed light zones; no electrical set-out"
+    },
+    {
+      "code": "L-209",
+      "room": "study",
+      "title": "Study / lighting intent",
+      "view": "lighting",
+      "status": "Intent only",
+      "basis": "Proposed light zones; no electrical set-out"
+    },
+    {
+      "code": "L-210",
+      "room": "store",
+      "title": "Store / lighting intent",
+      "view": "lighting",
+      "status": "Intent only",
+      "basis": "Proposed light zones; no electrical set-out"
+    },
+    {
+      "code": "L-211",
+      "room": "stairs",
+      "title": "Staircase / lighting intent",
+      "view": "lighting",
+      "status": "Intent only",
+      "basis": "Proposed light zones; no electrical set-out"
+    },
+    {
+      "code": "J-301",
+      "room": "kitchen",
+      "title": "Kitchen / counter elevations",
+      "view": "joinery",
+      "status": "Envelope only",
+      "basis": "Proposed heights and equipment; no fabrication detail"
+    },
+    {
+      "code": "J-302",
+      "room": "dressing",
+      "title": "Dressing / wardrobe envelope",
+      "view": "joinery",
+      "status": "Envelope only",
+      "basis": "Proposed heights and equipment; no fabrication detail"
+    },
+    {
+      "code": "J-303",
+      "room": "bath",
+      "title": "Bathroom / vanity envelope",
+      "view": "joinery",
+      "status": "Envelope only",
+      "basis": "Proposed heights and equipment; no fabrication detail"
+    }
+  ],
+  "missing": [
+    {
+      "code": "ARCH",
+      "title": "Verified architectural working plans",
+      "owner": "Architect / surveyor",
+      "needs": "Site dimensions, wall set-out, opening schedule and all levels",
+      "gate": [
+        "R01",
+        "R02",
+        "R03"
+      ]
+    },
+    {
+      "code": "STR",
+      "title": "Coordinated structural drawings",
+      "owner": "Structural engineer",
+      "needs": "Columns, beams, slabs and future floor / stair design",
+      "gate": [
+        "R02"
+      ]
+    },
+    {
+      "code": "ELEC",
+      "title": "Electrical power and reflected ceiling plans",
+      "owner": "Electrical designer + architect",
+      "needs": "Loads, circuits, protection, sockets, controls and coordinated ceiling",
+      "gate": [
+        "E01"
+      ]
+    },
+    {
+      "code": "PLUMB",
+      "title": "Plumbing and wet-area construction details",
+      "owner": "Plumbing designer + architect",
+      "needs": "Sanitary rough-ins, pipe routes, vents, falls, levels and waterproofing",
+      "gate": [
+        "P01"
+      ]
+    },
+    {
+      "code": "MECH",
+      "title": "AC, gas and extraction coordination",
+      "owner": "Specialist installers + architect",
+      "needs": "Selected appliances, rated services, routes, penetrations and maintenance",
+      "gate": [
+        "K01",
+        "K02",
+        "E01"
+      ]
+    },
+    {
+      "code": "JOIN",
+      "title": "Measured joinery shop drawings",
+      "owner": "Joinery supplier + designer",
+      "needs": "Panel build-ups, hardware, fixings, divisions and exact cut-outs",
+      "gate": [
+        "J01",
+        "K01",
+        "F01"
+      ]
+    },
+    {
+      "code": "COST",
+      "title": "Measured bill of quantities and supplier quotes",
+      "owner": "Quantity surveyor / contractors",
+      "needs": "Measured quantities, selected makes, rates, taxes, installation and exclusions",
+      "gate": [
+        "J01"
+      ]
+    }
+  ]
+}

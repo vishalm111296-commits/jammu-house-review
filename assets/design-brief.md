@@ -18,7 +18,7 @@ Updated 11 October 2026. Architectural source: **BANSI VERMA_010920.pdf**, page 
 
 The 40-foot dimension calibrates CAD vector coordinates. The model preserves the PDF wall footprints instead of mixing revisions or forcing contradictory labels to fit. The store is labelled 8 feet deep but drawn about 6 feet 9 inches deep. Study depth differs by about 50 mm; living width by about 37 mm. Obtain architect clarification and verify the shell before fabrication.
 
-Both parent-bed width and cot products are still open. The display uses a proposed 1524 × 2032 mm bed footprint with a 1130 mm headboard. Two separate cots remain in the purchase plan; their locations are deliberately not approved or placed in the 3D model because the earlier arrangement conflicted with the dressing route. Resolve window/cord separation, caregiver access and both dressing/store routes using actual cot products.
+The owner confirmed a 6-foot-wide parent bed on 12 October 2026. The model now reserves a proposed 1900 × 2100 mm overall frame with a 1130 mm headboard; exact frame and mattress dimensions remain open. Two separate cots remain in the purchase plan; their locations are deliberately not approved or placed in the 3D model because the earlier arrangement conflicted with the dressing route. Resolve window/cord separation, caregiver access and both dressing/store routes using actual cot products.
 
 Furniture reservations are proposals; envelope and overlap checks do not certify door swings, accessibility, occupied-chair movement or product installation clearances. The PDF does not supply door swings, window elevations, a stair section, electrical loads or plumbing drawings. Those are technical coordination tasks before procurement.
 
@@ -92,7 +92,7 @@ Finish codes: P01, P02, F01, J01.
 
 Warm ivory, pale oak and a textured stone-colour headboard.
 
-- 1524 × 2032 mm parent bed proposal, retaining the PDF headboard direction. Final bed width is awaiting your choice.
+- 6-foot-wide parent bed confirmed. Proposed overall frame 1900 × 2100 mm, retaining the PDF headboard direction; exact product pending. The larger reservation leaves approximately 1052 mm to the lower room face and 1500 mm at its foot; this is not a circulation approval.
 - Two separate baby cots are included in the item list, but their positions are held for a measured fit check. The previous side-wall placement obstructed the dressing route.
 - Keep dressing and store access open. No cot is shown as approved in the 3D room; product dimensions and safe placement must be resolved first.
 
@@ -203,7 +203,7 @@ Finish codes: P01, P02, F01, J01.
 ## Next decisions
 
 - Resolve the store, study and living-room label-versus-drawing discrepancies with the architect.
-- Confirm parent-bed width and exact outer sizes of both cots; approve a safe arrangement with both access routes clear.
+- Choose the actual 6-foot parent-bed frame and both cot products; demonstrate a safe arrangement with both access routes clear.
 - Choose actual three-burner gas and single-zone induction models (both fixed), extractor, fridge size, oven/microwave needs and washing-machine location.
 - Confirm how clothing and linen storage will be split between the two families.
 - Confirm ceiling, window sill/head and door details from architectural elevations; no heights are supplied in this PDF.

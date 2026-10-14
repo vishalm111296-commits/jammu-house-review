@@ -1,0 +1,19 @@
+{
+  "revision": "DD-04",
+  "status": "Not for construction",
+  "packagePages": 40,
+  "briefPages": 4,
+  "inputs": {
+    "assets/architectural_plan.pdf": "2c22e21673e9bd704036734eb310a27f706488516e390dbe4e8248f21b1d5fd3",
+    "data/home.json": "915115d95f9cc1f10c5e1949f001bd480ebd61f53a92b45adb46fd3b969ec590",
+    "data/plan.json": "e306b9b752b21df7c21ec8267b4368c508e47e5e5855ee052b71637e17f341f2",
+    "data/delivery.json": "b4004acde4471878227734b3deae291c33c86968541ecad4f4e18a09021e3487",
+    "js/drawings.js": "b3bd31a48d678b7fc396658cd27ef9ec6dba8c29222865346716f0b04e2fbac0",
+    "js/workspace.js": "f65d3be4e54e725a9ee870f61b401d6097a4d3902d8923bd36c1328651589fd8",
+    "css/workspace.css": "a9049825169570cf473a9da13309de2093a5970fd7757d01ed55bb612e8cd4eb"
+  },
+  "outputs": {
+    "coordination-package.pdf": "72fd3b5b989173d25923e6c12d8ba56b040cd4ed7c1a3e61b0aae40e583a4be7",
+    "architect-request-brief.pdf": "a2a944d8f5b3474a72f5c1fa5ed3d492aad856bca77b86312d8e7ee466887a5d"
+  }
+}

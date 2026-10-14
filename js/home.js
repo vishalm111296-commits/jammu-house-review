@@ -1,4 +1,4 @@
-import { createHouse } from './model.js?v=interiors-03';
+import { createHouse } from './model.js?v=interiors-04';
 const roomFinishCodes=r=>[...new Set([...r.finishCodes,...r.furnitureItems.map(f=>f.finish)])];
 const $ = id => document.getElementById(id);
 const esc = value => String(value).replace(/[&<>"']/g,s=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s]));
@@ -111,7 +111,7 @@ function renderReview(){
   paint();
 }
 function renderPrintBook(){
-  const head='<div class="book-head"><b>JH / JAMMU HOUSE</b><span>INTERIOR DESIGN REVIEW 03 · 11 OCT 2026</span></div>';
+  const head='<div class="book-head"><b>JH / JAMMU HOUSE</b><span>INTERIOR DESIGN REVIEW 04 · 11 OCT 2026</span></div>';
   const foot='<p class="book-foot">PDF-derived horizontal footprint · proposed furniture, finishes and heights · not for construction or fabrication. Confirm dimensions at the shell and obtain coordinated technical drawings.</p>';
   const cover=`<article class="book-page">${head}<p class="eyebrow" style="margin-top:38px">YOUR FAMILY / YOUR PLAN / YOUR HOME</p><h1>The interior<br>of your everyday.</h1><p class="book-title-note">Eleven indoor spaces. A warm ivory, pale oak and soft stone palette. Room plans, furniture reservations, material and lighting intent, and the decisions still to settle.</p><img class="book-cover-plan" src="assets/source-plan.png" alt="Uploaded architectural plan"><p><b>Source:</b> BANSI VERMA_010920.pdf · page 1. Parents and two babies in the family bedroom; grandparents in the other bedroom. Kitchen, puja and bathroom access retained.</p>${foot}</article>`;
   const pages=data.rooms.map((r,i)=>`<article class="book-page">${head}<h2>${String(i+1).padStart(2,'0')} / ${esc(r.name)}</h2><p>${esc(r.dimensions)} · printed PDF label · diagram dimensions are the scaled PDF footprint</p><div class="book-plan">${roomSVG(r)}</div><div class="book-columns"><div><h3>Layout & finishes</h3><p>${esc(r.finishes)}</p><ul>${r.furniture.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div><div><h3>Light & services</h3><p>${esc(r.lighting)}</p><p>${esc(r.services)}</p><p><b>Finish codes:</b> ${roomFinishCodes(r).join(' · ')}</p></div></div>${issuesHtml(plan.issues.filter(x=>x.room===r.id))}${foot}</article>`).join('');
@@ -176,7 +176,7 @@ async function init(){
   window.homeReady=true;
 }
 try{
-  const responses=await Promise.all(['home','research','plan'].map(n=>fetch(`data/${n}.json?v=interiors-03`)));
+  const responses=await Promise.all(['home','research','plan'].map(n=>fetch(`data/${n}.json?v=interiors-04`)));
   if(responses.some(r=>!r.ok))throw new Error('Design data could not be loaded');
   [data,research,plan]=await Promise.all(responses.map(r=>r.json()));
   await init();
