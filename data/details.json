@@ -34,10 +34,10 @@
     {
       "id": "laundry",
       "room": "store",
-      "title": "Find a home for laundry",
-      "priority": "Location unanswered",
-      "finding": "The current model has no washing-machine position or coordinated laundry services.",
-      "next": "Confirm the location, then check product dimensions, door movement, water, drainage, power and drying provision.",
+      "title": "Coordinate the outside utility area",
+      "priority": "Outside utility confirmed",
+      "finding": "The owner has chosen a separate utility area outside for the washing machine. Its exact position, product and services remain undecided.",
+      "next": "Confirm a protected site position, then check product dimensions, door movement, water isolation, drainage, suitable electrical supply, service access and drying provision. This interior model does not include an invented outdoor room.",
       "request": "P01"
     },
     {
@@ -254,7 +254,7 @@
       ],
       "comfort": [
         "The electric geyser is confirmed, but its product, capacity and mounting location are not. Coordinate support, relief discharge, plumbing, electrical isolation and service access before fixing it.",
-        "Bathing method, floor levels, falls, waterproofing and drain details require a coordinated drawing. No washing machine is added without a separate space and service review."
+        "Bathing method, floor levels, falls, waterproofing and drain details require a coordinated drawing. The owner has chosen a separate utility area outside for the washing machine; none is planned in this bathroom."
       ],
       "choices": [
         "Confirm bucket baths, showers or both.",
@@ -505,7 +505,7 @@
       "storage": [
         "Separate pantry goods, spare linen, household consumables and luggage. Keep heavier items lower and light occasional items higher.",
         "Use labelled removable bins so the narrow space can be maintained. Cleaning chemicals require a secured, separate location away from food and children.",
-        "Laundry equipment is not placed here. Confirm the washing-machine location separately before routing water, drainage or electrical supplies."
+        "The owner has chosen a separate utility area outside for the washing machine. Keep the interior store for household storage; the exact outdoor position, weather protection and services remain to be coordinated."
       ],
       "scenes": [
         {

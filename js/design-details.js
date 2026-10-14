@@ -3,7 +3,7 @@ import {esc,mm} from './drawings.js?v=dd04';
 let details,chosen=new Set();
 const key='jammu-material-samples-v1';
 export async function loadDesignDetails(home,plan){
-  const response=await fetch('data/details.json?v=dd06');if(!response.ok)throw new Error('Design details could not load');
+  const response=await fetch('data/details.json?v=dd06b');if(!response.ok)throw new Error('Design details could not load');
   details=await response.json();if(details.sourceSha256!==plan.source.sha256||home.rooms.some(r=>!details.rooms[r.id]))throw new Error('Design-detail source or room mismatch');
   try{const value=JSON.parse(localStorage.getItem(key)||'[]');if(Array.isArray(value))chosen=new Set(value.filter(c=>home.materials.some(m=>m.code===c)));}catch{}
   return details;

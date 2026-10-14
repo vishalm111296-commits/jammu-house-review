@@ -1,4 +1,4 @@
-import {loadDesignDetails,roomDesignDetails,designReview,setupDesignInteractions,buildDetailPrint} from './design-details.js?v=dd06';
+import {loadDesignDetails,roomDesignDetails,designReview,setupDesignInteractions,buildDetailPrint} from './design-details.js?v=dd06b';
 import {esc,mm,planSVG,elevationSVG,elevationSets,sourceMini} from './drawings.js?v=dd04';
 
 const $=id=>document.getElementById(id),root=$('workspace');
@@ -96,7 +96,7 @@ function openHouse(id,item){
  const ticket=++viewerRequest;
  root.innerHTML=head('Explore your home in 3D','The PDF layout, furnished in three dimensions. Choose a room to see its design and matching 2D plan.','JAMMU HOUSE / INTERIOR EXPLORER','Proposed interior')+'<div id="house-workspace"><div class="loading-state">Opening the 3D viewer…</div></div>';
  const host=$('house-workspace');
- import('./house-viewer.js?v=dd06').then(({mountHouseViewer})=>{if(ticket!==viewerRequest||!host.isConnected)return;houseViewer=mountHouseViewer(host,home,plan,{room:id,item,onInspect:(room,code)=>{route=['3d',room,...(code?[code]:[])];history.replaceState(null,'','#'+route.join('/'));},onRoom:(room,code)=>{const hash='3d/'+room+(code?'/'+code:'');if(location.hash==='#'+hash){houseViewer?.setRoom(room);if(code)houseViewer?.inspect(code);}else location.hash=hash;}});}).catch(error=>{if(ticket!==viewerRequest||!host.isConnected)return;host.innerHTML='<section class="panel panel-pad"><h2>The 3D viewer could not load.</h2><p>Please refresh to retry. Your drawings and room views are available.</p><a class="button" href="#drawings">Open 2D drawings</a> <a class="button" href="visual-tour.html">Finished room views</a></section>';console.warn('3D viewer unavailable',error.message);});
+ import('./house-viewer.js?v=dd06b').then(({mountHouseViewer})=>{if(ticket!==viewerRequest||!host.isConnected)return;houseViewer=mountHouseViewer(host,home,plan,{room:id,item,onInspect:(room,code)=>{route=['3d',room,...(code?[code]:[])];history.replaceState(null,'','#'+route.join('/'));},onRoom:(room,code)=>{const hash='3d/'+room+(code?'/'+code:'');if(location.hash==='#'+hash){houseViewer?.setRoom(room);if(code)houseViewer?.inspect(code);}else location.hash=hash;}});}).catch(error=>{if(ticket!==viewerRequest||!host.isConnected)return;host.innerHTML='<section class="panel panel-pad"><h2>The 3D viewer could not load.</h2><p>Please refresh to retry. Your drawings and room views are available.</p><a class="button" href="#drawings">Open 2D drawings</a> <a class="button" href="visual-tour.html">Finished room views</a></section>';console.warn('3D viewer unavailable',error.message);});
 }
 function navigate(){route=location.hash.slice(1).split('/');if(!route[0])route=['overview'];selected='';zoom=1;const section=route[0];let title='Project overview';
  if(section!=='3d'){viewerRequest++;houseViewer?.dispose();houseViewer=null;}

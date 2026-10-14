@@ -1,5 +1,5 @@
 import {createHouse} from './model.js?v=interiors-06';
-import {itemDetail} from './design-details.js?v=dd06';
+import {itemDetail} from './design-details.js?v=dd06b';
 import {esc,planSVG} from './drawings.js?v=dd04';
 
 /** The 2D navigator and WebGL scene read the same unmodified source data. */
