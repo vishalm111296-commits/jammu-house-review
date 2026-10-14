@@ -17,7 +17,7 @@ export function createHouse(container, data, plan, onSelect) {
   const controls = new OrbitControls(camera, renderer.domElement);
   controls.enableDamping = true;
   controls.minDistance = 1.4;
-  controls.maxDistance = 38;
+  controls.maxDistance = 100;
   controls.maxPolarAngle = Math.PI / 2 - .025;
   const model = new THREE.Group();
   model.name = 'Jammu House — PDF-derived interior review';
@@ -40,7 +40,7 @@ export function createHouse(container, data, plan, onSelect) {
   const tile = new THREE.CanvasTexture(tileCanvas);
   tile.wrapS = tile.wrapT = THREE.RepeatWrapping; tile.colorSpace = THREE.SRGBColorSpace;
   const floorMat = mat('#ffffff', .92, { map: tile });
-  let full = false, night = false, selected = null, isolated = false, dirty = true, stopped = false;
+  let full = false, night = false, selected = null, isolated = false, dirty = true, stopped = false, animation;
   const wallMeshes = [], roomGroups = new Map(), floorMeshes = [], roomLabels = [];
   function box(parent, x, y, z, w, h, d, material, name = '') {
     const mesh = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), material);
@@ -200,35 +200,49 @@ export function createHouse(container, data, plan, onSelect) {
   function frame(bounds, overhead=false) {
     const [a,b,c,d]=bounds, cx=(a+c)/2,cz=(b+d)/2;
     controls.target.set(cx,isolated?1.35:.15,cz);
-    const span=Math.max(c-a,(d-b)*.9), aspect=container.clientWidth/container.clientHeight;
+    const aspect=container.clientWidth/container.clientHeight;
     const viewAngle=Math.min(camera.fov*Math.PI/180,2*Math.atan(Math.tan(camera.fov*Math.PI/360)*aspect));
-    const distance=isolated ? Math.hypot(c-a+.5,d-b+.5,3)/2/Math.sin(viewAngle/2)*1.1 : span*1.75/Math.min(1,Math.max(.5,aspect));
+    const distance=Math.hypot(c-a+.5,d-b+.5,3)/2/Math.sin(viewAngle/2)*1.08;
     if(overhead)camera.position.set(cx,distance+4,cz+.001);
     else camera.position.set(cx+distance*.44,(isolated?1.35:0)+distance*.74,cz+distance*.61);
     camera.zoom=1;camera.updateProjectionMatrix();controls.update();dirty=true;
   }
-  const whole=[0,0,12.2,12.2];
+  const shellPoints=plan.walls.flatMap(w=>[[w.bounds[0],w.bounds[1]],[w.bounds[2],w.bounds[3]]]);
+  const whole=[Math.min(...shellPoints.map(p=>p[0])),Math.min(...shellPoints.map(p=>p[1])),Math.max(...shellPoints.map(p=>p[0])),Math.max(...shellPoints.map(p=>p[1]))];
   function resize(){const w=container.clientWidth,h=container.clientHeight;if(!w||!h)return;camera.aspect=w/h;camera.updateProjectionMatrix();renderer.setSize(w,h);dirty=true;}
   const observer=new ResizeObserver(resize);observer.observe(container);resize();frame(whole);
   controls.addEventListener('change',()=>dirty=true);
-  function animate(){if(stopped)return;requestAnimationFrame(animate);controls.update();if(dirty){renderer.render(scene,camera);dirty=false;}}animate();
-  const ray=new THREE.Raycaster(),pointer=new THREE.Vector2();let down;
-  renderer.domElement.addEventListener('pointerdown',e=>down=[e.clientX,e.clientY]);
+  function animate(){if(stopped)return;animation=requestAnimationFrame(animate);if(document.hidden)return;controls.update();if(dirty){renderer.render(scene,camera);dirty=false;}}animate();
+  const ray=new THREE.Raycaster(),pointer=new THREE.Vector2(),pointers=new Set();let down;
+  renderer.domElement.addEventListener('pointerdown',e=>{pointers.add(e.pointerId);down=pointers.size===1?[e.clientX,e.clientY,e.pointerId]:null;});
+  renderer.domElement.addEventListener('pointercancel',e=>{pointers.delete(e.pointerId);down=null;});
   renderer.domElement.addEventListener('pointerup',e=>{
-    if(!down||Math.hypot(e.clientX-down[0],e.clientY-down[1])>7)return;
+    const start=down;pointers.delete(e.pointerId);down=null;
+    if(!start||start[2]!==e.pointerId||pointers.size||Math.hypot(e.clientX-start[0],e.clientY-start[1])>7)return;
     const b=renderer.domElement.getBoundingClientRect();pointer.set((e.clientX-b.left)/b.width*2-1,-(e.clientY-b.top)/b.height*2+1);ray.setFromCamera(pointer,camera);
     const hit=ray.intersectObject(isolated?roomScene:model,true).find(h=>h.object.userData.room);if(hit)onSelect(hit.object.userData.room);
   });
   const api={
-    reset(){selected=null;isolated=false;model.visible=true;roomScene.visible=false;roomLabels.forEach(l=>l.visible=true);frame(whole);},
+    reset(){selected=null;isolated=false;model.visible=true;roomScene.visible=false;roomLabels.forEach(l=>l.visible=true);floorMeshes.forEach(f=>f.material.color.copy(finishes.F01.color));frame(whole);},
     top(){frame(isolated&&selected?data.rooms.find(r=>r.id===selected).bounds:whole,true);},
     select(id){selected=id||null;for(const f of floorMeshes)f.material.color.set(f.userData.room===id?'#c4ccb8':'#c6c1b7');if(isolated&&id){isolatedRoom(id);frame(data.rooms.find(r=>r.id===id).bounds);}else if(id)frame(data.rooms.find(r=>r.id===id).bounds);else api.reset();dirty=true;},
     roomView(value){isolated=Boolean(value&&selected);model.visible=!isolated;roomScene.visible=isolated;if(isolated){isolatedRoom(selected);frame(data.rooms.find(r=>r.id===selected).bounds);}else frame(whole);dirty=true;},
     walls(value){full=value;for(const w of wallMeshes){const h=full?3:.65;w.scale.y=h/.65;w.position.y=h/2;}if(isolated)isolatedRoom(selected);dirty=true;},
     night(value){night=value;scene.background.set(night?'#323b34':'#eae8df');ambient.intensity=night?.9:1.5;sun.intensity=night?.15:2.1;fill.intensity=night?.30:1;evening.intensity=night?35:0;lightMat.emissiveIntensity=night?2:.5;dirty=true;},
+    orbit(angle){const offset=camera.position.clone().sub(controls.target);offset.applyAxisAngle(new THREE.Vector3(0,1,0),angle);camera.position.copy(controls.target).add(offset);controls.update();dirty=true;},
+    zoom(factor){const offset=camera.position.clone().sub(controls.target);offset.setLength(THREE.MathUtils.clamp(offset.length()*factor,controls.minDistance,controls.maxDistance));camera.position.copy(controls.target).add(offset);controls.update();dirty=true;},
+    async glb(){
+      const {GLTFExporter}=await import('../vendor/GLTFExporter.js');
+      if(stopped)throw new Error('Viewer closed');
+      const exportModel=model.clone(true);exportModel.visible=true;
+      exportModel.userData={...model.userData,units:'metres',constructionReleased:false,wallDisplay:full?'3000 mm assumed height':'650 mm cutaway',unplacedItems:data.rooms.flatMap(r=>r.furnitureItems.filter(f=>!f.placed).map(f=>f.code))};
+      exportModel.updateMatrixWorld(true);
+      return new GLTFExporter().parseAsync(exportModel,{binary:true,onlyVisible:true});
+    },
+    state(){return {selected,isolated,full,night,stopped,camera:camera.position.toArray(),target:controls.target.toArray(),sourceSha256:plan.source.sha256,walls:wallMeshes.map(w=>({bounds:[...w.userData.bounds],height:w.geometry.parameters.height*w.scale.y})),placedItems:data.rooms.flatMap(r=>r.furnitureItems.filter(f=>f.placed).map(f=>({room:r.id,code:f.code,bounds:[r.bounds[0]+f.x,r.bounds[1]+f.z,r.bounds[0]+f.x+f.w,r.bounds[1]+f.z+f.d]})))};},
     snapshot(){renderer.render(scene,camera);return renderer.domElement.toDataURL('image/png');},
     download(){const blob=new Blob([JSON.stringify(model.toJSON())],{type:'application/json'});const u=URL.createObjectURL(blob);const a=document.createElement('a');a.href=u;a.download='jammu-pdf-interior-review.three.json';a.click();setTimeout(()=>URL.revokeObjectURL(u),1000);},
-    dispose(){stopped=true;observer.disconnect();controls.dispose();renderer.dispose();disposeRoom();}
+    dispose(){if(stopped)return;stopped=true;cancelAnimationFrame(animation);observer.disconnect();controls.dispose();disposeRoom();const geometries=new Set(),materials=new Set(),textures=new Set();model.traverse(o=>{if(o.geometry)geometries.add(o.geometry);if(o.material)for(const m of Array.isArray(o.material)?o.material:[o.material])materials.add(m);});for(const g of geometries)g.dispose();for(const m of materials){for(const v of Object.values(m))if(v?.isTexture)textures.add(v);m.dispose();}for(const t of textures)t.dispose();renderer.dispose();renderer.forceContextLoss();renderer.domElement.remove();}
   };
   return api;
 }
