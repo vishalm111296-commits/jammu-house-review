@@ -1,4 +1,4 @@
-import { createHouse } from './model.js?v=interiors-05';
+import { createHouse } from './model.js?v=interiors-06';
 const roomFinishCodes=r=>[...new Set([...r.finishCodes,...r.furnitureItems.map(f=>f.finish)])];
 const $ = id => document.getElementById(id);
 const esc = value => String(value).replace(/[&<>"']/g,s=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s]));

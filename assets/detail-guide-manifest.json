@@ -1,0 +1,16 @@
+{
+  "revision": "Interior details 06",
+  "pages": 12,
+  "inputs": {
+    "assets/architectural_plan.pdf": "2c22e21673e9bd704036734eb310a27f706488516e390dbe4e8248f21b1d5fd3",
+    "data/home.json": "915115d95f9cc1f10c5e1949f001bd480ebd61f53a92b45adb46fd3b969ec590",
+    "data/plan.json": "e306b9b752b21df7c21ec8267b4368c508e47e5e5855ee052b71637e17f341f2",
+    "data/details.json": "39cd472a8af364143c074f304ed59e05dcc5d4da2cde1c4e6b9fc4adcb17966a",
+    "js/design-details.js": "5a9c773ad082fd8a05c4cb328b81420d723aa2c7b2cd5662201036ae135e7b5d",
+    "css/design-details.css": "79d83094d64ea99ad402692022bdba1623820737b117e3b3133fa26be8d73146"
+  },
+  "output": {
+    "file": "assets/interior-detail-guide.pdf",
+    "sha256": "e4dfcc0f17d8a668aa635f5e9ffd32b9651ebfbd5d4fd89c5993bfeca4286c41"
+  }
+}

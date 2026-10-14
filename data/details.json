@@ -1,0 +1,579 @@
+{
+  "revision": "Interior details 06",
+  "date": "14 October 2026",
+  "sourceSha256": "2c22e21673e9bd704036734eb310a27f706488516e390dbe4e8248f21b1d5fd3",
+  "status": "Design recommendations; product selection and technical coordination pending",
+  "findings": [
+    {
+      "id": "sleep",
+      "room": "bed-main",
+      "title": "Resolve the four-person sleeping arrangement",
+      "priority": "First to resolve",
+      "finding": "The six-foot bed is confirmed; the two cot products and safe positions are not. The room is not yet a proven fit for all four sleepers.",
+      "next": "Choose actual products, then test the complete arrangement and access routes at full size.",
+      "request": "F01"
+    },
+    {
+      "id": "cooking",
+      "room": "kitchen",
+      "title": "Select both cooking units together",
+      "priority": "Before kitchen manufacture",
+      "finding": "The gas hob, induction and extractor are reservations. The illustrated gap is not a verified manufacturer clearance.",
+      "next": "Use both installation manuals to resolve cut-outs, separation, ventilation, LPG and power.",
+      "request": "K01"
+    },
+    {
+      "id": "storage",
+      "room": "dressing",
+      "title": "Allocate storage for every person",
+      "priority": "Owner decision",
+      "finding": "One 1600 mm wardrobe and the current chests do not demonstrate enough storage for this household.",
+      "next": "Count hanging, folded clothes, linen, luggage and baby supplies; assign a location before adding cabinets.",
+      "request": "J01"
+    },
+    {
+      "id": "laundry",
+      "room": "store",
+      "title": "Find a home for laundry",
+      "priority": "Location unanswered",
+      "finding": "The current model has no washing-machine position or coordinated laundry services.",
+      "next": "Confirm the location, then check product dimensions, door movement, water, drainage, power and drying provision.",
+      "request": "P01"
+    },
+    {
+      "id": "wet-joinery",
+      "room": "bath",
+      "title": "Specify the cabinet construction behind the finish",
+      "priority": "Before purchase",
+      "finding": "Oak appearance is shown in wet rooms. A wood-colour code does not specify a moisture-appropriate cabinet core or installation.",
+      "next": "Apply the J02 wet-zone construction requirements to kitchen/vanity cabinetry, including sealed cuts, service access and documented materials.",
+      "request": "J01"
+    },
+    {
+      "id": "privacy",
+      "room": "bed-main",
+      "title": "Detail the shared bathroom route",
+      "priority": "Access retained",
+      "finding": "Bathroom access through the family bedroom and dressing is confirmed. Night-time privacy and convenient lighting still need detailing.",
+      "next": "Coordinate door operation, privacy hardware and a quiet night route with the family; keep the agreed openings.",
+      "request": "R03"
+    },
+    {
+      "id": "shell",
+      "room": "store",
+      "title": "Close the PDF dimension conflicts",
+      "priority": "Before measured joinery",
+      "finding": "Store depth differs by about 381 mm, study depth by 50 mm and living width by 37 mm between drawing and labels.",
+      "next": "Have the architect reconcile these dimensions against the built plinth before detailed orders.",
+      "request": "R01"
+    }
+  ],
+  "rooms": {
+    "kitchen": {
+      "intent": "A compact working kitchen for one cook: a clear preparation area, reachable everyday storage and two separate fixed cooking appliances.",
+      "surfaces": [
+        {
+          "area": "Walls & splashback",
+          "proposal": "Keep warm ivory on dry walls. Use a smooth, wipeable splashback at the working runs; select its heat suitability with the gas-hob manual. Avoid deep texture behind cooking."
+        },
+        {
+          "area": "Worktop & edges",
+          "proposal": "Continue one light mineral colour around the L. Ask for a sample of the edge, joint and sink junction together. Round exposed corners where possible; final cut-outs follow the selected products."
+        },
+        {
+          "area": "Cabinet appearance",
+          "proposal": "Pale oak below, ivory above. The oak code describes appearance; kitchen carcasses, cut edges, sink base and backing require the moisture-appropriate specification associated with J02."
+        },
+        {
+          "area": "Ceiling & window",
+          "proposal": "Start with a plain chalk-white ceiling. Keep the PDF kitchen opening clear. Avoid hanging fabric beside heat, grease or an opening sash; any blind needs a site check."
+        }
+      ],
+      "storage": [
+        "Group daily cutlery and preparation tools beside the clear prep surface; reserve deeper accessible storage for pots. Confirm drawer positions after both appliance ventilation zones are known.",
+        "Use removable, washable storage under the sink and retain access to traps and isolation valves. Check bins against plumbing before choosing a pull-out mechanism.",
+        "Use the above-fridge cabinet for light, occasional items. Check refrigerator ventilation and door opening before enclosing it; do not treat this small kitchen as the whole household pantry."
+      ],
+      "scenes": [
+        {
+          "name": "Cooking",
+          "description": "Use the proposed 4000 K task light on the working surface, plus general ceiling light. Test for shadows while standing at both hobs."
+        },
+        {
+          "name": "Cleaning",
+          "description": "Keep general and task lights available together so worktop, sink and floor spills are visible."
+        },
+        {
+          "name": "Quiet evening",
+          "description": "A separately controlled task strip can provide a low-glare evening setting; its driver must remain accessible."
+        }
+      ],
+      "comfort": [
+        "Mock up the fridge door, base drawers and standing position together. The approximately 1178 mm drawn fridge-to-counter gap is not a check of open doors or occupied movement.",
+        "The illustrated 190 mm between hob reservations is not manufacturer-approved clearance. The three-burner LPG hob, fixed one-zone induction and extractor must be selected together."
+      ],
+      "choices": [
+        "Select both hob models and obtain installation/cut-out drawings.",
+        "Confirm fridge size, water purifier and sink preference.",
+        "Choose the LPG cylinder location and an external extractor route with installers."
+      ]
+    },
+    "bed-main": {
+      "intent": "A calm shared bedroom for the parents and two babies, with an open route to dressing and the bathroom. The six-foot bed is the confirmed priority; safe cot placement is still the main fit decision.",
+      "surfaces": [
+        {
+          "area": "Headboard wall",
+          "proposal": "Use a quiet ivory backdrop and a simple oak or easy-clean upholstered headboard. Avoid bulky projecting panels that reduce the modelled clearance."
+        },
+        {
+          "area": "Floor & ceiling",
+          "proposal": "Continue the matte dry-area floor and plain white ceiling. Keep the night route free of loose rugs and floor cables."
+        },
+        {
+          "area": "Curtains",
+          "proposal": "Propose a light sheer for daytime privacy and a separate blackout layer. Choose a cordless system and coordinate tracks, opening windows, AC airflow and eventual cot positions."
+        },
+        {
+          "area": "Bed & textiles",
+          "proposal": "Keep bedding in oatmeal and warm stone with limited sage accents. Fabric colour is a proposal; approve washability and cleaning instructions from the actual sample."
+        }
+      ],
+      "storage": [
+        "Allocate reachable daily baby supplies in closed storage outside both cot and bathroom access zones. No additional chest is placed until the full-size bed-and-cot arrangement is checked.",
+        "The compact bedside table is a small reservation, not a solution for all family storage. Agree which clothing goes in the dressing wardrobe and which linen goes in the store."
+      ],
+      "scenes": [
+        {
+          "name": "Getting ready",
+          "description": "Use the proposed general light and a separate dressing light rather than one bright fitting for both spaces."
+        },
+        {
+          "name": "Reading",
+          "description": "Provide independently controlled reading light that does not shine at the other sleeper or a cot; final mounting positions depend on the real headboard."
+        },
+        {
+          "name": "Night care",
+          "description": "Provide low-level, shielded light on the route to dressing and bathroom. It should not require crossing the room to switch on the main light."
+        }
+      ],
+      "comfort": [
+        "Mark the actual 1900 × 2100 mm proposed frame envelope, both cot products and door paths at full size before ordering. A nominal six-foot mattress is not the same size as its bed frame.",
+        "The cots remain unplaced. Keep their eventual positions clear of window coverings, cords and direct AC draughts; do not use a visual render as a fit or infant-product approval."
+      ],
+      "choices": [
+        "Choose the actual bed frame and mattress length.",
+        "Choose two separate cot products with their full external dimensions.",
+        "Agree clothing, linen and baby-supply storage allocation."
+      ]
+    },
+    "bed-left": {
+      "intent": "A quiet bedroom for the grandparents with simple controls, comfortable reading and an uncluttered route to the shared bathroom.",
+      "surfaces": [
+        {
+          "area": "Walls & bed",
+          "proposal": "Warm ivory walls with a restrained sage textile accent. Keep the headboard simple and the room bright enough to read objects clearly."
+        },
+        {
+          "area": "Floor",
+          "proposal": "Use the same matte floor as the circulation space. Avoid a loose bedside rug and raised transitions on the night route."
+        },
+        {
+          "area": "Curtains",
+          "proposal": "A light privacy sheer plus lined curtains can adjust daylight and winter comfort. Confirm the real window and track space before measuring fabric."
+        },
+        {
+          "area": "Bedside details",
+          "proposal": "Choose stable tables with easy-to-grip handles and softened exposed edges. Test bed and chair comfort with both parents before purchase."
+        }
+      ],
+      "storage": [
+        "Use the shallow chest for daily folded clothes and keep frequently used items at a comfortable reach.",
+        "The drawing does not provide a full wardrobe in this room. Agree hanging-clothes storage before buying the bed; the shared dressing route passes through the family bedroom."
+      ],
+      "scenes": [
+        {
+          "name": "Day to evening",
+          "description": "Use the proposed 3000 K general light with adjustable brightness where the selected fittings support it."
+        },
+        {
+          "name": "Reading",
+          "description": "Give each bedside its own controlled light. Test glare from a seated and lying position."
+        },
+        {
+          "name": "Night route",
+          "description": "Use a gentle, reachable night-light control and a clear path into the lobby. Bathroom access remains the owner-confirmed route through the family bedroom."
+        }
+      ],
+      "comfort": [
+        "The 1524 × 2032 mm bed is a proposal, not a confirmed purchase. Check the actual frame, mattress height and ease of sitting/standing.",
+        "Keep AC airflow adjustable and away from heads. Final capacity, condensate route and electrical protection require the selected unit and installer."
+      ],
+      "choices": [
+        "Confirm the grandparents’ preferred bed width and mattress firmness.",
+        "Agree where their hanging clothes will be kept.",
+        "Choose bedside controls and curtain operation with both parents."
+      ]
+    },
+    "bath": {
+      "intent": "A calm, easy-to-clean bathroom organised from dry grooming near the dressing entrance to the wet zone at the far end. Bucket versus shower use is still unanswered.",
+      "surfaces": [
+        {
+          "area": "Walls & floor",
+          "proposal": "Use a light stone family with a quieter grout colour. Ask for wet-slip evidence for the actual floor tile and test a physical sample; appearance alone does not establish performance."
+        },
+        {
+          "area": "Vanity & mirror",
+          "proposal": "Keep the vanity visually light with service access below. Oak is an appearance option; the cabinet construction must meet the J02 moisture requirements. Show mirror edges and cleaning access in the shop drawing."
+        },
+        {
+          "area": "Wet/dry division",
+          "proposal": "Keep the screen as a proposal until door movement, chosen fittings, cleaning access and daily bathing method are settled. Avoid inventing a drain position or shower niche in the source walls."
+        },
+        {
+          "area": "Ceiling & metalwork",
+          "proposal": "Use a simple accessible ceiling and a consistent brushed-metal family. Coordinate actual wet-area fixture suitability and access to exhaust and electrical equipment."
+        }
+      ],
+      "storage": [
+        "Provide separate places for daily toiletries and dry towels, reachable without reaching across the wet floor. Exact accessory positions follow the fixture layout.",
+        "Retain access to the vanity trap, concealed cistern if selected, valves and geyser service points. Do not seal them behind decorative panels."
+      ],
+      "scenes": [
+        {
+          "name": "Grooming",
+          "description": "Use the proposed 4000 K mirror light with even face illumination; confirm glare and shadows on the actual mirror."
+        },
+        {
+          "name": "Bathing & cleaning",
+          "description": "A general light should illuminate the wet floor. Fitting type, electrical zones and protection are for the electrician to coordinate."
+        },
+        {
+          "name": "Night visit",
+          "description": "Consider a shielded low-level light independent of the bright mirror light, linked to the route from dressing."
+        }
+      ],
+      "comfort": [
+        "The electric geyser is confirmed, but its product, capacity and mounting location are not. Coordinate support, relief discharge, plumbing, electrical isolation and service access before fixing it.",
+        "Bathing method, floor levels, falls, waterproofing and drain details require a coordinated drawing. No washing machine is added without a separate space and service review."
+      ],
+      "choices": [
+        "Confirm bucket baths, showers or both.",
+        "Choose sanitaryware, basin, taps and electric geyser.",
+        "Confirm towel, bucket and cleaning-supply storage, plus screen opening."
+      ]
+    },
+    "dressing": {
+      "intent": "A compact dressing area that keeps the family-bedroom-to-bathroom route open. Its single wardrobe should be planned around actual clothes, not a decorative front elevation.",
+      "surfaces": [
+        {
+          "area": "Wardrobe front",
+          "proposal": "Use a light, simple front with restrained oak detailing. Sliding doors are a proposal; check handle projection, overlap and whether drawers can open fully behind them."
+        },
+        {
+          "area": "Mirror",
+          "proposal": "Position the mirror within the scheduled reservation and provide edge protection. Confirm that reflected views respect bedroom and bathroom privacy."
+        },
+        {
+          "area": "Floor & ceiling",
+          "proposal": "Continue the dry floor with a coordinated bathroom threshold and a plain accessible ceiling. Prevent bathroom moisture collecting around the wardrobe base."
+        }
+      ],
+      "storage": [
+        "Inventory long hanging, short hanging, folded clothing, drawers and luggage separately. Prioritise everyday adult clothing at an easy reach; use high storage only for light occasional items.",
+        "The proposed 1600 × 600 × 2400 mm wardrobe has not been proven sufficient for four adults and two children. Allocate family and grandparents’ storage explicitly before approving internal divisions."
+      ],
+      "scenes": [
+        {
+          "name": "Dressing",
+          "description": "Use the proposed 3500–4000 K mirror lighting, CRI 90 or higher as a selection brief; check actual lamps and skin tones on site."
+        },
+        {
+          "name": "Finding clothes",
+          "description": "Consider accessible, shielded cabinet lighting with reachable drivers; it is an optional proposal, not an existing circuit."
+        },
+        {
+          "name": "Night passage",
+          "description": "A low-glare route light should allow bathroom access without lighting the whole bedroom."
+        }
+      ],
+      "comfort": [
+        "Test sliding access and drawer travel with the real wardrobe hardware. Do not add storage across either doorway.",
+        "Keep grooming equipment and sockets outside the bathroom wet-zone requirements, and coordinate ventilation rather than enclosing a damp recess."
+      ],
+      "choices": [
+        "Count clothing by person and storage type.",
+        "Choose wardrobe door/hardware and mirror size.",
+        "Confirm cabinet ventilation and the bathroom threshold detail."
+      ]
+    },
+    "lobby": {
+      "intent": "The everyday family space: relaxed seating, six dining places and clear routes to bedrooms, kitchen, study and stairs.",
+      "surfaces": [
+        {
+          "area": "Walls & ceiling",
+          "proposal": "Use warm ivory and a plain white ceiling. Keep any TV feature shallow; wait for actual beam and ceiling information before proposing bulkheads."
+        },
+        {
+          "area": "Furniture & textiles",
+          "proposal": "Use oatmeal seating, oak tables and small sage accents. Choose removable or documented easy-clean upholstery and softened table edges for family use."
+        },
+        {
+          "area": "Floor & curtains",
+          "proposal": "Continue the matte light-stone floor. Use adjustable privacy curtains at actual openings; keep fabric clear of walkways, fans and opening sashes."
+        }
+      ],
+      "storage": [
+        "Reserve closed everyday storage for toys, books and chargers; avoid letting the TV console become a floor-level cable store.",
+        "Allocate dining linen and crockery to an identified cabinet or store shelf before adding a sideboard. No extra large cabinet is assumed to fit in the circulation zone."
+      ],
+      "scenes": [
+        {
+          "name": "Family time",
+          "description": "Use the proposed warm 3000 K general lighting with controllable brightness and moderate light around the seating."
+        },
+        {
+          "name": "Dining",
+          "description": "Put the table pendant on a separate control; coordinate its position and height with the actual table and fan sweep."
+        },
+        {
+          "name": "TV & night route",
+          "description": "Provide a gentle background light for TV viewing and a low-glare route between bedrooms and the bathroom; final controls remain to be designed."
+        }
+      ],
+      "comfort": [
+        "Check the dining table with all chairs occupied and pulled back, especially the routes toward store and stairs. Static furniture rectangles do not prove these movements.",
+        "Only bedrooms have AC in the confirmed brief. Coordinate fan position, daylight control and usable ventilation for the family space."
+      ],
+      "choices": [
+        "Confirm TV size and everyday toy/book storage.",
+        "Choose table and chairs as a set and check occupied movement.",
+        "Choose fan type and curtain samples."
+      ]
+    },
+    "drawing": {
+      "intent": "A lighter guest sitting room that feels welcoming without filling every edge with furniture.",
+      "surfaces": [
+        {
+          "area": "Seating",
+          "proposal": "Use a compact oatmeal sofa and restrained sage accent seating. Test seat depth and cleaning method; keep a consistent leg and timber colour."
+        },
+        {
+          "area": "Walls & art",
+          "proposal": "Keep ivory walls mostly quiet. One artwork or small grouping can provide focus after furniture heights are confirmed; no heavy display is assumed over seating."
+        },
+        {
+          "area": "Curtains & floor",
+          "proposal": "Use a sheer and lined curtain option at the front opening. Keep the floor continuous and any future rug fixed and clear of door travel."
+        },
+        {
+          "area": "Ceiling",
+          "proposal": "Use a simple chalk-white ceiling. A decorative false ceiling is optional and cannot be resolved before beams, levels, fan and services are known."
+        }
+      ],
+      "storage": [
+        "Keep guest items in a compact tray or closed cabinet only after the actual entry clearance is checked.",
+        "Store occasional cushions and throws in the assigned household linen space; do not add deep storage behind every seat."
+      ],
+      "scenes": [
+        {
+          "name": "Welcoming",
+          "description": "Use warm 3000 K general light that illuminates faces without a harsh central glare."
+        },
+        {
+          "name": "Conversation",
+          "description": "A separately controlled wall or table light can add depth; keep cables out of the route and child reach."
+        },
+        {
+          "name": "Cleaning",
+          "description": "Provide a brighter general setting to inspect the floor and upholstery."
+        }
+      ],
+      "comfort": [
+        "Check the sofa and both occasional chairs with people seated, including the coffee-table reach and the doorway. The drawn chair quantity is a proposal.",
+        "This room has no requested AC. Coordinate a fan with curtains and lights; use controllable front daylight."
+      ],
+      "choices": [
+        "Confirm usual guest numbers and whether a TV is needed here.",
+        "Choose sofa/armchair comfort and fabric samples.",
+        "Decide artwork and curtain style after the main furniture."
+      ]
+    },
+    "puja": {
+      "intent": "A small, calm place for seated worship with a clear floor, simple altar and easy cleaning.",
+      "surfaces": [
+        {
+          "area": "Altar",
+          "proposal": "Use the proposed light mineral surface with a cleanable junction to the wall. Confirm whether incense or an open flame will be used before adding shelves or decoration above."
+        },
+        {
+          "area": "Walls & ceiling",
+          "proposal": "Use warm ivory and a quiet white ceiling. Keep the opening visually light; avoid deep ornament that reduces the small usable space."
+        },
+        {
+          "area": "Floor & accessories",
+          "proposal": "Keep the continuous floor easy to wipe. Any mat should be removable after use and should not obstruct the opening."
+        }
+      ],
+      "storage": [
+        "Use the closed lower altar storage for a small, organised collection of daily items; separate cleaning materials from worship items.",
+        "A high shelf is not included. Confirm flame/ventilation use and the actual items before proposing additional storage."
+      ],
+      "scenes": [
+        {
+          "name": "Daily prayer",
+          "description": "Use the proposed 2700–3000 K concealed light without a visible bright strip at seated eye level."
+        },
+        {
+          "name": "Cleaning",
+          "description": "Retain a separately usable general light so the floor and altar can be cleaned."
+        },
+        {
+          "name": "Evening",
+          "description": "A dimmed altar light is an option only with a compatible driver and accessible controls."
+        }
+      ],
+      "comfort": [
+        "Check seated and standing use in the actual clear area. Do not add a door, divider or shelf that was not coordinated with the PDF opening.",
+        "If using a flame or incense, choose a heat-safe tray and coordinate clearances and ventilation with the actual setup."
+      ],
+      "choices": [
+        "Confirm seated versus standing worship.",
+        "Confirm use of incense/open flame and size of the worship items.",
+        "Choose the altar sample and easy-clean storage arrangement."
+      ]
+    },
+    "study": {
+      "intent": "A small focused workspace with a comfortable desk, task lighting and tidy cables. The source opening is a ventilator, not a new full-height window.",
+      "surfaces": [
+        {
+          "area": "Desk",
+          "proposal": "Use a pale oak work surface with a comfortable front edge. Actual chair and user height should guide desk ergonomics; the scheduled dimensions are a reservation."
+        },
+        {
+          "area": "Walls & ceiling",
+          "proposal": "Use warm ivory, a plain ceiling and a small soft pinboard if wanted. Keep decorative shelves shallow and away from the entry."
+        },
+        {
+          "area": "Window treatment",
+          "proposal": "The PDF marks V. Confirm its actual size, sill and opening before choosing any blind or curtain."
+        }
+      ],
+      "storage": [
+        "Keep everyday books and devices reachable from the seat; use the shallow shelf only for its verified load and fixing.",
+        "Provide accessible cable organisation under or behind the desk. Leave room for plugs and device ventilation rather than boxing equipment in."
+      ],
+      "scenes": [
+        {
+          "name": "Computer work",
+          "description": "Use a general light and a task light positioned to avoid screen reflections; final location depends on handedness and screen position."
+        },
+        {
+          "name": "Reading",
+          "description": "An adjustable task lamp gives a useful local light; choose its light quality from a real demonstration."
+        },
+        {
+          "name": "Evening close-down",
+          "description": "Keep one reachable control at the entry; switching and socket positions remain to be coordinated."
+        }
+      ],
+      "comfort": [
+        "Test the chair pulled out and the D2 opening together. A desk fit alone does not establish an occupied working clearance.",
+        "Resolve the approximately 50 mm difference between the printed study label and drawn depth before ordering built-in work."
+      ],
+      "choices": [
+        "Confirm laptop versus desktop, monitor and printer requirements.",
+        "Confirm who uses the study and their preferred working height.",
+        "Choose the chair before finalising desk and shelf details."
+      ]
+    },
+    "store": {
+      "intent": "A practical household store organised by use and reach. Its source depth discrepancy must be settled before any shelves are manufactured.",
+      "surfaces": [
+        {
+          "area": "Shelving",
+          "proposal": "Use simple, cleanable, adjustable shelves with documented load capacity and suitable wall fixings. Avoid inaccessible deep corners."
+        },
+        {
+          "area": "Walls & floor",
+          "proposal": "Keep the walls light and the floor easy to clean. Resolve dampness and ventilation before placing closed storage against a wall."
+        },
+        {
+          "area": "Ceiling",
+          "proposal": "Use a plain ceiling with accessible lighting; do not add high cabinets that conflict with unknown beams or service routes."
+        }
+      ],
+      "storage": [
+        "Separate pantry goods, spare linen, household consumables and luggage. Keep heavier items lower and light occasional items higher.",
+        "Use labelled removable bins so the narrow space can be maintained. Cleaning chemicals require a secured, separate location away from food and children.",
+        "Laundry equipment is not placed here. Confirm the washing-machine location separately before routing water, drainage or electrical supplies."
+      ],
+      "scenes": [
+        {
+          "name": "Finding items",
+          "description": "Use general light that reaches shelf faces rather than casting the user’s shadow over them."
+        },
+        {
+          "name": "Restocking",
+          "description": "Check light with shelves loaded and labels in place; add a task light only if the actual layout needs it."
+        },
+        {
+          "name": "Leaving",
+          "description": "Put the final control where it is reachable without reaching past stored items."
+        }
+      ],
+      "comfort": [
+        "The store is labelled about 2438 mm deep but drawn about 2057 mm: the 381 mm conflict is material. Preserve the traced footprint until the architect resolves it.",
+        "Test the door route, shelf depth and carrying a basket together. Do not interpret an empty aisle width as a load or circulation approval."
+      ],
+      "choices": [
+        "Resolve the store depth with the architect.",
+        "List pantry, linen, luggage and cleaning-storage quantities.",
+        "Confirm shelf loads, wall construction and fixing method."
+      ]
+    },
+    "stairs": {
+      "intent": "A clear, durable route to the future upper floor. Interior detailing starts with the missing stair section, finished levels and headroom.",
+      "surfaces": [
+        {
+          "area": "Treads & landings",
+          "proposal": "Propose a durable, slip-appropriate finish with visible edges and easy cleaning. Actual tread/riser geometry must come from the structural and architectural set."
+        },
+        {
+          "area": "Handrail & guard",
+          "proposal": "Plan a continuous, comfortable handrail and a child-conscious guard design. Height, spacing, anchorage and compliance require the responsible designer’s details."
+        },
+        {
+          "area": "Walls & ceiling",
+          "proposal": "Keep the stair walls light. Coordinate any wall or step lighting before finishes; avoid decorative projections into the route."
+        }
+      ],
+      "storage": [
+        "Keep landings and the lower approach clear of loose shoes, toys and stored boxes.",
+        "Under-stair storage is not designed: the stair section, structure, headroom and service requirements are missing."
+      ],
+      "scenes": [
+        {
+          "name": "Normal use",
+          "description": "Light landings and changes in level without glare from the direction of travel."
+        },
+        {
+          "name": "Night use",
+          "description": "Low-level lighting is an intent; coordinate exact fittings and positions after the tread and landing drawings exist."
+        },
+        {
+          "name": "Two floors",
+          "description": "Provide coordinated controls at both levels; future circuits and routing belong in the electrical design."
+        }
+      ],
+      "comfort": [
+        "The 3D viewer shows a stair plan outline only. No convincing-looking finished stair is substituted for missing rises, landings or structure.",
+        "Coordinate future child-gate provision with the actual stair and landing design. Do not fix to an unverified guard or assume a product fits."
+      ],
+      "choices": [
+        "Obtain the stair section and finished floor heights.",
+        "Choose the tread finish and handrail sample after geometry is fixed.",
+        "Coordinate guard, child-gate provision and lighting with the architect."
+      ]
+    }
+  }
+}

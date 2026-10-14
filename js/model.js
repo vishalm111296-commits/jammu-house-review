@@ -40,7 +40,8 @@ export function createHouse(container, data, plan, onSelect) {
   const tile = new THREE.CanvasTexture(tileCanvas);
   tile.wrapS = tile.wrapT = THREE.RepeatWrapping; tile.colorSpace = THREE.SRGBColorSpace;
   const floorMat = mat('#ffffff', .92, { map: tile });
-  let full = false, night = false, selected = null, isolated = false, dirty = true, stopped = false, animation;
+  let full = false, night = false, selected = null, isolated = false, dirty = true, stopped = false, animation, inspection=null, inspected=null;
+  function clearInspection(){if(inspection){scene.remove(inspection);inspection.geometry.dispose();inspection.material.dispose();inspection=null;}inspected=null;dirty=true;}
   const wallMeshes = [], roomGroups = new Map(), floorMeshes = [], roomLabels = [];
   function box(parent, x, y, z, w, h, d, material, name = '') {
     const mesh = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), material);
@@ -220,10 +221,11 @@ export function createHouse(container, data, plan, onSelect) {
     const start=down;pointers.delete(e.pointerId);down=null;
     if(!start||start[2]!==e.pointerId||pointers.size||Math.hypot(e.clientX-start[0],e.clientY-start[1])>7)return;
     const b=renderer.domElement.getBoundingClientRect();pointer.set((e.clientX-b.left)/b.width*2-1,-(e.clientY-b.top)/b.height*2+1);ray.setFromCamera(pointer,camera);
-    const hit=ray.intersectObject(isolated?roomScene:model,true).find(h=>h.object.userData.room);if(hit)onSelect(hit.object.userData.room);
+    const hit=ray.intersectObject(isolated?roomScene:model,true).find(h=>h.object.userData.room);
+    if(hit){let item=hit.object;while(item&&!item.userData.code)item=item.parent;onSelect(hit.object.userData.room,item?.userData.code||null);}
   });
   const api={
-    reset(){selected=null;isolated=false;model.visible=true;roomScene.visible=false;roomLabels.forEach(l=>l.visible=true);floorMeshes.forEach(f=>f.material.color.copy(finishes.F01.color));frame(whole);},
+    reset(){clearInspection();selected=null;isolated=false;model.visible=true;roomScene.visible=false;roomLabels.forEach(l=>l.visible=true);floorMeshes.forEach(f=>f.material.color.copy(finishes.F01.color));frame(whole);},
     top(){frame(isolated&&selected?data.rooms.find(r=>r.id===selected).bounds:whole,true);},
     select(id){selected=id||null;for(const f of floorMeshes)f.material.color.set(f.userData.room===id?'#c4ccb8':'#c6c1b7');if(isolated&&id){isolatedRoom(id);frame(data.rooms.find(r=>r.id===id).bounds);}else if(id)frame(data.rooms.find(r=>r.id===id).bounds);else api.reset();dirty=true;},
     roomView(value){isolated=Boolean(value&&selected);model.visible=!isolated;roomScene.visible=isolated;if(isolated){isolatedRoom(selected);frame(data.rooms.find(r=>r.id===selected).bounds);}else frame(whole);dirty=true;},
@@ -231,6 +233,7 @@ export function createHouse(container, data, plan, onSelect) {
     night(value){night=value;scene.background.set(night?'#323b34':'#eae8df');ambient.intensity=night?.9:1.5;sun.intensity=night?.15:2.1;fill.intensity=night?.30:1;evening.intensity=night?35:0;lightMat.emissiveIntensity=night?2:.5;dirty=true;},
     orbit(angle){const offset=camera.position.clone().sub(controls.target);offset.applyAxisAngle(new THREE.Vector3(0,1,0),angle);camera.position.copy(controls.target).add(offset);controls.update();dirty=true;},
     zoom(factor){const offset=camera.position.clone().sub(controls.target);offset.setLength(THREE.MathUtils.clamp(offset.length()*factor,controls.minDistance,controls.maxDistance));camera.position.copy(controls.target).add(offset);controls.update();dirty=true;},
+    inspect(roomId,code){clearInspection();const r=data.rooms.find(r=>r.id===roomId),f=r?.furnitureItems.find(f=>f.code===code&&f.placed);if(!f)return;const x=r.bounds[0]+f.x,z=r.bounds[1]+f.z,y=f.base||0;const bounds=new THREE.Box3(new THREE.Vector3(x,y,z),new THREE.Vector3(x+f.w,y+f.h,z+f.d));inspection=new THREE.Box3Helper(bounds,'#217e8b');inspection.material.depthTest=false;inspection.material.transparent=true;inspection.material.opacity=.9;inspection.renderOrder=10;scene.add(inspection);inspected={room:roomId,code,bounds:[x,y,z,x+f.w,y+f.h,z+f.d]};dirty=true;},
     async glb(){
       const {GLTFExporter}=await import('../vendor/GLTFExporter.js');
       if(stopped)throw new Error('Viewer closed');
@@ -239,10 +242,10 @@ export function createHouse(container, data, plan, onSelect) {
       exportModel.updateMatrixWorld(true);
       return new GLTFExporter().parseAsync(exportModel,{binary:true,onlyVisible:true});
     },
-    state(){return {selected,isolated,full,night,stopped,camera:camera.position.toArray(),target:controls.target.toArray(),sourceSha256:plan.source.sha256,walls:wallMeshes.map(w=>({bounds:[...w.userData.bounds],height:w.geometry.parameters.height*w.scale.y})),placedItems:data.rooms.flatMap(r=>r.furnitureItems.filter(f=>f.placed).map(f=>({room:r.id,code:f.code,bounds:[r.bounds[0]+f.x,r.bounds[1]+f.z,r.bounds[0]+f.x+f.w,r.bounds[1]+f.z+f.d]})))};},
+    state(){return {selected,isolated,full,night,stopped,inspected,camera:camera.position.toArray(),target:controls.target.toArray(),sourceSha256:plan.source.sha256,walls:wallMeshes.map(w=>({bounds:[...w.userData.bounds],height:w.geometry.parameters.height*w.scale.y})),placedItems:data.rooms.flatMap(r=>r.furnitureItems.filter(f=>f.placed).map(f=>({room:r.id,code:f.code,bounds:[r.bounds[0]+f.x,r.bounds[1]+f.z,r.bounds[0]+f.x+f.w,r.bounds[1]+f.z+f.d]})))};},
     snapshot(){renderer.render(scene,camera);return renderer.domElement.toDataURL('image/png');},
     download(){const blob=new Blob([JSON.stringify(model.toJSON())],{type:'application/json'});const u=URL.createObjectURL(blob);const a=document.createElement('a');a.href=u;a.download='jammu-pdf-interior-review.three.json';a.click();setTimeout(()=>URL.revokeObjectURL(u),1000);},
-    dispose(){if(stopped)return;stopped=true;cancelAnimationFrame(animation);observer.disconnect();controls.dispose();disposeRoom();const geometries=new Set(),materials=new Set(),textures=new Set();model.traverse(o=>{if(o.geometry)geometries.add(o.geometry);if(o.material)for(const m of Array.isArray(o.material)?o.material:[o.material])materials.add(m);});for(const g of geometries)g.dispose();for(const m of materials){for(const v of Object.values(m))if(v?.isTexture)textures.add(v);m.dispose();}for(const t of textures)t.dispose();renderer.dispose();renderer.forceContextLoss();renderer.domElement.remove();}
+    dispose(){if(stopped)return;stopped=true;clearInspection();cancelAnimationFrame(animation);observer.disconnect();controls.dispose();disposeRoom();const geometries=new Set(),materials=new Set(),textures=new Set();model.traverse(o=>{if(o.geometry)geometries.add(o.geometry);if(o.material)for(const m of Array.isArray(o.material)?o.material:[o.material])materials.add(m);});for(const g of geometries)g.dispose();for(const m of materials){for(const v of Object.values(m))if(v?.isTexture)textures.add(v);m.dispose();}for(const t of textures)t.dispose();renderer.dispose();renderer.forceContextLoss();renderer.domElement.remove();}
   };
   return api;
 }

@@ -9,11 +9,11 @@
     "data/plan.json": "e306b9b752b21df7c21ec8267b4368c508e47e5e5855ee052b71637e17f341f2",
     "data/delivery.json": "b4004acde4471878227734b3deae291c33c86968541ecad4f4e18a09021e3487",
     "js/drawings.js": "b3bd31a48d678b7fc396658cd27ef9ec6dba8c29222865346716f0b04e2fbac0",
-    "js/workspace.js": "97e102f040fb447abc7d4d1b0aef6c116104ea5fd739dd597bc30e779f105b44",
+    "js/workspace.js": "89d9b87b3ab45ffafe776d6da10a12ea40951a7a5b06e88c14377ddc049bbf09",
     "css/workspace.css": "a9049825169570cf473a9da13309de2093a5970fd7757d01ed55bb612e8cd4eb"
   },
   "outputs": {
-    "coordination-package.pdf": "afbe8c1d184f02374277961d6025539f6d0a8843431e8cb90b43c61c3fa28733",
-    "architect-request-brief.pdf": "6662b4ed554103be4974e2ebbfbbb92db6981ad69d4bdbfd2de82f7718e981fc"
+    "coordination-package.pdf": "c47c924b12bc1f1b6acf436349d5018f05595d5bcb070cf0c2f1d0f4545fc41f",
+    "architect-request-brief.pdf": "57481dc13d4953e87db9486f8de0e22ea976113e79c0e017b04d2749d41e606d"
   }
 }
